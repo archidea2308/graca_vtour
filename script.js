@@ -126,6 +126,40 @@
  "automaticZoomSpeed": 10,
  "class": "PanoramaCamera",
  "initialPosition": {
+  "yaw": 46.52,
+  "class": "PanoramaCameraPosition",
+  "pitch": 0
+ },
+ "initialSequence": {
+  "restartMovementOnUserInteraction": false,
+  "class": "PanoramaCameraSequence",
+  "movements": [
+   {
+    "yawDelta": 18.5,
+    "yawSpeed": 7.96,
+    "easing": "cubic_in",
+    "class": "DistancePanoramaCameraMovement"
+   },
+   {
+    "yawDelta": 323,
+    "yawSpeed": 7.96,
+    "easing": "linear",
+    "class": "DistancePanoramaCameraMovement"
+   },
+   {
+    "yawDelta": 18.5,
+    "yawSpeed": 7.96,
+    "easing": "cubic_out",
+    "class": "DistancePanoramaCameraMovement"
+   }
+  ]
+ },
+ "id": "camera_A745C800_8157_E640_41DC_5549891F9344"
+},
+{
+ "automaticZoomSpeed": 10,
+ "class": "PanoramaCamera",
+ "initialPosition": {
   "yaw": 0,
   "class": "PanoramaCameraPosition",
   "pitch": 0
@@ -155,6 +189,40 @@
   ]
  },
  "id": "panorama_7FE13825_7499_1B32_41D0_2F851ABA3552_camera"
+},
+{
+ "automaticZoomSpeed": 10,
+ "class": "PanoramaCamera",
+ "initialPosition": {
+  "yaw": 89.08,
+  "class": "PanoramaCameraPosition",
+  "pitch": 0
+ },
+ "initialSequence": {
+  "restartMovementOnUserInteraction": false,
+  "class": "PanoramaCameraSequence",
+  "movements": [
+   {
+    "yawDelta": 18.5,
+    "yawSpeed": 7.96,
+    "easing": "cubic_in",
+    "class": "DistancePanoramaCameraMovement"
+   },
+   {
+    "yawDelta": 323,
+    "yawSpeed": 7.96,
+    "easing": "linear",
+    "class": "DistancePanoramaCameraMovement"
+   },
+   {
+    "yawDelta": 18.5,
+    "yawSpeed": 7.96,
+    "easing": "cubic_out",
+    "class": "DistancePanoramaCameraMovement"
+   }
+  ]
+ },
+ "id": "camera_A7E967A2_8157_EA40_41C5_2349CC1EBF91"
 },
 {
  "automaticZoomSpeed": 10,
@@ -668,19 +736,232 @@
  "pitch": 0
 },
 {
- "viewerArea": "this.MainViewer",
- "buttonCardboardView": [
-  "this.IconButton_EF7806FA_E38F_8606_41E5_5C4557EBCACB",
-  "this.IconButton_1B9ADD00_16C4_0505_41B4_B043CA1AA270"
+ "hfovMax": 130,
+ "class": "Panorama",
+ "frames": [
+  {
+   "front": {
+    "class": "ImageResource",
+    "levels": [
+     {
+      "url": "media/panorama_9859C7FB_81CE_69C0_41B3_965E0E279F58_0/f/0/{row}_{column}.jpg",
+      "rowCount": 4,
+      "class": "TiledImageResourceLevel",
+      "tags": "ondemand",
+      "width": 2048,
+      "colCount": 4,
+      "height": 2048
+     },
+     {
+      "url": "media/panorama_9859C7FB_81CE_69C0_41B3_965E0E279F58_0/f/1/{row}_{column}.jpg",
+      "rowCount": 2,
+      "class": "TiledImageResourceLevel",
+      "tags": "ondemand",
+      "width": 1024,
+      "colCount": 2,
+      "height": 1024
+     },
+     {
+      "url": "media/panorama_9859C7FB_81CE_69C0_41B3_965E0E279F58_0/f/2/{row}_{column}.jpg",
+      "rowCount": 1,
+      "class": "TiledImageResourceLevel",
+      "tags": [
+       "ondemand",
+       "preload"
+      ],
+      "width": 512,
+      "colCount": 1,
+      "height": 512
+     }
+    ]
+   },
+   "class": "CubicPanoramaFrame",
+   "top": {
+    "class": "ImageResource",
+    "levels": [
+     {
+      "url": "media/panorama_9859C7FB_81CE_69C0_41B3_965E0E279F58_0/u/0/{row}_{column}.jpg",
+      "rowCount": 4,
+      "class": "TiledImageResourceLevel",
+      "tags": "ondemand",
+      "width": 2048,
+      "colCount": 4,
+      "height": 2048
+     },
+     {
+      "url": "media/panorama_9859C7FB_81CE_69C0_41B3_965E0E279F58_0/u/1/{row}_{column}.jpg",
+      "rowCount": 2,
+      "class": "TiledImageResourceLevel",
+      "tags": "ondemand",
+      "width": 1024,
+      "colCount": 2,
+      "height": 1024
+     },
+     {
+      "url": "media/panorama_9859C7FB_81CE_69C0_41B3_965E0E279F58_0/u/2/{row}_{column}.jpg",
+      "rowCount": 1,
+      "class": "TiledImageResourceLevel",
+      "tags": [
+       "ondemand",
+       "preload"
+      ],
+      "width": 512,
+      "colCount": 1,
+      "height": 512
+     }
+    ]
+   },
+   "right": {
+    "class": "ImageResource",
+    "levels": [
+     {
+      "url": "media/panorama_9859C7FB_81CE_69C0_41B3_965E0E279F58_0/r/0/{row}_{column}.jpg",
+      "rowCount": 4,
+      "class": "TiledImageResourceLevel",
+      "tags": "ondemand",
+      "width": 2048,
+      "colCount": 4,
+      "height": 2048
+     },
+     {
+      "url": "media/panorama_9859C7FB_81CE_69C0_41B3_965E0E279F58_0/r/1/{row}_{column}.jpg",
+      "rowCount": 2,
+      "class": "TiledImageResourceLevel",
+      "tags": "ondemand",
+      "width": 1024,
+      "colCount": 2,
+      "height": 1024
+     },
+     {
+      "url": "media/panorama_9859C7FB_81CE_69C0_41B3_965E0E279F58_0/r/2/{row}_{column}.jpg",
+      "rowCount": 1,
+      "class": "TiledImageResourceLevel",
+      "tags": [
+       "ondemand",
+       "preload"
+      ],
+      "width": 512,
+      "colCount": 1,
+      "height": 512
+     }
+    ]
+   },
+   "back": {
+    "class": "ImageResource",
+    "levels": [
+     {
+      "url": "media/panorama_9859C7FB_81CE_69C0_41B3_965E0E279F58_0/b/0/{row}_{column}.jpg",
+      "rowCount": 4,
+      "class": "TiledImageResourceLevel",
+      "tags": "ondemand",
+      "width": 2048,
+      "colCount": 4,
+      "height": 2048
+     },
+     {
+      "url": "media/panorama_9859C7FB_81CE_69C0_41B3_965E0E279F58_0/b/1/{row}_{column}.jpg",
+      "rowCount": 2,
+      "class": "TiledImageResourceLevel",
+      "tags": "ondemand",
+      "width": 1024,
+      "colCount": 2,
+      "height": 1024
+     },
+     {
+      "url": "media/panorama_9859C7FB_81CE_69C0_41B3_965E0E279F58_0/b/2/{row}_{column}.jpg",
+      "rowCount": 1,
+      "class": "TiledImageResourceLevel",
+      "tags": [
+       "ondemand",
+       "preload"
+      ],
+      "width": 512,
+      "colCount": 1,
+      "height": 512
+     }
+    ]
+   },
+   "bottom": {
+    "class": "ImageResource",
+    "levels": [
+     {
+      "url": "media/panorama_9859C7FB_81CE_69C0_41B3_965E0E279F58_0/d/0/{row}_{column}.jpg",
+      "rowCount": 4,
+      "class": "TiledImageResourceLevel",
+      "tags": "ondemand",
+      "width": 2048,
+      "colCount": 4,
+      "height": 2048
+     },
+     {
+      "url": "media/panorama_9859C7FB_81CE_69C0_41B3_965E0E279F58_0/d/1/{row}_{column}.jpg",
+      "rowCount": 2,
+      "class": "TiledImageResourceLevel",
+      "tags": "ondemand",
+      "width": 1024,
+      "colCount": 2,
+      "height": 1024
+     },
+     {
+      "url": "media/panorama_9859C7FB_81CE_69C0_41B3_965E0E279F58_0/d/2/{row}_{column}.jpg",
+      "rowCount": 1,
+      "class": "TiledImageResourceLevel",
+      "tags": [
+       "ondemand",
+       "preload"
+      ],
+      "width": 512,
+      "colCount": 1,
+      "height": 512
+     }
+    ]
+   },
+   "left": {
+    "class": "ImageResource",
+    "levels": [
+     {
+      "url": "media/panorama_9859C7FB_81CE_69C0_41B3_965E0E279F58_0/l/0/{row}_{column}.jpg",
+      "rowCount": 4,
+      "class": "TiledImageResourceLevel",
+      "tags": "ondemand",
+      "width": 2048,
+      "colCount": 4,
+      "height": 2048
+     },
+     {
+      "url": "media/panorama_9859C7FB_81CE_69C0_41B3_965E0E279F58_0/l/1/{row}_{column}.jpg",
+      "rowCount": 2,
+      "class": "TiledImageResourceLevel",
+      "tags": "ondemand",
+      "width": 1024,
+      "colCount": 2,
+      "height": 1024
+     },
+     {
+      "url": "media/panorama_9859C7FB_81CE_69C0_41B3_965E0E279F58_0/l/2/{row}_{column}.jpg",
+      "rowCount": 1,
+      "class": "TiledImageResourceLevel",
+      "tags": [
+       "ondemand",
+       "preload"
+      ],
+      "width": 512,
+      "colCount": 1,
+      "height": 512
+     }
+    ]
+   },
+   "thumbnailUrl": "media/panorama_9859C7FB_81CE_69C0_41B3_965E0E279F58_t.jpg"
+  }
  ],
- "buttonToggleHotspots": "this.IconButton_EEEB3760_E38B_8603_41D6_FE6B11A3DA96",
- "class": "PanoramaPlayer",
- "touchControlMode": "drag_rotation",
- "id": "MainViewerPanoramaPlayer",
- "gyroscopeVerticalDraggingEnabled": true,
- "displayPlaybackBar": true,
- "buttonToggleGyroscope": "this.IconButton_EE9FBAB2_E389_8E06_41D7_903ABEDD153A",
- "mouseControlMode": "drag_acceleration"
+ "vfov": 180,
+ "hfov": 360,
+ "label": "Tribun Keluarga Selatan Lantai 2",
+ "id": "panorama_9859C7FB_81CE_69C0_41B3_965E0E279F58",
+ "hfovMin": "135%",
+ "thumbnailUrl": "media/panorama_9859C7FB_81CE_69C0_41B3_965E0E279F58_t.jpg",
+ "partial": false,
+ "pitch": 0
 },
 {
  "adjacentPanoramas": [
@@ -1663,7 +1944,7 @@
     "class": "ImageResource",
     "levels": [
      {
-      "url": "media/panorama_9859C7FB_81CE_69C0_41B3_965E0E279F58_0/f/0/{row}_{column}.jpg",
+      "url": "media/panorama_97A14F9C_81CE_5A41_41D9_B42B9832D285_0/f/0/{row}_{column}.jpg",
       "rowCount": 4,
       "class": "TiledImageResourceLevel",
       "tags": "ondemand",
@@ -1672,7 +1953,7 @@
       "height": 2048
      },
      {
-      "url": "media/panorama_9859C7FB_81CE_69C0_41B3_965E0E279F58_0/f/1/{row}_{column}.jpg",
+      "url": "media/panorama_97A14F9C_81CE_5A41_41D9_B42B9832D285_0/f/1/{row}_{column}.jpg",
       "rowCount": 2,
       "class": "TiledImageResourceLevel",
       "tags": "ondemand",
@@ -1681,7 +1962,7 @@
       "height": 1024
      },
      {
-      "url": "media/panorama_9859C7FB_81CE_69C0_41B3_965E0E279F58_0/f/2/{row}_{column}.jpg",
+      "url": "media/panorama_97A14F9C_81CE_5A41_41D9_B42B9832D285_0/f/2/{row}_{column}.jpg",
       "rowCount": 1,
       "class": "TiledImageResourceLevel",
       "tags": [
@@ -1699,7 +1980,7 @@
     "class": "ImageResource",
     "levels": [
      {
-      "url": "media/panorama_9859C7FB_81CE_69C0_41B3_965E0E279F58_0/u/0/{row}_{column}.jpg",
+      "url": "media/panorama_97A14F9C_81CE_5A41_41D9_B42B9832D285_0/u/0/{row}_{column}.jpg",
       "rowCount": 4,
       "class": "TiledImageResourceLevel",
       "tags": "ondemand",
@@ -1708,7 +1989,7 @@
       "height": 2048
      },
      {
-      "url": "media/panorama_9859C7FB_81CE_69C0_41B3_965E0E279F58_0/u/1/{row}_{column}.jpg",
+      "url": "media/panorama_97A14F9C_81CE_5A41_41D9_B42B9832D285_0/u/1/{row}_{column}.jpg",
       "rowCount": 2,
       "class": "TiledImageResourceLevel",
       "tags": "ondemand",
@@ -1717,7 +1998,7 @@
       "height": 1024
      },
      {
-      "url": "media/panorama_9859C7FB_81CE_69C0_41B3_965E0E279F58_0/u/2/{row}_{column}.jpg",
+      "url": "media/panorama_97A14F9C_81CE_5A41_41D9_B42B9832D285_0/u/2/{row}_{column}.jpg",
       "rowCount": 1,
       "class": "TiledImageResourceLevel",
       "tags": [
@@ -1734,7 +2015,7 @@
     "class": "ImageResource",
     "levels": [
      {
-      "url": "media/panorama_9859C7FB_81CE_69C0_41B3_965E0E279F58_0/r/0/{row}_{column}.jpg",
+      "url": "media/panorama_97A14F9C_81CE_5A41_41D9_B42B9832D285_0/r/0/{row}_{column}.jpg",
       "rowCount": 4,
       "class": "TiledImageResourceLevel",
       "tags": "ondemand",
@@ -1743,7 +2024,7 @@
       "height": 2048
      },
      {
-      "url": "media/panorama_9859C7FB_81CE_69C0_41B3_965E0E279F58_0/r/1/{row}_{column}.jpg",
+      "url": "media/panorama_97A14F9C_81CE_5A41_41D9_B42B9832D285_0/r/1/{row}_{column}.jpg",
       "rowCount": 2,
       "class": "TiledImageResourceLevel",
       "tags": "ondemand",
@@ -1752,7 +2033,7 @@
       "height": 1024
      },
      {
-      "url": "media/panorama_9859C7FB_81CE_69C0_41B3_965E0E279F58_0/r/2/{row}_{column}.jpg",
+      "url": "media/panorama_97A14F9C_81CE_5A41_41D9_B42B9832D285_0/r/2/{row}_{column}.jpg",
       "rowCount": 1,
       "class": "TiledImageResourceLevel",
       "tags": [
@@ -1769,7 +2050,7 @@
     "class": "ImageResource",
     "levels": [
      {
-      "url": "media/panorama_9859C7FB_81CE_69C0_41B3_965E0E279F58_0/b/0/{row}_{column}.jpg",
+      "url": "media/panorama_97A14F9C_81CE_5A41_41D9_B42B9832D285_0/b/0/{row}_{column}.jpg",
       "rowCount": 4,
       "class": "TiledImageResourceLevel",
       "tags": "ondemand",
@@ -1778,7 +2059,7 @@
       "height": 2048
      },
      {
-      "url": "media/panorama_9859C7FB_81CE_69C0_41B3_965E0E279F58_0/b/1/{row}_{column}.jpg",
+      "url": "media/panorama_97A14F9C_81CE_5A41_41D9_B42B9832D285_0/b/1/{row}_{column}.jpg",
       "rowCount": 2,
       "class": "TiledImageResourceLevel",
       "tags": "ondemand",
@@ -1787,7 +2068,7 @@
       "height": 1024
      },
      {
-      "url": "media/panorama_9859C7FB_81CE_69C0_41B3_965E0E279F58_0/b/2/{row}_{column}.jpg",
+      "url": "media/panorama_97A14F9C_81CE_5A41_41D9_B42B9832D285_0/b/2/{row}_{column}.jpg",
       "rowCount": 1,
       "class": "TiledImageResourceLevel",
       "tags": [
@@ -1804,7 +2085,7 @@
     "class": "ImageResource",
     "levels": [
      {
-      "url": "media/panorama_9859C7FB_81CE_69C0_41B3_965E0E279F58_0/d/0/{row}_{column}.jpg",
+      "url": "media/panorama_97A14F9C_81CE_5A41_41D9_B42B9832D285_0/d/0/{row}_{column}.jpg",
       "rowCount": 4,
       "class": "TiledImageResourceLevel",
       "tags": "ondemand",
@@ -1813,7 +2094,7 @@
       "height": 2048
      },
      {
-      "url": "media/panorama_9859C7FB_81CE_69C0_41B3_965E0E279F58_0/d/1/{row}_{column}.jpg",
+      "url": "media/panorama_97A14F9C_81CE_5A41_41D9_B42B9832D285_0/d/1/{row}_{column}.jpg",
       "rowCount": 2,
       "class": "TiledImageResourceLevel",
       "tags": "ondemand",
@@ -1822,7 +2103,7 @@
       "height": 1024
      },
      {
-      "url": "media/panorama_9859C7FB_81CE_69C0_41B3_965E0E279F58_0/d/2/{row}_{column}.jpg",
+      "url": "media/panorama_97A14F9C_81CE_5A41_41D9_B42B9832D285_0/d/2/{row}_{column}.jpg",
       "rowCount": 1,
       "class": "TiledImageResourceLevel",
       "tags": [
@@ -1839,7 +2120,7 @@
     "class": "ImageResource",
     "levels": [
      {
-      "url": "media/panorama_9859C7FB_81CE_69C0_41B3_965E0E279F58_0/l/0/{row}_{column}.jpg",
+      "url": "media/panorama_97A14F9C_81CE_5A41_41D9_B42B9832D285_0/l/0/{row}_{column}.jpg",
       "rowCount": 4,
       "class": "TiledImageResourceLevel",
       "tags": "ondemand",
@@ -1848,7 +2129,7 @@
       "height": 2048
      },
      {
-      "url": "media/panorama_9859C7FB_81CE_69C0_41B3_965E0E279F58_0/l/1/{row}_{column}.jpg",
+      "url": "media/panorama_97A14F9C_81CE_5A41_41D9_B42B9832D285_0/l/1/{row}_{column}.jpg",
       "rowCount": 2,
       "class": "TiledImageResourceLevel",
       "tags": "ondemand",
@@ -1857,7 +2138,7 @@
       "height": 1024
      },
      {
-      "url": "media/panorama_9859C7FB_81CE_69C0_41B3_965E0E279F58_0/l/2/{row}_{column}.jpg",
+      "url": "media/panorama_97A14F9C_81CE_5A41_41D9_B42B9832D285_0/l/2/{row}_{column}.jpg",
       "rowCount": 1,
       "class": "TiledImageResourceLevel",
       "tags": [
@@ -1870,15 +2151,15 @@
      }
     ]
    },
-   "thumbnailUrl": "media/panorama_9859C7FB_81CE_69C0_41B3_965E0E279F58_t.jpg"
+   "thumbnailUrl": "media/panorama_97A14F9C_81CE_5A41_41D9_B42B9832D285_t.jpg"
   }
  ],
  "vfov": 180,
  "hfov": 360,
- "label": "Tribun Keluarga Selatan Lantai 2",
- "id": "panorama_9859C7FB_81CE_69C0_41B3_965E0E279F58",
+ "label": "Tribun Keluarga Utara Lantai 2",
+ "id": "panorama_97A14F9C_81CE_5A41_41D9_B42B9832D285",
  "hfovMin": "135%",
- "thumbnailUrl": "media/panorama_9859C7FB_81CE_69C0_41B3_965E0E279F58_t.jpg",
+ "thumbnailUrl": "media/panorama_97A14F9C_81CE_5A41_41D9_B42B9832D285_t.jpg",
  "partial": false,
  "pitch": 0
 },
@@ -1915,6 +2196,40 @@
   ]
  },
  "id": "panorama_7FC7CD76_7499_151E_41D8_2AAFAFF10D8B_camera"
+},
+{
+ "automaticZoomSpeed": 10,
+ "class": "PanoramaCamera",
+ "initialPosition": {
+  "yaw": 179.3,
+  "class": "PanoramaCameraPosition",
+  "pitch": 0
+ },
+ "initialSequence": {
+  "restartMovementOnUserInteraction": false,
+  "class": "PanoramaCameraSequence",
+  "movements": [
+   {
+    "yawDelta": 18.5,
+    "yawSpeed": 7.96,
+    "easing": "cubic_in",
+    "class": "DistancePanoramaCameraMovement"
+   },
+   {
+    "yawDelta": 323,
+    "yawSpeed": 7.96,
+    "easing": "linear",
+    "class": "DistancePanoramaCameraMovement"
+   },
+   {
+    "yawDelta": 18.5,
+    "yawSpeed": 7.96,
+    "easing": "cubic_out",
+    "class": "DistancePanoramaCameraMovement"
+   }
+  ]
+ },
+ "id": "camera_A7D1A783_8157_EA40_41A1_022A8DD31254"
 },
 {
  "backgroundColorRatios": [],
@@ -3192,234 +3507,6 @@
  "pitch": 0
 },
 {
- "hfovMax": 130,
- "class": "Panorama",
- "frames": [
-  {
-   "front": {
-    "class": "ImageResource",
-    "levels": [
-     {
-      "url": "media/panorama_97A14F9C_81CE_5A41_41D9_B42B9832D285_0/f/0/{row}_{column}.jpg",
-      "rowCount": 4,
-      "class": "TiledImageResourceLevel",
-      "tags": "ondemand",
-      "width": 2048,
-      "colCount": 4,
-      "height": 2048
-     },
-     {
-      "url": "media/panorama_97A14F9C_81CE_5A41_41D9_B42B9832D285_0/f/1/{row}_{column}.jpg",
-      "rowCount": 2,
-      "class": "TiledImageResourceLevel",
-      "tags": "ondemand",
-      "width": 1024,
-      "colCount": 2,
-      "height": 1024
-     },
-     {
-      "url": "media/panorama_97A14F9C_81CE_5A41_41D9_B42B9832D285_0/f/2/{row}_{column}.jpg",
-      "rowCount": 1,
-      "class": "TiledImageResourceLevel",
-      "tags": [
-       "ondemand",
-       "preload"
-      ],
-      "width": 512,
-      "colCount": 1,
-      "height": 512
-     }
-    ]
-   },
-   "class": "CubicPanoramaFrame",
-   "top": {
-    "class": "ImageResource",
-    "levels": [
-     {
-      "url": "media/panorama_97A14F9C_81CE_5A41_41D9_B42B9832D285_0/u/0/{row}_{column}.jpg",
-      "rowCount": 4,
-      "class": "TiledImageResourceLevel",
-      "tags": "ondemand",
-      "width": 2048,
-      "colCount": 4,
-      "height": 2048
-     },
-     {
-      "url": "media/panorama_97A14F9C_81CE_5A41_41D9_B42B9832D285_0/u/1/{row}_{column}.jpg",
-      "rowCount": 2,
-      "class": "TiledImageResourceLevel",
-      "tags": "ondemand",
-      "width": 1024,
-      "colCount": 2,
-      "height": 1024
-     },
-     {
-      "url": "media/panorama_97A14F9C_81CE_5A41_41D9_B42B9832D285_0/u/2/{row}_{column}.jpg",
-      "rowCount": 1,
-      "class": "TiledImageResourceLevel",
-      "tags": [
-       "ondemand",
-       "preload"
-      ],
-      "width": 512,
-      "colCount": 1,
-      "height": 512
-     }
-    ]
-   },
-   "right": {
-    "class": "ImageResource",
-    "levels": [
-     {
-      "url": "media/panorama_97A14F9C_81CE_5A41_41D9_B42B9832D285_0/r/0/{row}_{column}.jpg",
-      "rowCount": 4,
-      "class": "TiledImageResourceLevel",
-      "tags": "ondemand",
-      "width": 2048,
-      "colCount": 4,
-      "height": 2048
-     },
-     {
-      "url": "media/panorama_97A14F9C_81CE_5A41_41D9_B42B9832D285_0/r/1/{row}_{column}.jpg",
-      "rowCount": 2,
-      "class": "TiledImageResourceLevel",
-      "tags": "ondemand",
-      "width": 1024,
-      "colCount": 2,
-      "height": 1024
-     },
-     {
-      "url": "media/panorama_97A14F9C_81CE_5A41_41D9_B42B9832D285_0/r/2/{row}_{column}.jpg",
-      "rowCount": 1,
-      "class": "TiledImageResourceLevel",
-      "tags": [
-       "ondemand",
-       "preload"
-      ],
-      "width": 512,
-      "colCount": 1,
-      "height": 512
-     }
-    ]
-   },
-   "back": {
-    "class": "ImageResource",
-    "levels": [
-     {
-      "url": "media/panorama_97A14F9C_81CE_5A41_41D9_B42B9832D285_0/b/0/{row}_{column}.jpg",
-      "rowCount": 4,
-      "class": "TiledImageResourceLevel",
-      "tags": "ondemand",
-      "width": 2048,
-      "colCount": 4,
-      "height": 2048
-     },
-     {
-      "url": "media/panorama_97A14F9C_81CE_5A41_41D9_B42B9832D285_0/b/1/{row}_{column}.jpg",
-      "rowCount": 2,
-      "class": "TiledImageResourceLevel",
-      "tags": "ondemand",
-      "width": 1024,
-      "colCount": 2,
-      "height": 1024
-     },
-     {
-      "url": "media/panorama_97A14F9C_81CE_5A41_41D9_B42B9832D285_0/b/2/{row}_{column}.jpg",
-      "rowCount": 1,
-      "class": "TiledImageResourceLevel",
-      "tags": [
-       "ondemand",
-       "preload"
-      ],
-      "width": 512,
-      "colCount": 1,
-      "height": 512
-     }
-    ]
-   },
-   "bottom": {
-    "class": "ImageResource",
-    "levels": [
-     {
-      "url": "media/panorama_97A14F9C_81CE_5A41_41D9_B42B9832D285_0/d/0/{row}_{column}.jpg",
-      "rowCount": 4,
-      "class": "TiledImageResourceLevel",
-      "tags": "ondemand",
-      "width": 2048,
-      "colCount": 4,
-      "height": 2048
-     },
-     {
-      "url": "media/panorama_97A14F9C_81CE_5A41_41D9_B42B9832D285_0/d/1/{row}_{column}.jpg",
-      "rowCount": 2,
-      "class": "TiledImageResourceLevel",
-      "tags": "ondemand",
-      "width": 1024,
-      "colCount": 2,
-      "height": 1024
-     },
-     {
-      "url": "media/panorama_97A14F9C_81CE_5A41_41D9_B42B9832D285_0/d/2/{row}_{column}.jpg",
-      "rowCount": 1,
-      "class": "TiledImageResourceLevel",
-      "tags": [
-       "ondemand",
-       "preload"
-      ],
-      "width": 512,
-      "colCount": 1,
-      "height": 512
-     }
-    ]
-   },
-   "left": {
-    "class": "ImageResource",
-    "levels": [
-     {
-      "url": "media/panorama_97A14F9C_81CE_5A41_41D9_B42B9832D285_0/l/0/{row}_{column}.jpg",
-      "rowCount": 4,
-      "class": "TiledImageResourceLevel",
-      "tags": "ondemand",
-      "width": 2048,
-      "colCount": 4,
-      "height": 2048
-     },
-     {
-      "url": "media/panorama_97A14F9C_81CE_5A41_41D9_B42B9832D285_0/l/1/{row}_{column}.jpg",
-      "rowCount": 2,
-      "class": "TiledImageResourceLevel",
-      "tags": "ondemand",
-      "width": 1024,
-      "colCount": 2,
-      "height": 1024
-     },
-     {
-      "url": "media/panorama_97A14F9C_81CE_5A41_41D9_B42B9832D285_0/l/2/{row}_{column}.jpg",
-      "rowCount": 1,
-      "class": "TiledImageResourceLevel",
-      "tags": [
-       "ondemand",
-       "preload"
-      ],
-      "width": 512,
-      "colCount": 1,
-      "height": 512
-     }
-    ]
-   },
-   "thumbnailUrl": "media/panorama_97A14F9C_81CE_5A41_41D9_B42B9832D285_t.jpg"
-  }
- ],
- "vfov": 180,
- "hfov": 360,
- "label": "Tribun Keluarga Utara Lantai 2",
- "id": "panorama_97A14F9C_81CE_5A41_41D9_B42B9832D285",
- "hfovMin": "135%",
- "thumbnailUrl": "media/panorama_97A14F9C_81CE_5A41_41D9_B42B9832D285_t.jpg",
- "partial": false,
- "pitch": 0
-},
-{
  "backgroundColorRatios": [],
  "data": {
   "name": "Window8403"
@@ -3730,142 +3817,6 @@
  "paddingBottom": 0
 },
 {
- "automaticZoomSpeed": 10,
- "class": "PanoramaCamera",
- "initialPosition": {
-  "yaw": 0,
-  "class": "PanoramaCameraPosition",
-  "pitch": 0
- },
- "initialSequence": {
-  "restartMovementOnUserInteraction": false,
-  "class": "PanoramaCameraSequence",
-  "movements": [
-   {
-    "yawDelta": 18.5,
-    "yawSpeed": 7.96,
-    "easing": "cubic_in",
-    "class": "DistancePanoramaCameraMovement"
-   },
-   {
-    "yawDelta": 323,
-    "yawSpeed": 7.96,
-    "easing": "linear",
-    "class": "DistancePanoramaCameraMovement"
-   },
-   {
-    "yawDelta": 18.5,
-    "yawSpeed": 7.96,
-    "easing": "cubic_out",
-    "class": "DistancePanoramaCameraMovement"
-   }
-  ]
- },
- "id": "panorama_7FC9FC43_749B_1B76_41D0_A94876309FCB_camera"
-},
-{
- "automaticZoomSpeed": 10,
- "class": "PanoramaCamera",
- "initialPosition": {
-  "yaw": -97.12,
-  "class": "PanoramaCameraPosition",
-  "pitch": 0
- },
- "initialSequence": {
-  "restartMovementOnUserInteraction": false,
-  "class": "PanoramaCameraSequence",
-  "movements": [
-   {
-    "yawDelta": 18.5,
-    "yawSpeed": 7.96,
-    "easing": "cubic_in",
-    "class": "DistancePanoramaCameraMovement"
-   },
-   {
-    "yawDelta": 323,
-    "yawSpeed": 7.96,
-    "easing": "linear",
-    "class": "DistancePanoramaCameraMovement"
-   },
-   {
-    "yawDelta": 18.5,
-    "yawSpeed": 7.96,
-    "easing": "cubic_out",
-    "class": "DistancePanoramaCameraMovement"
-   }
-  ]
- },
- "id": "camera_A228A73A_81F1_EA41_41C5_298AF13BCE73"
-},
-{
- "automaticZoomSpeed": 10,
- "class": "PanoramaCamera",
- "initialPosition": {
-  "yaw": 0,
-  "class": "PanoramaCameraPosition",
-  "pitch": 0
- },
- "initialSequence": {
-  "restartMovementOnUserInteraction": false,
-  "class": "PanoramaCameraSequence",
-  "movements": [
-   {
-    "yawDelta": 18.5,
-    "yawSpeed": 7.96,
-    "easing": "cubic_in",
-    "class": "DistancePanoramaCameraMovement"
-   },
-   {
-    "yawDelta": 323,
-    "yawSpeed": 7.96,
-    "easing": "linear",
-    "class": "DistancePanoramaCameraMovement"
-   },
-   {
-    "yawDelta": 18.5,
-    "yawSpeed": 7.96,
-    "easing": "cubic_out",
-    "class": "DistancePanoramaCameraMovement"
-   }
-  ]
- },
- "id": "panorama_7FCCEAE9_7499_FF33_4197_451F12024186_camera"
-},
-{
- "automaticZoomSpeed": 10,
- "class": "PanoramaCamera",
- "initialPosition": {
-  "yaw": 46.52,
-  "class": "PanoramaCameraPosition",
-  "pitch": 0
- },
- "initialSequence": {
-  "restartMovementOnUserInteraction": false,
-  "class": "PanoramaCameraSequence",
-  "movements": [
-   {
-    "yawDelta": 18.5,
-    "yawSpeed": 7.96,
-    "easing": "cubic_in",
-    "class": "DistancePanoramaCameraMovement"
-   },
-   {
-    "yawDelta": 323,
-    "yawSpeed": 7.96,
-    "easing": "linear",
-    "class": "DistancePanoramaCameraMovement"
-   },
-   {
-    "yawDelta": 18.5,
-    "yawSpeed": 7.96,
-    "easing": "cubic_out",
-    "class": "DistancePanoramaCameraMovement"
-   }
-  ]
- },
- "id": "camera_A28287C7_81F1_E9C0_41B1_362D5F472743"
-},
-{
  "backgroundColorRatios": [],
  "data": {
   "name": "Window8403"
@@ -3875,7 +3826,7 @@
   "class": "FadeOutEffect",
   "duration": 500
  },
- "id": "window_96BA827F_8152_6AC0_41C2_ECF27BB8D599",
+ "id": "window_6A34AD88_7F4E_7E40_41C8_DE9F6EC6D349",
  "bodyBackgroundColorDirection": "vertical",
  "bodyPaddingTop": 5,
  "scrollBarColor": "#000000",
@@ -3913,7 +3864,7 @@
  "veilColorDirection": "horizontal",
  "titleFontSize": "3vmin",
  "minWidth": 20,
- "title": "PINTU GERBANG UTARA",
+ "title": "KURSI GUKAR",
  "paddingLeft": 0,
  "headerBackgroundColorDirection": "vertical",
  "titleFontWeight": "bold",
@@ -3954,7 +3905,7 @@
  "propagateClick": false,
  "footerBackgroundColorDirection": "vertical",
  "children": [
-  "this.htmlText_96B6927F_8152_6AC0_41B0_CA5F2CB0DD3E"
+  "this.htmlText_6A30BD88_7F4E_7E40_41DB_E1A5CCD790D7"
  ],
  "titlePaddingRight": 5,
  "closeButtonIconHeight": 12,
@@ -4019,6 +3970,74 @@
  "scrollBarWidth": 10,
  "closeButtonIconWidth": 12,
  "paddingBottom": 0
+},
+{
+ "automaticZoomSpeed": 10,
+ "class": "PanoramaCamera",
+ "initialPosition": {
+  "yaw": 0,
+  "class": "PanoramaCameraPosition",
+  "pitch": 0
+ },
+ "initialSequence": {
+  "restartMovementOnUserInteraction": false,
+  "class": "PanoramaCameraSequence",
+  "movements": [
+   {
+    "yawDelta": 18.5,
+    "yawSpeed": 7.96,
+    "easing": "cubic_in",
+    "class": "DistancePanoramaCameraMovement"
+   },
+   {
+    "yawDelta": 323,
+    "yawSpeed": 7.96,
+    "easing": "linear",
+    "class": "DistancePanoramaCameraMovement"
+   },
+   {
+    "yawDelta": 18.5,
+    "yawSpeed": 7.96,
+    "easing": "cubic_out",
+    "class": "DistancePanoramaCameraMovement"
+   }
+  ]
+ },
+ "id": "panorama_7FCCEAE9_7499_FF33_4197_451F12024186_camera"
+},
+{
+ "automaticZoomSpeed": 10,
+ "class": "PanoramaCamera",
+ "initialPosition": {
+  "yaw": 0,
+  "class": "PanoramaCameraPosition",
+  "pitch": 0
+ },
+ "initialSequence": {
+  "restartMovementOnUserInteraction": false,
+  "class": "PanoramaCameraSequence",
+  "movements": [
+   {
+    "yawDelta": 18.5,
+    "yawSpeed": 7.96,
+    "easing": "cubic_in",
+    "class": "DistancePanoramaCameraMovement"
+   },
+   {
+    "yawDelta": 323,
+    "yawSpeed": 7.96,
+    "easing": "linear",
+    "class": "DistancePanoramaCameraMovement"
+   },
+   {
+    "yawDelta": 18.5,
+    "yawSpeed": 7.96,
+    "easing": "cubic_out",
+    "class": "DistancePanoramaCameraMovement"
+   }
+  ]
+ },
+ "id": "panorama_7FC9FC43_749B_1B76_41D0_A94876309FCB_camera"
 },
 {
  "hfovMax": 130,
@@ -4281,40 +4300,6 @@
   ]
  },
  "id": "panorama_7FC6C27B_7498_EF17_41D1_123A7B70F607_camera"
-},
-{
- "automaticZoomSpeed": 10,
- "class": "PanoramaCamera",
- "initialPosition": {
-  "yaw": -179.69,
-  "class": "PanoramaCameraPosition",
-  "pitch": 0
- },
- "initialSequence": {
-  "restartMovementOnUserInteraction": false,
-  "class": "PanoramaCameraSequence",
-  "movements": [
-   {
-    "yawDelta": 18.5,
-    "yawSpeed": 7.96,
-    "easing": "cubic_in",
-    "class": "DistancePanoramaCameraMovement"
-   },
-   {
-    "yawDelta": 323,
-    "yawSpeed": 7.96,
-    "easing": "linear",
-    "class": "DistancePanoramaCameraMovement"
-   },
-   {
-    "yawDelta": 18.5,
-    "yawSpeed": 7.96,
-    "easing": "cubic_out",
-    "class": "DistancePanoramaCameraMovement"
-   }
-  ]
- },
- "id": "camera_A2AF97E6_81F1_E9C1_41C2_6C70A2E86E02"
 },
 {
  "backgroundColorRatios": [],
@@ -4636,7 +4621,7 @@
   "class": "FadeOutEffect",
   "duration": 500
  },
- "id": "window_6A34AD88_7F4E_7E40_41C8_DE9F6EC6D349",
+ "id": "window_96BA827F_8152_6AC0_41C2_ECF27BB8D599",
  "bodyBackgroundColorDirection": "vertical",
  "bodyPaddingTop": 5,
  "scrollBarColor": "#000000",
@@ -4674,7 +4659,7 @@
  "veilColorDirection": "horizontal",
  "titleFontSize": "3vmin",
  "minWidth": 20,
- "title": "KURSI GUKAR",
+ "title": "PINTU GERBANG UTARA",
  "paddingLeft": 0,
  "headerBackgroundColorDirection": "vertical",
  "titleFontWeight": "bold",
@@ -4715,7 +4700,7 @@
  "propagateClick": false,
  "footerBackgroundColorDirection": "vertical",
  "children": [
-  "this.htmlText_6A30BD88_7F4E_7E40_41DB_E1A5CCD790D7"
+  "this.htmlText_96B6927F_8152_6AC0_41B0_CA5F2CB0DD3E"
  ],
  "titlePaddingRight": 5,
  "closeButtonIconHeight": 12,
@@ -4974,74 +4959,6 @@
  "automaticZoomSpeed": 10,
  "class": "PanoramaCamera",
  "initialPosition": {
-  "yaw": -7.74,
-  "class": "PanoramaCameraPosition",
-  "pitch": 0
- },
- "initialSequence": {
-  "restartMovementOnUserInteraction": false,
-  "class": "PanoramaCameraSequence",
-  "movements": [
-   {
-    "yawDelta": 18.5,
-    "yawSpeed": 7.96,
-    "easing": "cubic_in",
-    "class": "DistancePanoramaCameraMovement"
-   },
-   {
-    "yawDelta": 323,
-    "yawSpeed": 7.96,
-    "easing": "linear",
-    "class": "DistancePanoramaCameraMovement"
-   },
-   {
-    "yawDelta": 18.5,
-    "yawSpeed": 7.96,
-    "easing": "cubic_out",
-    "class": "DistancePanoramaCameraMovement"
-   }
-  ]
- },
- "id": "camera_A359B7E6_81F1_E9C1_41C9_796D095E1B27"
-},
-{
- "automaticZoomSpeed": 10,
- "class": "PanoramaCamera",
- "initialPosition": {
-  "yaw": 85.24,
-  "class": "PanoramaCameraPosition",
-  "pitch": 0
- },
- "initialSequence": {
-  "restartMovementOnUserInteraction": false,
-  "class": "PanoramaCameraSequence",
-  "movements": [
-   {
-    "yawDelta": 18.5,
-    "yawSpeed": 7.96,
-    "easing": "cubic_in",
-    "class": "DistancePanoramaCameraMovement"
-   },
-   {
-    "yawDelta": 323,
-    "yawSpeed": 7.96,
-    "easing": "linear",
-    "class": "DistancePanoramaCameraMovement"
-   },
-   {
-    "yawDelta": 18.5,
-    "yawSpeed": 7.96,
-    "easing": "cubic_out",
-    "class": "DistancePanoramaCameraMovement"
-   }
-  ]
- },
- "id": "camera_A2D50779_81F1_EAC0_41C4_02CA98B63DD3"
-},
-{
- "automaticZoomSpeed": 10,
- "class": "PanoramaCamera",
- "initialPosition": {
   "yaw": 0,
   "class": "PanoramaCameraPosition",
   "pitch": 0
@@ -5071,6 +4988,40 @@
   ]
  },
  "id": "panorama_7FDA84BB_7499_2B16_41D2_4571F93FFF66_camera"
+},
+{
+ "automaticZoomSpeed": 10,
+ "class": "PanoramaCamera",
+ "initialPosition": {
+  "yaw": -179.69,
+  "class": "PanoramaCameraPosition",
+  "pitch": 0
+ },
+ "initialSequence": {
+  "restartMovementOnUserInteraction": false,
+  "class": "PanoramaCameraSequence",
+  "movements": [
+   {
+    "yawDelta": 18.5,
+    "yawSpeed": 7.96,
+    "easing": "cubic_in",
+    "class": "DistancePanoramaCameraMovement"
+   },
+   {
+    "yawDelta": 323,
+    "yawSpeed": 7.96,
+    "easing": "linear",
+    "class": "DistancePanoramaCameraMovement"
+   },
+   {
+    "yawDelta": 18.5,
+    "yawSpeed": 7.96,
+    "easing": "cubic_out",
+    "class": "DistancePanoramaCameraMovement"
+   }
+  ]
+ },
+ "id": "camera_A75EB80F_8157_E65F_418F_05B09D2D184F"
 },
 {
  "backgroundColorRatios": [],
@@ -5231,7 +5182,7 @@
  "automaticZoomSpeed": 10,
  "class": "PanoramaCamera",
  "initialPosition": {
-  "yaw": -60.67,
+  "yaw": 0,
   "class": "PanoramaCameraPosition",
   "pitch": 0
  },
@@ -5259,7 +5210,7 @@
    }
   ]
  },
- "id": "camera_A22C274A_81F1_EAC0_4193_96AA57BDE2E9"
+ "id": "panorama_7FC7AF97_7499_751E_41BC_34F2046F335C_camera"
 },
 {
  "automaticZoomSpeed": 10,
@@ -5299,7 +5250,7 @@
  "automaticZoomSpeed": 10,
  "class": "PanoramaCamera",
  "initialPosition": {
-  "yaw": -73.63,
+  "yaw": -97.12,
   "class": "PanoramaCameraPosition",
   "pitch": 0
  },
@@ -5327,264 +5278,7 @@
    }
   ]
  },
- "id": "camera_A2FE8798_81F1_EA40_41DC_37901C137335"
-},
-{
- "automaticZoomSpeed": 10,
- "class": "PanoramaCamera",
- "initialPosition": {
-  "yaw": 0,
-  "class": "PanoramaCameraPosition",
-  "pitch": 0
- },
- "initialSequence": {
-  "restartMovementOnUserInteraction": false,
-  "class": "PanoramaCameraSequence",
-  "movements": [
-   {
-    "yawDelta": 18.5,
-    "yawSpeed": 7.96,
-    "easing": "cubic_in",
-    "class": "DistancePanoramaCameraMovement"
-   },
-   {
-    "yawDelta": 323,
-    "yawSpeed": 7.96,
-    "easing": "linear",
-    "class": "DistancePanoramaCameraMovement"
-   },
-   {
-    "yawDelta": 18.5,
-    "yawSpeed": 7.96,
-    "easing": "cubic_out",
-    "class": "DistancePanoramaCameraMovement"
-   }
-  ]
- },
- "id": "panorama_7FC7AF97_7499_751E_41BC_34F2046F335C_camera"
-},
-{
- "automaticZoomSpeed": 10,
- "class": "PanoramaCamera",
- "initialPosition": {
-  "yaw": -9.13,
-  "class": "PanoramaCameraPosition",
-  "pitch": 0
- },
- "initialSequence": {
-  "restartMovementOnUserInteraction": false,
-  "class": "PanoramaCameraSequence",
-  "movements": [
-   {
-    "yawDelta": 18.5,
-    "yawSpeed": 7.96,
-    "easing": "cubic_in",
-    "class": "DistancePanoramaCameraMovement"
-   },
-   {
-    "yawDelta": 323,
-    "yawSpeed": 7.96,
-    "easing": "linear",
-    "class": "DistancePanoramaCameraMovement"
-   },
-   {
-    "yawDelta": 18.5,
-    "yawSpeed": 7.96,
-    "easing": "cubic_out",
-    "class": "DistancePanoramaCameraMovement"
-   }
-  ]
- },
- "id": "camera_A227F75A_81F1_EAC0_41DF_8F80EFA09557"
-},
-{
- "automaticZoomSpeed": 10,
- "class": "PanoramaCamera",
- "initialPosition": {
-  "yaw": 0,
-  "class": "PanoramaCameraPosition",
-  "pitch": 0
- },
- "initialSequence": {
-  "restartMovementOnUserInteraction": false,
-  "class": "PanoramaCameraSequence",
-  "movements": [
-   {
-    "yawDelta": 18.5,
-    "yawSpeed": 7.96,
-    "easing": "cubic_in",
-    "class": "DistancePanoramaCameraMovement"
-   },
-   {
-    "yawDelta": 323,
-    "yawSpeed": 7.96,
-    "easing": "linear",
-    "class": "DistancePanoramaCameraMovement"
-   },
-   {
-    "yawDelta": 18.5,
-    "yawSpeed": 7.96,
-    "easing": "cubic_out",
-    "class": "DistancePanoramaCameraMovement"
-   }
-  ]
- },
- "id": "panorama_7FC9C678_749B_7712_41D7_280C0863DBEB_camera"
-},
-{
- "backgroundColorRatios": [],
- "data": {
-  "name": "Window8403"
- },
- "hideEffect": {
-  "easing": "cubic_in_out",
-  "class": "FadeOutEffect",
-  "duration": 500
- },
- "id": "window_6969C790_7F76_6A40_41C4_698F8CF69173",
- "bodyBackgroundColorDirection": "vertical",
- "bodyPaddingTop": 5,
- "scrollBarColor": "#000000",
- "bodyPaddingRight": 5,
- "horizontalAlign": "center",
- "shadowHorizontalLength": 3,
- "closeButtonRollOverBackgroundColorRatios": [
-  0
- ],
- "width": 400,
- "headerVerticalAlign": "middle",
- "headerBackgroundColorRatios": [
-  0,
-  0.1,
-  1
- ],
- "scrollBarVisible": "rollOver",
- "bodyBackgroundOpacity": 1,
- "minHeight": 20,
- "veilColor": [
-  "#000000",
-  "#000000"
- ],
- "modal": true,
- "scrollBarOpacity": 0.5,
- "titlePaddingLeft": 5,
- "paddingRight": 0,
- "veilColorRatios": [
-  0,
-  1
- ],
- "verticalAlign": "middle",
- "height": 600,
- "titleFontColor": "#000000",
- "veilColorDirection": "horizontal",
- "titleFontSize": "3vmin",
- "minWidth": 20,
- "title": "REGISTRASI ORTU",
- "paddingLeft": 0,
- "headerBackgroundColorDirection": "vertical",
- "titleFontWeight": "bold",
- "showEffect": {
-  "easing": "cubic_in_out",
-  "class": "FadeInEffect",
-  "duration": 500
- },
- "backgroundColor": [],
- "shadowSpread": 1,
- "closeButtonBackgroundColor": [],
- "bodyPaddingBottom": 5,
- "backgroundOpacity": 1,
- "headerBorderSize": 0,
- "closeButtonRollOverIconColor": "#FFFFFF",
- "shadow": true,
- "titlePaddingTop": 5,
- "footerHeight": 5,
- "closeButtonPressedBackgroundColor": [
-  "#3A1D1F"
- ],
- "closeButtonPressedBackgroundColorRatios": [
-  0
- ],
- "veilShowEffect": {
-  "easing": "cubic_in_out",
-  "class": "FadeInEffect",
-  "duration": 500
- },
- "overflow": "scroll",
- "veilOpacity": 0.4,
- "footerBackgroundColor": [
-  "#FFFFFF",
-  "#EEEEEE",
-  "#DDDDDD"
- ],
- "headerPaddingRight": 10,
- "propagateClick": false,
- "footerBackgroundColorDirection": "vertical",
- "children": [
-  "this.htmlText_6969778E_7F76_6A41_41D7_7A08C295BEDF"
- ],
- "titlePaddingRight": 5,
- "closeButtonIconHeight": 12,
- "layout": "vertical",
- "bodyBorderSize": 0,
- "shadowColor": "#000000",
- "titleFontStyle": "normal",
- "shadowVerticalLength": 0,
- "borderSize": 0,
- "titleFontFamily": "Arial",
- "headerPaddingBottom": 10,
- "backgroundColorDirection": "vertical",
- "closeButtonIconColor": "#000000",
- "headerBorderColor": "#000000",
- "footerBackgroundColorRatios": [
-  0,
-  0.9,
-  1
- ],
- "scrollBarMargin": 2,
- "contentOpaque": false,
- "headerPaddingTop": 10,
- "class": "Window",
- "headerPaddingLeft": 10,
- "closeButtonBorderRadius": 11,
- "shadowBlurRadius": 6,
- "bodyBackgroundColor": [
-  "#FFFFFF",
-  "#DDDDDD",
-  "#FFFFFF"
- ],
- "gap": 10,
- "titleTextDecoration": "none",
- "headerBackgroundColor": [
-  "#DDDDDD",
-  "#EEEEEE",
-  "#FFFFFF"
- ],
- "closeButtonBackgroundColorRatios": [],
- "closeButtonRollOverBackgroundColor": [
-  "#C13535"
- ],
- "headerBackgroundOpacity": 1,
- "bodyBorderColor": "#000000",
- "bodyBackgroundColorRatios": [
-  0,
-  0.5,
-  1
- ],
- "bodyPaddingLeft": 5,
- "closeButtonIconLineWidth": 2,
- "titlePaddingBottom": 5,
- "borderRadius": 5,
- "closeButtonPressedIconColor": "#FFFFFF",
- "shadowOpacity": 0.5,
- "paddingTop": 0,
- "veilHideEffect": {
-  "easing": "cubic_in_out",
-  "class": "FadeOutEffect",
-  "duration": 500
- },
- "scrollBarWidth": 10,
- "closeButtonIconWidth": 12,
- "paddingBottom": 0
+ "id": "camera_A7ABE744_8157_EAC0_41CC_5FD7A935200A"
 },
 {
  "hfovMax": 130,
@@ -5819,10 +5513,264 @@
  ]
 },
 {
+ "adjacentPanoramas": [
+  {
+   "backwardYaw": 82.88,
+   "yaw": -94.76,
+   "class": "AdjacentPanorama",
+   "distance": 1,
+   "panorama": "this.panorama_7FC7AF97_7499_751E_41BC_34F2046F335C"
+  },
+  {
+   "backwardYaw": 119.33,
+   "yaw": -78.67,
+   "class": "AdjacentPanorama",
+   "distance": 1,
+   "panorama": "this.panorama_7FE13825_7499_1B32_41D0_2F851ABA3552"
+  },
+  {
+   "class": "AdjacentPanorama",
+   "panorama": "this.panorama_7FD8FC1A_749B_1B16_41B1_B6EA19FAC5E7"
+  }
+ ],
+ "class": "Panorama",
+ "hfov": 360,
+ "partial": false,
+ "id": "panorama_7FC7CD76_7499_151E_41D8_2AAFAFF10D8B",
+ "hfovMin": "135%",
+ "thumbnailUrl": "media/panorama_7FC7CD76_7499_151E_41D8_2AAFAFF10D8B_t.jpg",
+ "label": "Jalan Depan",
+ "pitch": 0,
+ "hfovMax": 130,
+ "frames": [
+  {
+   "front": {
+    "class": "ImageResource",
+    "levels": [
+     {
+      "url": "media/panorama_7FC7CD76_7499_151E_41D8_2AAFAFF10D8B_0/f/0/{row}_{column}.jpg",
+      "rowCount": 4,
+      "class": "TiledImageResourceLevel",
+      "tags": "ondemand",
+      "width": 2048,
+      "colCount": 4,
+      "height": 2048
+     },
+     {
+      "url": "media/panorama_7FC7CD76_7499_151E_41D8_2AAFAFF10D8B_0/f/1/{row}_{column}.jpg",
+      "rowCount": 2,
+      "class": "TiledImageResourceLevel",
+      "tags": "ondemand",
+      "width": 1024,
+      "colCount": 2,
+      "height": 1024
+     },
+     {
+      "url": "media/panorama_7FC7CD76_7499_151E_41D8_2AAFAFF10D8B_0/f/2/{row}_{column}.jpg",
+      "rowCount": 1,
+      "class": "TiledImageResourceLevel",
+      "tags": [
+       "ondemand",
+       "preload"
+      ],
+      "width": 512,
+      "colCount": 1,
+      "height": 512
+     }
+    ]
+   },
+   "class": "CubicPanoramaFrame",
+   "top": {
+    "class": "ImageResource",
+    "levels": [
+     {
+      "url": "media/panorama_7FC7CD76_7499_151E_41D8_2AAFAFF10D8B_0/u/0/{row}_{column}.jpg",
+      "rowCount": 4,
+      "class": "TiledImageResourceLevel",
+      "tags": "ondemand",
+      "width": 2048,
+      "colCount": 4,
+      "height": 2048
+     },
+     {
+      "url": "media/panorama_7FC7CD76_7499_151E_41D8_2AAFAFF10D8B_0/u/1/{row}_{column}.jpg",
+      "rowCount": 2,
+      "class": "TiledImageResourceLevel",
+      "tags": "ondemand",
+      "width": 1024,
+      "colCount": 2,
+      "height": 1024
+     },
+     {
+      "url": "media/panorama_7FC7CD76_7499_151E_41D8_2AAFAFF10D8B_0/u/2/{row}_{column}.jpg",
+      "rowCount": 1,
+      "class": "TiledImageResourceLevel",
+      "tags": [
+       "ondemand",
+       "preload"
+      ],
+      "width": 512,
+      "colCount": 1,
+      "height": 512
+     }
+    ]
+   },
+   "right": {
+    "class": "ImageResource",
+    "levels": [
+     {
+      "url": "media/panorama_7FC7CD76_7499_151E_41D8_2AAFAFF10D8B_0/r/0/{row}_{column}.jpg",
+      "rowCount": 4,
+      "class": "TiledImageResourceLevel",
+      "tags": "ondemand",
+      "width": 2048,
+      "colCount": 4,
+      "height": 2048
+     },
+     {
+      "url": "media/panorama_7FC7CD76_7499_151E_41D8_2AAFAFF10D8B_0/r/1/{row}_{column}.jpg",
+      "rowCount": 2,
+      "class": "TiledImageResourceLevel",
+      "tags": "ondemand",
+      "width": 1024,
+      "colCount": 2,
+      "height": 1024
+     },
+     {
+      "url": "media/panorama_7FC7CD76_7499_151E_41D8_2AAFAFF10D8B_0/r/2/{row}_{column}.jpg",
+      "rowCount": 1,
+      "class": "TiledImageResourceLevel",
+      "tags": [
+       "ondemand",
+       "preload"
+      ],
+      "width": 512,
+      "colCount": 1,
+      "height": 512
+     }
+    ]
+   },
+   "back": {
+    "class": "ImageResource",
+    "levels": [
+     {
+      "url": "media/panorama_7FC7CD76_7499_151E_41D8_2AAFAFF10D8B_0/b/0/{row}_{column}.jpg",
+      "rowCount": 4,
+      "class": "TiledImageResourceLevel",
+      "tags": "ondemand",
+      "width": 2048,
+      "colCount": 4,
+      "height": 2048
+     },
+     {
+      "url": "media/panorama_7FC7CD76_7499_151E_41D8_2AAFAFF10D8B_0/b/1/{row}_{column}.jpg",
+      "rowCount": 2,
+      "class": "TiledImageResourceLevel",
+      "tags": "ondemand",
+      "width": 1024,
+      "colCount": 2,
+      "height": 1024
+     },
+     {
+      "url": "media/panorama_7FC7CD76_7499_151E_41D8_2AAFAFF10D8B_0/b/2/{row}_{column}.jpg",
+      "rowCount": 1,
+      "class": "TiledImageResourceLevel",
+      "tags": [
+       "ondemand",
+       "preload"
+      ],
+      "width": 512,
+      "colCount": 1,
+      "height": 512
+     }
+    ]
+   },
+   "bottom": {
+    "class": "ImageResource",
+    "levels": [
+     {
+      "url": "media/panorama_7FC7CD76_7499_151E_41D8_2AAFAFF10D8B_0/d/0/{row}_{column}.jpg",
+      "rowCount": 4,
+      "class": "TiledImageResourceLevel",
+      "tags": "ondemand",
+      "width": 2048,
+      "colCount": 4,
+      "height": 2048
+     },
+     {
+      "url": "media/panorama_7FC7CD76_7499_151E_41D8_2AAFAFF10D8B_0/d/1/{row}_{column}.jpg",
+      "rowCount": 2,
+      "class": "TiledImageResourceLevel",
+      "tags": "ondemand",
+      "width": 1024,
+      "colCount": 2,
+      "height": 1024
+     },
+     {
+      "url": "media/panorama_7FC7CD76_7499_151E_41D8_2AAFAFF10D8B_0/d/2/{row}_{column}.jpg",
+      "rowCount": 1,
+      "class": "TiledImageResourceLevel",
+      "tags": [
+       "ondemand",
+       "preload"
+      ],
+      "width": 512,
+      "colCount": 1,
+      "height": 512
+     }
+    ]
+   },
+   "left": {
+    "class": "ImageResource",
+    "levels": [
+     {
+      "url": "media/panorama_7FC7CD76_7499_151E_41D8_2AAFAFF10D8B_0/l/0/{row}_{column}.jpg",
+      "rowCount": 4,
+      "class": "TiledImageResourceLevel",
+      "tags": "ondemand",
+      "width": 2048,
+      "colCount": 4,
+      "height": 2048
+     },
+     {
+      "url": "media/panorama_7FC7CD76_7499_151E_41D8_2AAFAFF10D8B_0/l/1/{row}_{column}.jpg",
+      "rowCount": 2,
+      "class": "TiledImageResourceLevel",
+      "tags": "ondemand",
+      "width": 1024,
+      "colCount": 2,
+      "height": 1024
+     },
+     {
+      "url": "media/panorama_7FC7CD76_7499_151E_41D8_2AAFAFF10D8B_0/l/2/{row}_{column}.jpg",
+      "rowCount": 1,
+      "class": "TiledImageResourceLevel",
+      "tags": [
+       "ondemand",
+       "preload"
+      ],
+      "width": 512,
+      "colCount": 1,
+      "height": 512
+     }
+    ]
+   },
+   "thumbnailUrl": "media/panorama_7FC7CD76_7499_151E_41D8_2AAFAFF10D8B_t.jpg"
+  }
+ ],
+ "vfov": 180,
+ "overlays": [
+  "this.overlay_7A642BD2_749B_1D16_41D4_11AB050E34FE",
+  "this.overlay_649FB23D_74A9_2F13_41D8_1C488D0637FD",
+  "this.overlay_968DF405_814E_2E40_41D5_C40F77BC62AC",
+  "this.overlay_968432CD_8152_6BC3_41D7_EDE52334B9C9"
+ ]
+},
+{
  "automaticZoomSpeed": 10,
  "class": "PanoramaCamera",
  "initialPosition": {
-  "yaw": -128.78,
+  "yaw": 0,
   "class": "PanoramaCameraPosition",
   "pitch": 0
  },
@@ -5850,7 +5798,412 @@
    }
   ]
  },
- "id": "camera_A2D9A75A_81F1_EAC0_41CB_0B58E42001FF"
+ "id": "panorama_7FC9C678_749B_7712_41D7_280C0863DBEB_camera"
+},
+{
+ "backgroundColorRatios": [],
+ "data": {
+  "name": "Window8403"
+ },
+ "hideEffect": {
+  "easing": "cubic_in_out",
+  "class": "FadeOutEffect",
+  "duration": 500
+ },
+ "id": "window_6969C790_7F76_6A40_41C4_698F8CF69173",
+ "bodyBackgroundColorDirection": "vertical",
+ "bodyPaddingTop": 5,
+ "scrollBarColor": "#000000",
+ "bodyPaddingRight": 5,
+ "horizontalAlign": "center",
+ "shadowHorizontalLength": 3,
+ "closeButtonRollOverBackgroundColorRatios": [
+  0
+ ],
+ "width": 400,
+ "headerVerticalAlign": "middle",
+ "headerBackgroundColorRatios": [
+  0,
+  0.1,
+  1
+ ],
+ "scrollBarVisible": "rollOver",
+ "bodyBackgroundOpacity": 1,
+ "minHeight": 20,
+ "veilColor": [
+  "#000000",
+  "#000000"
+ ],
+ "modal": true,
+ "scrollBarOpacity": 0.5,
+ "titlePaddingLeft": 5,
+ "paddingRight": 0,
+ "veilColorRatios": [
+  0,
+  1
+ ],
+ "verticalAlign": "middle",
+ "height": 600,
+ "titleFontColor": "#000000",
+ "veilColorDirection": "horizontal",
+ "titleFontSize": "3vmin",
+ "minWidth": 20,
+ "title": "REGISTRASI ORTU",
+ "paddingLeft": 0,
+ "headerBackgroundColorDirection": "vertical",
+ "titleFontWeight": "bold",
+ "showEffect": {
+  "easing": "cubic_in_out",
+  "class": "FadeInEffect",
+  "duration": 500
+ },
+ "backgroundColor": [],
+ "shadowSpread": 1,
+ "closeButtonBackgroundColor": [],
+ "bodyPaddingBottom": 5,
+ "backgroundOpacity": 1,
+ "headerBorderSize": 0,
+ "closeButtonRollOverIconColor": "#FFFFFF",
+ "shadow": true,
+ "titlePaddingTop": 5,
+ "footerHeight": 5,
+ "closeButtonPressedBackgroundColor": [
+  "#3A1D1F"
+ ],
+ "closeButtonPressedBackgroundColorRatios": [
+  0
+ ],
+ "veilShowEffect": {
+  "easing": "cubic_in_out",
+  "class": "FadeInEffect",
+  "duration": 500
+ },
+ "overflow": "scroll",
+ "veilOpacity": 0.4,
+ "footerBackgroundColor": [
+  "#FFFFFF",
+  "#EEEEEE",
+  "#DDDDDD"
+ ],
+ "headerPaddingRight": 10,
+ "propagateClick": false,
+ "footerBackgroundColorDirection": "vertical",
+ "children": [
+  "this.htmlText_6969778E_7F76_6A41_41D7_7A08C295BEDF"
+ ],
+ "titlePaddingRight": 5,
+ "closeButtonIconHeight": 12,
+ "layout": "vertical",
+ "bodyBorderSize": 0,
+ "shadowColor": "#000000",
+ "titleFontStyle": "normal",
+ "shadowVerticalLength": 0,
+ "borderSize": 0,
+ "titleFontFamily": "Arial",
+ "headerPaddingBottom": 10,
+ "backgroundColorDirection": "vertical",
+ "closeButtonIconColor": "#000000",
+ "headerBorderColor": "#000000",
+ "footerBackgroundColorRatios": [
+  0,
+  0.9,
+  1
+ ],
+ "scrollBarMargin": 2,
+ "contentOpaque": false,
+ "headerPaddingTop": 10,
+ "class": "Window",
+ "headerPaddingLeft": 10,
+ "closeButtonBorderRadius": 11,
+ "shadowBlurRadius": 6,
+ "bodyBackgroundColor": [
+  "#FFFFFF",
+  "#DDDDDD",
+  "#FFFFFF"
+ ],
+ "gap": 10,
+ "titleTextDecoration": "none",
+ "headerBackgroundColor": [
+  "#DDDDDD",
+  "#EEEEEE",
+  "#FFFFFF"
+ ],
+ "closeButtonBackgroundColorRatios": [],
+ "closeButtonRollOverBackgroundColor": [
+  "#C13535"
+ ],
+ "headerBackgroundOpacity": 1,
+ "bodyBorderColor": "#000000",
+ "bodyBackgroundColorRatios": [
+  0,
+  0.5,
+  1
+ ],
+ "bodyPaddingLeft": 5,
+ "closeButtonIconLineWidth": 2,
+ "titlePaddingBottom": 5,
+ "borderRadius": 5,
+ "closeButtonPressedIconColor": "#FFFFFF",
+ "shadowOpacity": 0.5,
+ "paddingTop": 0,
+ "veilHideEffect": {
+  "easing": "cubic_in_out",
+  "class": "FadeOutEffect",
+  "duration": 500
+ },
+ "scrollBarWidth": 10,
+ "closeButtonIconWidth": 12,
+ "paddingBottom": 0
+},
+{
+ "adjacentPanoramas": [
+  {
+   "backwardYaw": -59.6,
+   "yaw": 106.37,
+   "class": "AdjacentPanorama",
+   "distance": 1,
+   "panorama": "this.panorama_7F314191_7499_ED12_41CA_ED7ED0661FAF"
+  },
+  {
+   "class": "AdjacentPanorama",
+   "panorama": "this.panorama_7FC915BE_749B_150E_417A_B09F71DEE69E"
+  },
+  {
+   "class": "AdjacentPanorama",
+   "panorama": "this.panorama_7FC9C678_749B_7712_41D7_280C0863DBEB"
+  }
+ ],
+ "class": "Panorama",
+ "hfov": 360,
+ "partial": false,
+ "id": "panorama_7FCCEAE9_7499_FF33_4197_451F12024186",
+ "hfovMin": "135%",
+ "thumbnailUrl": "media/panorama_7FCCEAE9_7499_FF33_4197_451F12024186_t.jpg",
+ "label": "Back Selatan 1",
+ "pitch": 0,
+ "hfovMax": 130,
+ "frames": [
+  {
+   "front": {
+    "class": "ImageResource",
+    "levels": [
+     {
+      "url": "media/panorama_7FCCEAE9_7499_FF33_4197_451F12024186_0/f/0/{row}_{column}.jpg",
+      "rowCount": 4,
+      "class": "TiledImageResourceLevel",
+      "tags": "ondemand",
+      "width": 2048,
+      "colCount": 4,
+      "height": 2048
+     },
+     {
+      "url": "media/panorama_7FCCEAE9_7499_FF33_4197_451F12024186_0/f/1/{row}_{column}.jpg",
+      "rowCount": 2,
+      "class": "TiledImageResourceLevel",
+      "tags": "ondemand",
+      "width": 1024,
+      "colCount": 2,
+      "height": 1024
+     },
+     {
+      "url": "media/panorama_7FCCEAE9_7499_FF33_4197_451F12024186_0/f/2/{row}_{column}.jpg",
+      "rowCount": 1,
+      "class": "TiledImageResourceLevel",
+      "tags": [
+       "ondemand",
+       "preload"
+      ],
+      "width": 512,
+      "colCount": 1,
+      "height": 512
+     }
+    ]
+   },
+   "class": "CubicPanoramaFrame",
+   "top": {
+    "class": "ImageResource",
+    "levels": [
+     {
+      "url": "media/panorama_7FCCEAE9_7499_FF33_4197_451F12024186_0/u/0/{row}_{column}.jpg",
+      "rowCount": 4,
+      "class": "TiledImageResourceLevel",
+      "tags": "ondemand",
+      "width": 2048,
+      "colCount": 4,
+      "height": 2048
+     },
+     {
+      "url": "media/panorama_7FCCEAE9_7499_FF33_4197_451F12024186_0/u/1/{row}_{column}.jpg",
+      "rowCount": 2,
+      "class": "TiledImageResourceLevel",
+      "tags": "ondemand",
+      "width": 1024,
+      "colCount": 2,
+      "height": 1024
+     },
+     {
+      "url": "media/panorama_7FCCEAE9_7499_FF33_4197_451F12024186_0/u/2/{row}_{column}.jpg",
+      "rowCount": 1,
+      "class": "TiledImageResourceLevel",
+      "tags": [
+       "ondemand",
+       "preload"
+      ],
+      "width": 512,
+      "colCount": 1,
+      "height": 512
+     }
+    ]
+   },
+   "right": {
+    "class": "ImageResource",
+    "levels": [
+     {
+      "url": "media/panorama_7FCCEAE9_7499_FF33_4197_451F12024186_0/r/0/{row}_{column}.jpg",
+      "rowCount": 4,
+      "class": "TiledImageResourceLevel",
+      "tags": "ondemand",
+      "width": 2048,
+      "colCount": 4,
+      "height": 2048
+     },
+     {
+      "url": "media/panorama_7FCCEAE9_7499_FF33_4197_451F12024186_0/r/1/{row}_{column}.jpg",
+      "rowCount": 2,
+      "class": "TiledImageResourceLevel",
+      "tags": "ondemand",
+      "width": 1024,
+      "colCount": 2,
+      "height": 1024
+     },
+     {
+      "url": "media/panorama_7FCCEAE9_7499_FF33_4197_451F12024186_0/r/2/{row}_{column}.jpg",
+      "rowCount": 1,
+      "class": "TiledImageResourceLevel",
+      "tags": [
+       "ondemand",
+       "preload"
+      ],
+      "width": 512,
+      "colCount": 1,
+      "height": 512
+     }
+    ]
+   },
+   "back": {
+    "class": "ImageResource",
+    "levels": [
+     {
+      "url": "media/panorama_7FCCEAE9_7499_FF33_4197_451F12024186_0/b/0/{row}_{column}.jpg",
+      "rowCount": 4,
+      "class": "TiledImageResourceLevel",
+      "tags": "ondemand",
+      "width": 2048,
+      "colCount": 4,
+      "height": 2048
+     },
+     {
+      "url": "media/panorama_7FCCEAE9_7499_FF33_4197_451F12024186_0/b/1/{row}_{column}.jpg",
+      "rowCount": 2,
+      "class": "TiledImageResourceLevel",
+      "tags": "ondemand",
+      "width": 1024,
+      "colCount": 2,
+      "height": 1024
+     },
+     {
+      "url": "media/panorama_7FCCEAE9_7499_FF33_4197_451F12024186_0/b/2/{row}_{column}.jpg",
+      "rowCount": 1,
+      "class": "TiledImageResourceLevel",
+      "tags": [
+       "ondemand",
+       "preload"
+      ],
+      "width": 512,
+      "colCount": 1,
+      "height": 512
+     }
+    ]
+   },
+   "bottom": {
+    "class": "ImageResource",
+    "levels": [
+     {
+      "url": "media/panorama_7FCCEAE9_7499_FF33_4197_451F12024186_0/d/0/{row}_{column}.jpg",
+      "rowCount": 4,
+      "class": "TiledImageResourceLevel",
+      "tags": "ondemand",
+      "width": 2048,
+      "colCount": 4,
+      "height": 2048
+     },
+     {
+      "url": "media/panorama_7FCCEAE9_7499_FF33_4197_451F12024186_0/d/1/{row}_{column}.jpg",
+      "rowCount": 2,
+      "class": "TiledImageResourceLevel",
+      "tags": "ondemand",
+      "width": 1024,
+      "colCount": 2,
+      "height": 1024
+     },
+     {
+      "url": "media/panorama_7FCCEAE9_7499_FF33_4197_451F12024186_0/d/2/{row}_{column}.jpg",
+      "rowCount": 1,
+      "class": "TiledImageResourceLevel",
+      "tags": [
+       "ondemand",
+       "preload"
+      ],
+      "width": 512,
+      "colCount": 1,
+      "height": 512
+     }
+    ]
+   },
+   "left": {
+    "class": "ImageResource",
+    "levels": [
+     {
+      "url": "media/panorama_7FCCEAE9_7499_FF33_4197_451F12024186_0/l/0/{row}_{column}.jpg",
+      "rowCount": 4,
+      "class": "TiledImageResourceLevel",
+      "tags": "ondemand",
+      "width": 2048,
+      "colCount": 4,
+      "height": 2048
+     },
+     {
+      "url": "media/panorama_7FCCEAE9_7499_FF33_4197_451F12024186_0/l/1/{row}_{column}.jpg",
+      "rowCount": 2,
+      "class": "TiledImageResourceLevel",
+      "tags": "ondemand",
+      "width": 1024,
+      "colCount": 2,
+      "height": 1024
+     },
+     {
+      "url": "media/panorama_7FCCEAE9_7499_FF33_4197_451F12024186_0/l/2/{row}_{column}.jpg",
+      "rowCount": 1,
+      "class": "TiledImageResourceLevel",
+      "tags": [
+       "ondemand",
+       "preload"
+      ],
+      "width": 512,
+      "colCount": 1,
+      "height": 512
+     }
+    ]
+   },
+   "thumbnailUrl": "media/panorama_7FCCEAE9_7499_FF33_4197_451F12024186_t.jpg"
+  }
+ ],
+ "vfov": 180,
+ "overlays": [
+  "this.overlay_6DED4069_74F9_2B32_41D8_9EEA065BC3CD",
+  "this.overlay_6C38621C_74F9_6F12_41AD_3375D8D6FD49",
+  "this.overlay_6C1A64E3_74F9_6B37_41BF_CED98CC00B95"
+ ]
 },
 {
  "automaticZoomSpeed": 10,
@@ -6313,508 +6666,38 @@
  "paddingBottom": 0
 },
 {
- "adjacentPanoramas": [
-  {
-   "backwardYaw": 82.88,
-   "yaw": -94.76,
-   "class": "AdjacentPanorama",
-   "distance": 1,
-   "panorama": "this.panorama_7FC7AF97_7499_751E_41BC_34F2046F335C"
-  },
-  {
-   "backwardYaw": 119.33,
-   "yaw": -78.67,
-   "class": "AdjacentPanorama",
-   "distance": 1,
-   "panorama": "this.panorama_7FE13825_7499_1B32_41D0_2F851ABA3552"
-  },
-  {
-   "class": "AdjacentPanorama",
-   "panorama": "this.panorama_7FD8FC1A_749B_1B16_41B1_B6EA19FAC5E7"
-  }
- ],
- "class": "Panorama",
- "hfov": 360,
- "partial": false,
- "id": "panorama_7FC7CD76_7499_151E_41D8_2AAFAFF10D8B",
- "hfovMin": "135%",
- "thumbnailUrl": "media/panorama_7FC7CD76_7499_151E_41D8_2AAFAFF10D8B_t.jpg",
- "label": "Jalan Depan",
- "pitch": 0,
- "hfovMax": 130,
- "frames": [
-  {
-   "front": {
-    "class": "ImageResource",
-    "levels": [
-     {
-      "url": "media/panorama_7FC7CD76_7499_151E_41D8_2AAFAFF10D8B_0/f/0/{row}_{column}.jpg",
-      "rowCount": 4,
-      "class": "TiledImageResourceLevel",
-      "tags": "ondemand",
-      "width": 2048,
-      "colCount": 4,
-      "height": 2048
-     },
-     {
-      "url": "media/panorama_7FC7CD76_7499_151E_41D8_2AAFAFF10D8B_0/f/1/{row}_{column}.jpg",
-      "rowCount": 2,
-      "class": "TiledImageResourceLevel",
-      "tags": "ondemand",
-      "width": 1024,
-      "colCount": 2,
-      "height": 1024
-     },
-     {
-      "url": "media/panorama_7FC7CD76_7499_151E_41D8_2AAFAFF10D8B_0/f/2/{row}_{column}.jpg",
-      "rowCount": 1,
-      "class": "TiledImageResourceLevel",
-      "tags": [
-       "ondemand",
-       "preload"
-      ],
-      "width": 512,
-      "colCount": 1,
-      "height": 512
-     }
-    ]
+ "automaticZoomSpeed": 10,
+ "class": "PanoramaCamera",
+ "initialPosition": {
+  "yaw": -8.44,
+  "class": "PanoramaCameraPosition",
+  "pitch": 0
+ },
+ "initialSequence": {
+  "restartMovementOnUserInteraction": false,
+  "class": "PanoramaCameraSequence",
+  "movements": [
+   {
+    "yawDelta": 18.5,
+    "yawSpeed": 7.96,
+    "easing": "cubic_in",
+    "class": "DistancePanoramaCameraMovement"
    },
-   "class": "CubicPanoramaFrame",
-   "top": {
-    "class": "ImageResource",
-    "levels": [
-     {
-      "url": "media/panorama_7FC7CD76_7499_151E_41D8_2AAFAFF10D8B_0/u/0/{row}_{column}.jpg",
-      "rowCount": 4,
-      "class": "TiledImageResourceLevel",
-      "tags": "ondemand",
-      "width": 2048,
-      "colCount": 4,
-      "height": 2048
-     },
-     {
-      "url": "media/panorama_7FC7CD76_7499_151E_41D8_2AAFAFF10D8B_0/u/1/{row}_{column}.jpg",
-      "rowCount": 2,
-      "class": "TiledImageResourceLevel",
-      "tags": "ondemand",
-      "width": 1024,
-      "colCount": 2,
-      "height": 1024
-     },
-     {
-      "url": "media/panorama_7FC7CD76_7499_151E_41D8_2AAFAFF10D8B_0/u/2/{row}_{column}.jpg",
-      "rowCount": 1,
-      "class": "TiledImageResourceLevel",
-      "tags": [
-       "ondemand",
-       "preload"
-      ],
-      "width": 512,
-      "colCount": 1,
-      "height": 512
-     }
-    ]
+   {
+    "yawDelta": 323,
+    "yawSpeed": 7.96,
+    "easing": "linear",
+    "class": "DistancePanoramaCameraMovement"
    },
-   "right": {
-    "class": "ImageResource",
-    "levels": [
-     {
-      "url": "media/panorama_7FC7CD76_7499_151E_41D8_2AAFAFF10D8B_0/r/0/{row}_{column}.jpg",
-      "rowCount": 4,
-      "class": "TiledImageResourceLevel",
-      "tags": "ondemand",
-      "width": 2048,
-      "colCount": 4,
-      "height": 2048
-     },
-     {
-      "url": "media/panorama_7FC7CD76_7499_151E_41D8_2AAFAFF10D8B_0/r/1/{row}_{column}.jpg",
-      "rowCount": 2,
-      "class": "TiledImageResourceLevel",
-      "tags": "ondemand",
-      "width": 1024,
-      "colCount": 2,
-      "height": 1024
-     },
-     {
-      "url": "media/panorama_7FC7CD76_7499_151E_41D8_2AAFAFF10D8B_0/r/2/{row}_{column}.jpg",
-      "rowCount": 1,
-      "class": "TiledImageResourceLevel",
-      "tags": [
-       "ondemand",
-       "preload"
-      ],
-      "width": 512,
-      "colCount": 1,
-      "height": 512
-     }
-    ]
-   },
-   "back": {
-    "class": "ImageResource",
-    "levels": [
-     {
-      "url": "media/panorama_7FC7CD76_7499_151E_41D8_2AAFAFF10D8B_0/b/0/{row}_{column}.jpg",
-      "rowCount": 4,
-      "class": "TiledImageResourceLevel",
-      "tags": "ondemand",
-      "width": 2048,
-      "colCount": 4,
-      "height": 2048
-     },
-     {
-      "url": "media/panorama_7FC7CD76_7499_151E_41D8_2AAFAFF10D8B_0/b/1/{row}_{column}.jpg",
-      "rowCount": 2,
-      "class": "TiledImageResourceLevel",
-      "tags": "ondemand",
-      "width": 1024,
-      "colCount": 2,
-      "height": 1024
-     },
-     {
-      "url": "media/panorama_7FC7CD76_7499_151E_41D8_2AAFAFF10D8B_0/b/2/{row}_{column}.jpg",
-      "rowCount": 1,
-      "class": "TiledImageResourceLevel",
-      "tags": [
-       "ondemand",
-       "preload"
-      ],
-      "width": 512,
-      "colCount": 1,
-      "height": 512
-     }
-    ]
-   },
-   "bottom": {
-    "class": "ImageResource",
-    "levels": [
-     {
-      "url": "media/panorama_7FC7CD76_7499_151E_41D8_2AAFAFF10D8B_0/d/0/{row}_{column}.jpg",
-      "rowCount": 4,
-      "class": "TiledImageResourceLevel",
-      "tags": "ondemand",
-      "width": 2048,
-      "colCount": 4,
-      "height": 2048
-     },
-     {
-      "url": "media/panorama_7FC7CD76_7499_151E_41D8_2AAFAFF10D8B_0/d/1/{row}_{column}.jpg",
-      "rowCount": 2,
-      "class": "TiledImageResourceLevel",
-      "tags": "ondemand",
-      "width": 1024,
-      "colCount": 2,
-      "height": 1024
-     },
-     {
-      "url": "media/panorama_7FC7CD76_7499_151E_41D8_2AAFAFF10D8B_0/d/2/{row}_{column}.jpg",
-      "rowCount": 1,
-      "class": "TiledImageResourceLevel",
-      "tags": [
-       "ondemand",
-       "preload"
-      ],
-      "width": 512,
-      "colCount": 1,
-      "height": 512
-     }
-    ]
-   },
-   "left": {
-    "class": "ImageResource",
-    "levels": [
-     {
-      "url": "media/panorama_7FC7CD76_7499_151E_41D8_2AAFAFF10D8B_0/l/0/{row}_{column}.jpg",
-      "rowCount": 4,
-      "class": "TiledImageResourceLevel",
-      "tags": "ondemand",
-      "width": 2048,
-      "colCount": 4,
-      "height": 2048
-     },
-     {
-      "url": "media/panorama_7FC7CD76_7499_151E_41D8_2AAFAFF10D8B_0/l/1/{row}_{column}.jpg",
-      "rowCount": 2,
-      "class": "TiledImageResourceLevel",
-      "tags": "ondemand",
-      "width": 1024,
-      "colCount": 2,
-      "height": 1024
-     },
-     {
-      "url": "media/panorama_7FC7CD76_7499_151E_41D8_2AAFAFF10D8B_0/l/2/{row}_{column}.jpg",
-      "rowCount": 1,
-      "class": "TiledImageResourceLevel",
-      "tags": [
-       "ondemand",
-       "preload"
-      ],
-      "width": 512,
-      "colCount": 1,
-      "height": 512
-     }
-    ]
-   },
-   "thumbnailUrl": "media/panorama_7FC7CD76_7499_151E_41D8_2AAFAFF10D8B_t.jpg"
-  }
- ],
- "vfov": 180,
- "overlays": [
-  "this.overlay_7A642BD2_749B_1D16_41D4_11AB050E34FE",
-  "this.overlay_649FB23D_74A9_2F13_41D8_1C488D0637FD",
-  "this.overlay_968DF405_814E_2E40_41D5_C40F77BC62AC",
-  "this.overlay_968432CD_8152_6BC3_41D7_EDE52334B9C9"
- ]
-},
-{
- "adjacentPanoramas": [
-  {
-   "backwardYaw": -59.6,
-   "yaw": 106.37,
-   "class": "AdjacentPanorama",
-   "distance": 1,
-   "panorama": "this.panorama_7F314191_7499_ED12_41CA_ED7ED0661FAF"
-  },
-  {
-   "class": "AdjacentPanorama",
-   "panorama": "this.panorama_7FC915BE_749B_150E_417A_B09F71DEE69E"
-  },
-  {
-   "class": "AdjacentPanorama",
-   "panorama": "this.panorama_7FC9C678_749B_7712_41D7_280C0863DBEB"
-  }
- ],
- "class": "Panorama",
- "hfov": 360,
- "partial": false,
- "id": "panorama_7FCCEAE9_7499_FF33_4197_451F12024186",
- "hfovMin": "135%",
- "thumbnailUrl": "media/panorama_7FCCEAE9_7499_FF33_4197_451F12024186_t.jpg",
- "label": "Back Selatan 1",
- "pitch": 0,
- "hfovMax": 130,
- "frames": [
-  {
-   "front": {
-    "class": "ImageResource",
-    "levels": [
-     {
-      "url": "media/panorama_7FCCEAE9_7499_FF33_4197_451F12024186_0/f/0/{row}_{column}.jpg",
-      "rowCount": 4,
-      "class": "TiledImageResourceLevel",
-      "tags": "ondemand",
-      "width": 2048,
-      "colCount": 4,
-      "height": 2048
-     },
-     {
-      "url": "media/panorama_7FCCEAE9_7499_FF33_4197_451F12024186_0/f/1/{row}_{column}.jpg",
-      "rowCount": 2,
-      "class": "TiledImageResourceLevel",
-      "tags": "ondemand",
-      "width": 1024,
-      "colCount": 2,
-      "height": 1024
-     },
-     {
-      "url": "media/panorama_7FCCEAE9_7499_FF33_4197_451F12024186_0/f/2/{row}_{column}.jpg",
-      "rowCount": 1,
-      "class": "TiledImageResourceLevel",
-      "tags": [
-       "ondemand",
-       "preload"
-      ],
-      "width": 512,
-      "colCount": 1,
-      "height": 512
-     }
-    ]
-   },
-   "class": "CubicPanoramaFrame",
-   "top": {
-    "class": "ImageResource",
-    "levels": [
-     {
-      "url": "media/panorama_7FCCEAE9_7499_FF33_4197_451F12024186_0/u/0/{row}_{column}.jpg",
-      "rowCount": 4,
-      "class": "TiledImageResourceLevel",
-      "tags": "ondemand",
-      "width": 2048,
-      "colCount": 4,
-      "height": 2048
-     },
-     {
-      "url": "media/panorama_7FCCEAE9_7499_FF33_4197_451F12024186_0/u/1/{row}_{column}.jpg",
-      "rowCount": 2,
-      "class": "TiledImageResourceLevel",
-      "tags": "ondemand",
-      "width": 1024,
-      "colCount": 2,
-      "height": 1024
-     },
-     {
-      "url": "media/panorama_7FCCEAE9_7499_FF33_4197_451F12024186_0/u/2/{row}_{column}.jpg",
-      "rowCount": 1,
-      "class": "TiledImageResourceLevel",
-      "tags": [
-       "ondemand",
-       "preload"
-      ],
-      "width": 512,
-      "colCount": 1,
-      "height": 512
-     }
-    ]
-   },
-   "right": {
-    "class": "ImageResource",
-    "levels": [
-     {
-      "url": "media/panorama_7FCCEAE9_7499_FF33_4197_451F12024186_0/r/0/{row}_{column}.jpg",
-      "rowCount": 4,
-      "class": "TiledImageResourceLevel",
-      "tags": "ondemand",
-      "width": 2048,
-      "colCount": 4,
-      "height": 2048
-     },
-     {
-      "url": "media/panorama_7FCCEAE9_7499_FF33_4197_451F12024186_0/r/1/{row}_{column}.jpg",
-      "rowCount": 2,
-      "class": "TiledImageResourceLevel",
-      "tags": "ondemand",
-      "width": 1024,
-      "colCount": 2,
-      "height": 1024
-     },
-     {
-      "url": "media/panorama_7FCCEAE9_7499_FF33_4197_451F12024186_0/r/2/{row}_{column}.jpg",
-      "rowCount": 1,
-      "class": "TiledImageResourceLevel",
-      "tags": [
-       "ondemand",
-       "preload"
-      ],
-      "width": 512,
-      "colCount": 1,
-      "height": 512
-     }
-    ]
-   },
-   "back": {
-    "class": "ImageResource",
-    "levels": [
-     {
-      "url": "media/panorama_7FCCEAE9_7499_FF33_4197_451F12024186_0/b/0/{row}_{column}.jpg",
-      "rowCount": 4,
-      "class": "TiledImageResourceLevel",
-      "tags": "ondemand",
-      "width": 2048,
-      "colCount": 4,
-      "height": 2048
-     },
-     {
-      "url": "media/panorama_7FCCEAE9_7499_FF33_4197_451F12024186_0/b/1/{row}_{column}.jpg",
-      "rowCount": 2,
-      "class": "TiledImageResourceLevel",
-      "tags": "ondemand",
-      "width": 1024,
-      "colCount": 2,
-      "height": 1024
-     },
-     {
-      "url": "media/panorama_7FCCEAE9_7499_FF33_4197_451F12024186_0/b/2/{row}_{column}.jpg",
-      "rowCount": 1,
-      "class": "TiledImageResourceLevel",
-      "tags": [
-       "ondemand",
-       "preload"
-      ],
-      "width": 512,
-      "colCount": 1,
-      "height": 512
-     }
-    ]
-   },
-   "bottom": {
-    "class": "ImageResource",
-    "levels": [
-     {
-      "url": "media/panorama_7FCCEAE9_7499_FF33_4197_451F12024186_0/d/0/{row}_{column}.jpg",
-      "rowCount": 4,
-      "class": "TiledImageResourceLevel",
-      "tags": "ondemand",
-      "width": 2048,
-      "colCount": 4,
-      "height": 2048
-     },
-     {
-      "url": "media/panorama_7FCCEAE9_7499_FF33_4197_451F12024186_0/d/1/{row}_{column}.jpg",
-      "rowCount": 2,
-      "class": "TiledImageResourceLevel",
-      "tags": "ondemand",
-      "width": 1024,
-      "colCount": 2,
-      "height": 1024
-     },
-     {
-      "url": "media/panorama_7FCCEAE9_7499_FF33_4197_451F12024186_0/d/2/{row}_{column}.jpg",
-      "rowCount": 1,
-      "class": "TiledImageResourceLevel",
-      "tags": [
-       "ondemand",
-       "preload"
-      ],
-      "width": 512,
-      "colCount": 1,
-      "height": 512
-     }
-    ]
-   },
-   "left": {
-    "class": "ImageResource",
-    "levels": [
-     {
-      "url": "media/panorama_7FCCEAE9_7499_FF33_4197_451F12024186_0/l/0/{row}_{column}.jpg",
-      "rowCount": 4,
-      "class": "TiledImageResourceLevel",
-      "tags": "ondemand",
-      "width": 2048,
-      "colCount": 4,
-      "height": 2048
-     },
-     {
-      "url": "media/panorama_7FCCEAE9_7499_FF33_4197_451F12024186_0/l/1/{row}_{column}.jpg",
-      "rowCount": 2,
-      "class": "TiledImageResourceLevel",
-      "tags": "ondemand",
-      "width": 1024,
-      "colCount": 2,
-      "height": 1024
-     },
-     {
-      "url": "media/panorama_7FCCEAE9_7499_FF33_4197_451F12024186_0/l/2/{row}_{column}.jpg",
-      "rowCount": 1,
-      "class": "TiledImageResourceLevel",
-      "tags": [
-       "ondemand",
-       "preload"
-      ],
-      "width": 512,
-      "colCount": 1,
-      "height": 512
-     }
-    ]
-   },
-   "thumbnailUrl": "media/panorama_7FCCEAE9_7499_FF33_4197_451F12024186_t.jpg"
-  }
- ],
- "vfov": 180,
- "overlays": [
-  "this.overlay_6DED4069_74F9_2B32_41D8_9EEA065BC3CD",
-  "this.overlay_6C38621C_74F9_6F12_41AD_3375D8D6FD49",
-  "this.overlay_6C1A64E3_74F9_6B37_41BF_CED98CC00B95"
- ]
+   {
+    "yawDelta": 18.5,
+    "yawSpeed": 7.96,
+    "easing": "cubic_out",
+    "class": "DistancePanoramaCameraMovement"
+   }
+  ]
+ },
+ "id": "camera_A7FC57B2_8157_EA40_41C7_34E7C8D32923"
 },
 {
  "backgroundColorRatios": [],
@@ -7289,6 +7172,40 @@
  ]
 },
 {
+ "automaticZoomSpeed": 10,
+ "class": "PanoramaCamera",
+ "initialPosition": {
+  "yaw": 168.98,
+  "class": "PanoramaCameraPosition",
+  "pitch": 0
+ },
+ "initialSequence": {
+  "restartMovementOnUserInteraction": false,
+  "class": "PanoramaCameraSequence",
+  "movements": [
+   {
+    "yawDelta": 18.5,
+    "yawSpeed": 7.96,
+    "easing": "cubic_in",
+    "class": "DistancePanoramaCameraMovement"
+   },
+   {
+    "yawDelta": 323,
+    "yawSpeed": 7.96,
+    "easing": "linear",
+    "class": "DistancePanoramaCameraMovement"
+   },
+   {
+    "yawDelta": 18.5,
+    "yawSpeed": 7.96,
+    "easing": "cubic_out",
+    "class": "DistancePanoramaCameraMovement"
+   }
+  ]
+ },
+ "id": "camera_A71447D1_8157_E9C0_41D3_2F69A8A2C431"
+},
+{
  "backgroundColorRatios": [],
  "data": {
   "name": "Window8403"
@@ -7667,106 +7584,159 @@
  "paddingBottom": 0
 },
 {
- "automaticZoomSpeed": 10,
- "class": "PanoramaCamera",
- "initialPosition": {
-  "yaw": 168.98,
-  "class": "PanoramaCameraPosition",
-  "pitch": 0
+ "backgroundColorRatios": [],
+ "data": {
+  "name": "Window8403"
  },
- "initialSequence": {
-  "restartMovementOnUserInteraction": false,
-  "class": "PanoramaCameraSequence",
-  "movements": [
-   {
-    "yawDelta": 18.5,
-    "yawSpeed": 7.96,
-    "easing": "cubic_in",
-    "class": "DistancePanoramaCameraMovement"
-   },
-   {
-    "yawDelta": 323,
-    "yawSpeed": 7.96,
-    "easing": "linear",
-    "class": "DistancePanoramaCameraMovement"
-   },
-   {
-    "yawDelta": 18.5,
-    "yawSpeed": 7.96,
-    "easing": "cubic_out",
-    "class": "DistancePanoramaCameraMovement"
-   }
-  ]
+ "hideEffect": {
+  "easing": "cubic_in_out",
+  "class": "FadeOutEffect",
+  "duration": 500
  },
- "id": "camera_A2F6E798_81F1_EA40_41D6_F71AA24C2519"
-},
-{
- "automaticZoomSpeed": 10,
- "class": "PanoramaCamera",
- "initialPosition": {
-  "yaw": 179.3,
-  "class": "PanoramaCameraPosition",
-  "pitch": 0
+ "id": "window_9A187AC4_81B2_5BC0_419B_714E0BA808D0",
+ "bodyBackgroundColorDirection": "vertical",
+ "bodyPaddingTop": 5,
+ "scrollBarColor": "#000000",
+ "bodyPaddingRight": 5,
+ "horizontalAlign": "center",
+ "shadowHorizontalLength": 3,
+ "closeButtonRollOverBackgroundColorRatios": [
+  0
+ ],
+ "width": 400,
+ "headerVerticalAlign": "middle",
+ "headerBackgroundColorRatios": [
+  0,
+  0.1,
+  1
+ ],
+ "scrollBarVisible": "rollOver",
+ "bodyBackgroundOpacity": 1,
+ "minHeight": 20,
+ "veilColor": [
+  "#000000",
+  "#000000"
+ ],
+ "modal": true,
+ "scrollBarOpacity": 0.5,
+ "titlePaddingLeft": 5,
+ "paddingRight": 0,
+ "veilColorRatios": [
+  0,
+  1
+ ],
+ "verticalAlign": "middle",
+ "height": 600,
+ "titleFontColor": "#000000",
+ "veilColorDirection": "horizontal",
+ "titleFontSize": "3vmin",
+ "minWidth": 20,
+ "title": "PHOTOBOOTH",
+ "paddingLeft": 0,
+ "headerBackgroundColorDirection": "vertical",
+ "titleFontWeight": "bold",
+ "showEffect": {
+  "easing": "cubic_in_out",
+  "class": "FadeInEffect",
+  "duration": 500
  },
- "initialSequence": {
-  "restartMovementOnUserInteraction": false,
-  "class": "PanoramaCameraSequence",
-  "movements": [
-   {
-    "yawDelta": 18.5,
-    "yawSpeed": 7.96,
-    "easing": "cubic_in",
-    "class": "DistancePanoramaCameraMovement"
-   },
-   {
-    "yawDelta": 323,
-    "yawSpeed": 7.96,
-    "easing": "linear",
-    "class": "DistancePanoramaCameraMovement"
-   },
-   {
-    "yawDelta": 18.5,
-    "yawSpeed": 7.96,
-    "easing": "cubic_out",
-    "class": "DistancePanoramaCameraMovement"
-   }
-  ]
+ "backgroundColor": [],
+ "shadowSpread": 1,
+ "closeButtonBackgroundColor": [],
+ "bodyPaddingBottom": 5,
+ "backgroundOpacity": 1,
+ "headerBorderSize": 0,
+ "closeButtonRollOverIconColor": "#FFFFFF",
+ "shadow": true,
+ "titlePaddingTop": 5,
+ "footerHeight": 5,
+ "closeButtonPressedBackgroundColor": [
+  "#3A1D1F"
+ ],
+ "closeButtonPressedBackgroundColorRatios": [
+  0
+ ],
+ "veilShowEffect": {
+  "easing": "cubic_in_out",
+  "class": "FadeInEffect",
+  "duration": 500
  },
- "id": "camera_A2DC8769_81F1_EAC3_41DD_1A94442994E7"
-},
-{
- "automaticZoomSpeed": 10,
- "class": "PanoramaCamera",
- "initialPosition": {
-  "yaw": 33.36,
-  "class": "PanoramaCameraPosition",
-  "pitch": 0
+ "overflow": "scroll",
+ "veilOpacity": 0.4,
+ "footerBackgroundColor": [
+  "#FFFFFF",
+  "#EEEEEE",
+  "#DDDDDD"
+ ],
+ "headerPaddingRight": 10,
+ "propagateClick": false,
+ "footerBackgroundColorDirection": "vertical",
+ "children": [
+  "this.htmlText_9A1B2AC4_81B2_5BC0_41B4_F7AC640398E2"
+ ],
+ "titlePaddingRight": 5,
+ "closeButtonIconHeight": 12,
+ "layout": "vertical",
+ "bodyBorderSize": 0,
+ "shadowColor": "#000000",
+ "titleFontStyle": "normal",
+ "shadowVerticalLength": 0,
+ "borderSize": 0,
+ "titleFontFamily": "Arial",
+ "headerPaddingBottom": 10,
+ "backgroundColorDirection": "vertical",
+ "closeButtonIconColor": "#000000",
+ "headerBorderColor": "#000000",
+ "footerBackgroundColorRatios": [
+  0,
+  0.9,
+  1
+ ],
+ "scrollBarMargin": 2,
+ "contentOpaque": false,
+ "headerPaddingTop": 10,
+ "class": "Window",
+ "headerPaddingLeft": 10,
+ "closeButtonBorderRadius": 11,
+ "shadowBlurRadius": 6,
+ "bodyBackgroundColor": [
+  "#FFFFFF",
+  "#DDDDDD",
+  "#FFFFFF"
+ ],
+ "gap": 10,
+ "titleTextDecoration": "none",
+ "headerBackgroundColor": [
+  "#DDDDDD",
+  "#EEEEEE",
+  "#FFFFFF"
+ ],
+ "closeButtonBackgroundColorRatios": [],
+ "closeButtonRollOverBackgroundColor": [
+  "#C13535"
+ ],
+ "headerBackgroundOpacity": 1,
+ "bodyBorderColor": "#000000",
+ "bodyBackgroundColorRatios": [
+  0,
+  0.5,
+  1
+ ],
+ "bodyPaddingLeft": 5,
+ "closeButtonIconLineWidth": 2,
+ "titlePaddingBottom": 5,
+ "borderRadius": 5,
+ "closeButtonPressedIconColor": "#FFFFFF",
+ "shadowOpacity": 0.5,
+ "paddingTop": 0,
+ "veilHideEffect": {
+  "easing": "cubic_in_out",
+  "class": "FadeOutEffect",
+  "duration": 500
  },
- "initialSequence": {
-  "restartMovementOnUserInteraction": false,
-  "class": "PanoramaCameraSequence",
-  "movements": [
-   {
-    "yawDelta": 18.5,
-    "yawSpeed": 7.96,
-    "easing": "cubic_in",
-    "class": "DistancePanoramaCameraMovement"
-   },
-   {
-    "yawDelta": 323,
-    "yawSpeed": 7.96,
-    "easing": "linear",
-    "class": "DistancePanoramaCameraMovement"
-   },
-   {
-    "yawDelta": 18.5,
-    "yawSpeed": 7.96,
-    "easing": "cubic_out",
-    "class": "DistancePanoramaCameraMovement"
-   }
-  ]
- },
- "id": "camera_A2EC57A8_81F1_EA40_41D2_6ADFEE2F2DC8"
+ "scrollBarWidth": 10,
+ "closeButtonIconWidth": 12,
+ "paddingBottom": 0
 },
 {
  "automaticZoomSpeed": 10,
@@ -7801,6 +7771,40 @@
   ]
  },
  "id": "panorama_7FC7BB54_7499_1D12_41CC_B9E0A857D095_camera"
+},
+{
+ "automaticZoomSpeed": 10,
+ "class": "PanoramaCamera",
+ "initialPosition": {
+  "yaw": -73.63,
+  "class": "PanoramaCameraPosition",
+  "pitch": 0
+ },
+ "initialSequence": {
+  "restartMovementOnUserInteraction": false,
+  "class": "PanoramaCameraSequence",
+  "movements": [
+   {
+    "yawDelta": 18.5,
+    "yawSpeed": 7.96,
+    "easing": "cubic_in",
+    "class": "DistancePanoramaCameraMovement"
+   },
+   {
+    "yawDelta": 323,
+    "yawSpeed": 7.96,
+    "easing": "linear",
+    "class": "DistancePanoramaCameraMovement"
+   },
+   {
+    "yawDelta": 18.5,
+    "yawSpeed": 7.96,
+    "easing": "cubic_out",
+    "class": "DistancePanoramaCameraMovement"
+   }
+  ]
+ },
+ "id": "camera_A70197C1_8157_E9C3_41AF_E584A1BDD70B"
 },
 {
  "adjacentPanoramas": [
@@ -8510,384 +8514,6 @@
  "pitch": 0
 },
 {
- "backgroundColorRatios": [],
- "data": {
-  "name": "Window8403"
- },
- "hideEffect": {
-  "easing": "cubic_in_out",
-  "class": "FadeOutEffect",
-  "duration": 500
- },
- "id": "window_9A187AC4_81B2_5BC0_419B_714E0BA808D0",
- "bodyBackgroundColorDirection": "vertical",
- "bodyPaddingTop": 5,
- "scrollBarColor": "#000000",
- "bodyPaddingRight": 5,
- "horizontalAlign": "center",
- "shadowHorizontalLength": 3,
- "closeButtonRollOverBackgroundColorRatios": [
-  0
- ],
- "width": 400,
- "headerVerticalAlign": "middle",
- "headerBackgroundColorRatios": [
-  0,
-  0.1,
-  1
- ],
- "scrollBarVisible": "rollOver",
- "bodyBackgroundOpacity": 1,
- "minHeight": 20,
- "veilColor": [
-  "#000000",
-  "#000000"
- ],
- "modal": true,
- "scrollBarOpacity": 0.5,
- "titlePaddingLeft": 5,
- "paddingRight": 0,
- "veilColorRatios": [
-  0,
-  1
- ],
- "verticalAlign": "middle",
- "height": 600,
- "titleFontColor": "#000000",
- "veilColorDirection": "horizontal",
- "titleFontSize": "3vmin",
- "minWidth": 20,
- "title": "PHOTOBOOTH",
- "paddingLeft": 0,
- "headerBackgroundColorDirection": "vertical",
- "titleFontWeight": "bold",
- "showEffect": {
-  "easing": "cubic_in_out",
-  "class": "FadeInEffect",
-  "duration": 500
- },
- "backgroundColor": [],
- "shadowSpread": 1,
- "closeButtonBackgroundColor": [],
- "bodyPaddingBottom": 5,
- "backgroundOpacity": 1,
- "headerBorderSize": 0,
- "closeButtonRollOverIconColor": "#FFFFFF",
- "shadow": true,
- "titlePaddingTop": 5,
- "footerHeight": 5,
- "closeButtonPressedBackgroundColor": [
-  "#3A1D1F"
- ],
- "closeButtonPressedBackgroundColorRatios": [
-  0
- ],
- "veilShowEffect": {
-  "easing": "cubic_in_out",
-  "class": "FadeInEffect",
-  "duration": 500
- },
- "overflow": "scroll",
- "veilOpacity": 0.4,
- "footerBackgroundColor": [
-  "#FFFFFF",
-  "#EEEEEE",
-  "#DDDDDD"
- ],
- "headerPaddingRight": 10,
- "propagateClick": false,
- "footerBackgroundColorDirection": "vertical",
- "children": [
-  "this.htmlText_9A1B2AC4_81B2_5BC0_41B4_F7AC640398E2"
- ],
- "titlePaddingRight": 5,
- "closeButtonIconHeight": 12,
- "layout": "vertical",
- "bodyBorderSize": 0,
- "shadowColor": "#000000",
- "titleFontStyle": "normal",
- "shadowVerticalLength": 0,
- "borderSize": 0,
- "titleFontFamily": "Arial",
- "headerPaddingBottom": 10,
- "backgroundColorDirection": "vertical",
- "closeButtonIconColor": "#000000",
- "headerBorderColor": "#000000",
- "footerBackgroundColorRatios": [
-  0,
-  0.9,
-  1
- ],
- "scrollBarMargin": 2,
- "contentOpaque": false,
- "headerPaddingTop": 10,
- "class": "Window",
- "headerPaddingLeft": 10,
- "closeButtonBorderRadius": 11,
- "shadowBlurRadius": 6,
- "bodyBackgroundColor": [
-  "#FFFFFF",
-  "#DDDDDD",
-  "#FFFFFF"
- ],
- "gap": 10,
- "titleTextDecoration": "none",
- "headerBackgroundColor": [
-  "#DDDDDD",
-  "#EEEEEE",
-  "#FFFFFF"
- ],
- "closeButtonBackgroundColorRatios": [],
- "closeButtonRollOverBackgroundColor": [
-  "#C13535"
- ],
- "headerBackgroundOpacity": 1,
- "bodyBorderColor": "#000000",
- "bodyBackgroundColorRatios": [
-  0,
-  0.5,
-  1
- ],
- "bodyPaddingLeft": 5,
- "closeButtonIconLineWidth": 2,
- "titlePaddingBottom": 5,
- "borderRadius": 5,
- "closeButtonPressedIconColor": "#FFFFFF",
- "shadowOpacity": 0.5,
- "paddingTop": 0,
- "veilHideEffect": {
-  "easing": "cubic_in_out",
-  "class": "FadeOutEffect",
-  "duration": 500
- },
- "scrollBarWidth": 10,
- "closeButtonIconWidth": 12,
- "paddingBottom": 0
-},
-{
- "automaticZoomSpeed": 10,
- "class": "PanoramaCamera",
- "initialPosition": {
-  "yaw": 0,
-  "class": "PanoramaCameraPosition",
-  "pitch": 0
- },
- "initialSequence": {
-  "restartMovementOnUserInteraction": false,
-  "class": "PanoramaCameraSequence",
-  "movements": [
-   {
-    "yawDelta": 18.5,
-    "yawSpeed": 7.96,
-    "easing": "cubic_in",
-    "class": "DistancePanoramaCameraMovement"
-   },
-   {
-    "yawDelta": 323,
-    "yawSpeed": 7.96,
-    "easing": "linear",
-    "class": "DistancePanoramaCameraMovement"
-   },
-   {
-    "yawDelta": 18.5,
-    "yawSpeed": 7.96,
-    "easing": "cubic_out",
-    "class": "DistancePanoramaCameraMovement"
-   }
-  ]
- },
- "id": "panorama_7FD0BD61_749B_3532_41D0_FA1A7FCE5567_camera"
-},
-{
- "backgroundColorRatios": [],
- "data": {
-  "name": "Window8403"
- },
- "hideEffect": {
-  "easing": "cubic_in_out",
-  "class": "FadeOutEffect",
-  "duration": 500
- },
- "id": "window_6AFAB7D4_7F52_E9C0_41DA_92E687E35F94",
- "bodyBackgroundColorDirection": "vertical",
- "bodyPaddingTop": 5,
- "scrollBarColor": "#000000",
- "bodyPaddingRight": 5,
- "horizontalAlign": "center",
- "shadowHorizontalLength": 3,
- "closeButtonRollOverBackgroundColorRatios": [
-  0
- ],
- "width": 400,
- "headerVerticalAlign": "middle",
- "headerBackgroundColorRatios": [
-  0,
-  0.1,
-  1
- ],
- "scrollBarVisible": "rollOver",
- "bodyBackgroundOpacity": 1,
- "minHeight": 20,
- "veilColor": [
-  "#000000",
-  "#000000"
- ],
- "modal": true,
- "scrollBarOpacity": 0.5,
- "titlePaddingLeft": 5,
- "paddingRight": 0,
- "veilColorRatios": [
-  0,
-  1
- ],
- "verticalAlign": "middle",
- "height": 600,
- "titleFontColor": "#000000",
- "veilColorDirection": "horizontal",
- "titleFontSize": "3vmin",
- "minWidth": 20,
- "title": "AREA PENERIMA TAMU",
- "paddingLeft": 0,
- "headerBackgroundColorDirection": "vertical",
- "titleFontWeight": "bold",
- "showEffect": {
-  "easing": "cubic_in_out",
-  "class": "FadeInEffect",
-  "duration": 500
- },
- "backgroundColor": [],
- "shadowSpread": 1,
- "closeButtonBackgroundColor": [],
- "bodyPaddingBottom": 5,
- "backgroundOpacity": 1,
- "headerBorderSize": 0,
- "closeButtonRollOverIconColor": "#FFFFFF",
- "shadow": true,
- "titlePaddingTop": 5,
- "footerHeight": 5,
- "closeButtonPressedBackgroundColor": [
-  "#3A1D1F"
- ],
- "closeButtonPressedBackgroundColorRatios": [
-  0
- ],
- "veilShowEffect": {
-  "easing": "cubic_in_out",
-  "class": "FadeInEffect",
-  "duration": 500
- },
- "overflow": "scroll",
- "veilOpacity": 0.4,
- "footerBackgroundColor": [
-  "#FFFFFF",
-  "#EEEEEE",
-  "#DDDDDD"
- ],
- "headerPaddingRight": 10,
- "propagateClick": false,
- "footerBackgroundColorDirection": "vertical",
- "children": [
-  "this.htmlText_6AFEB7D4_7F52_E9C0_41C9_7CCFACE8ED2C"
- ],
- "titlePaddingRight": 5,
- "closeButtonIconHeight": 12,
- "layout": "vertical",
- "bodyBorderSize": 0,
- "shadowColor": "#000000",
- "titleFontStyle": "normal",
- "shadowVerticalLength": 0,
- "borderSize": 0,
- "titleFontFamily": "Arial",
- "headerPaddingBottom": 10,
- "backgroundColorDirection": "vertical",
- "closeButtonIconColor": "#000000",
- "headerBorderColor": "#000000",
- "footerBackgroundColorRatios": [
-  0,
-  0.9,
-  1
- ],
- "scrollBarMargin": 2,
- "contentOpaque": false,
- "headerPaddingTop": 10,
- "class": "Window",
- "headerPaddingLeft": 10,
- "closeButtonBorderRadius": 11,
- "shadowBlurRadius": 6,
- "bodyBackgroundColor": [
-  "#FFFFFF",
-  "#DDDDDD",
-  "#FFFFFF"
- ],
- "gap": 10,
- "titleTextDecoration": "none",
- "headerBackgroundColor": [
-  "#DDDDDD",
-  "#EEEEEE",
-  "#FFFFFF"
- ],
- "closeButtonBackgroundColorRatios": [],
- "closeButtonRollOverBackgroundColor": [
-  "#C13535"
- ],
- "headerBackgroundOpacity": 1,
- "bodyBorderColor": "#000000",
- "bodyBackgroundColorRatios": [
-  0,
-  0.5,
-  1
- ],
- "bodyPaddingLeft": 5,
- "closeButtonIconLineWidth": 2,
- "titlePaddingBottom": 5,
- "borderRadius": 5,
- "closeButtonPressedIconColor": "#FFFFFF",
- "shadowOpacity": 0.5,
- "paddingTop": 0,
- "veilHideEffect": {
-  "easing": "cubic_in_out",
-  "class": "FadeOutEffect",
-  "duration": 500
- },
- "scrollBarWidth": 10,
- "closeButtonIconWidth": 12,
- "paddingBottom": 0
-},
-{
- "automaticZoomSpeed": 10,
- "class": "PanoramaCamera",
- "initialPosition": {
-  "yaw": 0,
-  "class": "PanoramaCameraPosition",
-  "pitch": 0
- },
- "initialSequence": {
-  "restartMovementOnUserInteraction": false,
-  "class": "PanoramaCameraSequence",
-  "movements": [
-   {
-    "yawDelta": 18.5,
-    "yawSpeed": 7.96,
-    "easing": "cubic_in",
-    "class": "DistancePanoramaCameraMovement"
-   },
-   {
-    "yawDelta": 323,
-    "yawSpeed": 7.96,
-    "easing": "linear",
-    "class": "DistancePanoramaCameraMovement"
-   },
-   {
-    "yawDelta": 18.5,
-    "yawSpeed": 7.96,
-    "easing": "cubic_out",
-    "class": "DistancePanoramaCameraMovement"
-   }
-  ]
- },
- "id": "panorama_7FC915BE_749B_150E_417A_B09F71DEE69E_camera"
-},
-{
  "adjacentPanoramas": [
   {
    "class": "AdjacentPanorama",
@@ -9171,6 +8797,40 @@
  "automaticZoomSpeed": 10,
  "class": "PanoramaCamera",
  "initialPosition": {
+  "yaw": 0,
+  "class": "PanoramaCameraPosition",
+  "pitch": 0
+ },
+ "initialSequence": {
+  "restartMovementOnUserInteraction": false,
+  "class": "PanoramaCameraSequence",
+  "movements": [
+   {
+    "yawDelta": 18.5,
+    "yawSpeed": 7.96,
+    "easing": "cubic_in",
+    "class": "DistancePanoramaCameraMovement"
+   },
+   {
+    "yawDelta": 323,
+    "yawSpeed": 7.96,
+    "easing": "linear",
+    "class": "DistancePanoramaCameraMovement"
+   },
+   {
+    "yawDelta": 18.5,
+    "yawSpeed": 7.96,
+    "easing": "cubic_out",
+    "class": "DistancePanoramaCameraMovement"
+   }
+  ]
+ },
+ "id": "panorama_7FD0BD61_749B_3532_41D0_FA1A7FCE5567_camera"
+},
+{
+ "automaticZoomSpeed": 10,
+ "class": "PanoramaCamera",
+ "initialPosition": {
   "yaw": 120.4,
   "class": "PanoramaCameraPosition",
   "pitch": 0
@@ -9199,7 +8859,196 @@
    }
   ]
  },
- "id": "camera_A2BF77D7_81F1_E9C0_41CE_330A4999CBCC"
+ "id": "camera_A748D80F_8157_E65F_4180_3F0B01515B87"
+},
+{
+ "backgroundColorRatios": [],
+ "data": {
+  "name": "Window8403"
+ },
+ "hideEffect": {
+  "easing": "cubic_in_out",
+  "class": "FadeOutEffect",
+  "duration": 500
+ },
+ "id": "window_6AFAB7D4_7F52_E9C0_41DA_92E687E35F94",
+ "bodyBackgroundColorDirection": "vertical",
+ "bodyPaddingTop": 5,
+ "scrollBarColor": "#000000",
+ "bodyPaddingRight": 5,
+ "horizontalAlign": "center",
+ "shadowHorizontalLength": 3,
+ "closeButtonRollOverBackgroundColorRatios": [
+  0
+ ],
+ "width": 400,
+ "headerVerticalAlign": "middle",
+ "headerBackgroundColorRatios": [
+  0,
+  0.1,
+  1
+ ],
+ "scrollBarVisible": "rollOver",
+ "bodyBackgroundOpacity": 1,
+ "minHeight": 20,
+ "veilColor": [
+  "#000000",
+  "#000000"
+ ],
+ "modal": true,
+ "scrollBarOpacity": 0.5,
+ "titlePaddingLeft": 5,
+ "paddingRight": 0,
+ "veilColorRatios": [
+  0,
+  1
+ ],
+ "verticalAlign": "middle",
+ "height": 600,
+ "titleFontColor": "#000000",
+ "veilColorDirection": "horizontal",
+ "titleFontSize": "3vmin",
+ "minWidth": 20,
+ "title": "AREA PENERIMA TAMU",
+ "paddingLeft": 0,
+ "headerBackgroundColorDirection": "vertical",
+ "titleFontWeight": "bold",
+ "showEffect": {
+  "easing": "cubic_in_out",
+  "class": "FadeInEffect",
+  "duration": 500
+ },
+ "backgroundColor": [],
+ "shadowSpread": 1,
+ "closeButtonBackgroundColor": [],
+ "bodyPaddingBottom": 5,
+ "backgroundOpacity": 1,
+ "headerBorderSize": 0,
+ "closeButtonRollOverIconColor": "#FFFFFF",
+ "shadow": true,
+ "titlePaddingTop": 5,
+ "footerHeight": 5,
+ "closeButtonPressedBackgroundColor": [
+  "#3A1D1F"
+ ],
+ "closeButtonPressedBackgroundColorRatios": [
+  0
+ ],
+ "veilShowEffect": {
+  "easing": "cubic_in_out",
+  "class": "FadeInEffect",
+  "duration": 500
+ },
+ "overflow": "scroll",
+ "veilOpacity": 0.4,
+ "footerBackgroundColor": [
+  "#FFFFFF",
+  "#EEEEEE",
+  "#DDDDDD"
+ ],
+ "headerPaddingRight": 10,
+ "propagateClick": false,
+ "footerBackgroundColorDirection": "vertical",
+ "children": [
+  "this.htmlText_6AFEB7D4_7F52_E9C0_41C9_7CCFACE8ED2C"
+ ],
+ "titlePaddingRight": 5,
+ "closeButtonIconHeight": 12,
+ "layout": "vertical",
+ "bodyBorderSize": 0,
+ "shadowColor": "#000000",
+ "titleFontStyle": "normal",
+ "shadowVerticalLength": 0,
+ "borderSize": 0,
+ "titleFontFamily": "Arial",
+ "headerPaddingBottom": 10,
+ "backgroundColorDirection": "vertical",
+ "closeButtonIconColor": "#000000",
+ "headerBorderColor": "#000000",
+ "footerBackgroundColorRatios": [
+  0,
+  0.9,
+  1
+ ],
+ "scrollBarMargin": 2,
+ "contentOpaque": false,
+ "headerPaddingTop": 10,
+ "class": "Window",
+ "headerPaddingLeft": 10,
+ "closeButtonBorderRadius": 11,
+ "shadowBlurRadius": 6,
+ "bodyBackgroundColor": [
+  "#FFFFFF",
+  "#DDDDDD",
+  "#FFFFFF"
+ ],
+ "gap": 10,
+ "titleTextDecoration": "none",
+ "headerBackgroundColor": [
+  "#DDDDDD",
+  "#EEEEEE",
+  "#FFFFFF"
+ ],
+ "closeButtonBackgroundColorRatios": [],
+ "closeButtonRollOverBackgroundColor": [
+  "#C13535"
+ ],
+ "headerBackgroundOpacity": 1,
+ "bodyBorderColor": "#000000",
+ "bodyBackgroundColorRatios": [
+  0,
+  0.5,
+  1
+ ],
+ "bodyPaddingLeft": 5,
+ "closeButtonIconLineWidth": 2,
+ "titlePaddingBottom": 5,
+ "borderRadius": 5,
+ "closeButtonPressedIconColor": "#FFFFFF",
+ "shadowOpacity": 0.5,
+ "paddingTop": 0,
+ "veilHideEffect": {
+  "easing": "cubic_in_out",
+  "class": "FadeOutEffect",
+  "duration": 500
+ },
+ "scrollBarWidth": 10,
+ "closeButtonIconWidth": 12,
+ "paddingBottom": 0
+},
+{
+ "automaticZoomSpeed": 10,
+ "class": "PanoramaCamera",
+ "initialPosition": {
+  "yaw": 0,
+  "class": "PanoramaCameraPosition",
+  "pitch": 0
+ },
+ "initialSequence": {
+  "restartMovementOnUserInteraction": false,
+  "class": "PanoramaCameraSequence",
+  "movements": [
+   {
+    "yawDelta": 18.5,
+    "yawSpeed": 7.96,
+    "easing": "cubic_in",
+    "class": "DistancePanoramaCameraMovement"
+   },
+   {
+    "yawDelta": 323,
+    "yawSpeed": 7.96,
+    "easing": "linear",
+    "class": "DistancePanoramaCameraMovement"
+   },
+   {
+    "yawDelta": 18.5,
+    "yawSpeed": 7.96,
+    "easing": "cubic_out",
+    "class": "DistancePanoramaCameraMovement"
+   }
+  ]
+ },
+ "id": "panorama_7FC915BE_749B_150E_417A_B09F71DEE69E_camera"
 },
 {
  "hfovMax": 130,
@@ -9467,7 +9316,7 @@
  "automaticZoomSpeed": 10,
  "class": "PanoramaCamera",
  "initialPosition": {
-  "yaw": -38.3,
+  "yaw": 101.33,
   "class": "PanoramaCameraPosition",
   "pitch": 0
  },
@@ -9495,7 +9344,7 @@
    }
   ]
  },
- "id": "camera_A29A87B7_81F1_EA4F_41DE_B6B415550D22"
+ "id": "camera_A73097F0_8157_E9C0_41C7_5CFF02FEDC31"
 },
 {
  "automaticZoomSpeed": 10,
@@ -9530,6 +9379,74 @@
   ]
  },
  "id": "panorama_7FD78B2A_7498_FD36_41DA_0C9AB5B54E8A_camera"
+},
+{
+ "automaticZoomSpeed": 10,
+ "class": "PanoramaCamera",
+ "initialPosition": {
+  "yaw": -7.74,
+  "class": "PanoramaCameraPosition",
+  "pitch": 0
+ },
+ "initialSequence": {
+  "restartMovementOnUserInteraction": false,
+  "class": "PanoramaCameraSequence",
+  "movements": [
+   {
+    "yawDelta": 18.5,
+    "yawSpeed": 7.96,
+    "easing": "cubic_in",
+    "class": "DistancePanoramaCameraMovement"
+   },
+   {
+    "yawDelta": 323,
+    "yawSpeed": 7.96,
+    "easing": "linear",
+    "class": "DistancePanoramaCameraMovement"
+   },
+   {
+    "yawDelta": 18.5,
+    "yawSpeed": 7.96,
+    "easing": "cubic_out",
+    "class": "DistancePanoramaCameraMovement"
+   }
+  ]
+ },
+ "id": "camera_A4FF886D_8157_E6C0_418E_36576432350B"
+},
+{
+ "automaticZoomSpeed": 10,
+ "class": "PanoramaCamera",
+ "initialPosition": {
+  "yaw": 33.36,
+  "class": "PanoramaCameraPosition",
+  "pitch": 0
+ },
+ "initialSequence": {
+  "restartMovementOnUserInteraction": false,
+  "class": "PanoramaCameraSequence",
+  "movements": [
+   {
+    "yawDelta": 18.5,
+    "yawSpeed": 7.96,
+    "easing": "cubic_in",
+    "class": "DistancePanoramaCameraMovement"
+   },
+   {
+    "yawDelta": 323,
+    "yawSpeed": 7.96,
+    "easing": "linear",
+    "class": "DistancePanoramaCameraMovement"
+   },
+   {
+    "yawDelta": 18.5,
+    "yawSpeed": 7.96,
+    "easing": "cubic_out",
+    "class": "DistancePanoramaCameraMovement"
+   }
+  ]
+ },
+ "id": "camera_A71817D1_8157_E9C0_41DB_72E4E344EF44"
 },
 {
  "hfovMax": 130,
@@ -9763,7 +9680,7 @@
  "automaticZoomSpeed": 10,
  "class": "PanoramaCamera",
  "initialPosition": {
-  "yaw": 89.08,
+  "yaw": -9.13,
   "class": "PanoramaCameraPosition",
   "pitch": 0
  },
@@ -9791,7 +9708,7 @@
    }
   ]
  },
- "id": "camera_A2CD4779_81F1_EAC0_41B0_B65A769313C3"
+ "id": "camera_A7C44763_8157_EAC7_41D2_7D02B44C0198"
 },
 {
  "automaticZoomSpeed": 10,
@@ -9986,7 +9903,7 @@
  "automaticZoomSpeed": 10,
  "class": "PanoramaCamera",
  "initialPosition": {
-  "yaw": 101.33,
+  "yaw": -94.65,
   "class": "PanoramaCameraPosition",
   "pitch": 0
  },
@@ -10014,7 +9931,7 @@
    }
   ]
  },
- "id": "camera_A296E7C7_81F1_E9C0_41DF_EE16F2E7E8D9"
+ "id": "camera_A4FB087D_8157_E6C0_41A4_BAFAD32B8A3A"
 },
 {
  "backgroundColorRatios": [],
@@ -10851,6 +10768,40 @@
  "id": "panorama_7FC770EF_7499_2B0F_41D8_AC6A593E797F_camera"
 },
 {
+ "automaticZoomSpeed": 10,
+ "class": "PanoramaCamera",
+ "initialPosition": {
+  "yaw": -128.78,
+  "class": "PanoramaCameraPosition",
+  "pitch": 0
+ },
+ "initialSequence": {
+  "restartMovementOnUserInteraction": false,
+  "class": "PanoramaCameraSequence",
+  "movements": [
+   {
+    "yawDelta": 18.5,
+    "yawSpeed": 7.96,
+    "easing": "cubic_in",
+    "class": "DistancePanoramaCameraMovement"
+   },
+   {
+    "yawDelta": 323,
+    "yawSpeed": 7.96,
+    "easing": "linear",
+    "class": "DistancePanoramaCameraMovement"
+   },
+   {
+    "yawDelta": 18.5,
+    "yawSpeed": 7.96,
+    "easing": "cubic_out",
+    "class": "DistancePanoramaCameraMovement"
+   }
+  ]
+ },
+ "id": "camera_A7CF4774_8157_EAC1_41DF_166C0D126AB5"
+},
+{
  "adjacentPanoramas": [
   {
    "backwardYaw": 170.87,
@@ -11134,6 +11085,21 @@
  "id": "panorama_7FF15716_7499_751E_41B5_3AAD4B2AE01C_camera"
 },
 {
+ "viewerArea": "this.MainViewer",
+ "buttonCardboardView": [
+  "this.IconButton_EF7806FA_E38F_8606_41E5_5C4557EBCACB",
+  "this.IconButton_1B9ADD00_16C4_0505_41B4_B043CA1AA270"
+ ],
+ "buttonToggleHotspots": "this.IconButton_EEEB3760_E38B_8603_41D6_FE6B11A3DA96",
+ "class": "PanoramaPlayer",
+ "touchControlMode": "drag_rotation",
+ "id": "MainViewerPanoramaPlayer",
+ "gyroscopeVerticalDraggingEnabled": true,
+ "displayPlaybackBar": true,
+ "buttonToggleGyroscope": "this.IconButton_EE9FBAB2_E389_8E06_41D7_903ABEDD153A",
+ "mouseControlMode": "drag_acceleration"
+},
+{
  "hfovMax": 130,
  "class": "Panorama",
  "frames": [
@@ -11365,7 +11331,7 @@
  "automaticZoomSpeed": 10,
  "class": "PanoramaCamera",
  "initialPosition": {
-  "yaw": -94.65,
+  "yaw": 85.24,
   "class": "PanoramaCameraPosition",
   "pitch": 0
  },
@@ -11393,7 +11359,41 @@
    }
   ]
  },
- "id": "camera_A349C7F6_81F1_E9C0_4180_7E14F85BD4B2"
+ "id": "camera_A7E5B793_8157_EA40_41B1_1C7B951C640C"
+},
+{
+ "automaticZoomSpeed": 10,
+ "class": "PanoramaCamera",
+ "initialPosition": {
+  "yaw": -38.3,
+  "class": "PanoramaCameraPosition",
+  "pitch": 0
+ },
+ "initialSequence": {
+  "restartMovementOnUserInteraction": false,
+  "class": "PanoramaCameraSequence",
+  "movements": [
+   {
+    "yawDelta": 18.5,
+    "yawSpeed": 7.96,
+    "easing": "cubic_in",
+    "class": "DistancePanoramaCameraMovement"
+   },
+   {
+    "yawDelta": 323,
+    "yawSpeed": 7.96,
+    "easing": "linear",
+    "class": "DistancePanoramaCameraMovement"
+   },
+   {
+    "yawDelta": 18.5,
+    "yawSpeed": 7.96,
+    "easing": "cubic_out",
+    "class": "DistancePanoramaCameraMovement"
+   }
+  ]
+ },
+ "id": "camera_A72CF7E1_8157_E9C0_41BF_AAD2D5B76E26"
 },
 {
  "backgroundColorRatios": [],
@@ -11927,6 +11927,40 @@
   ]
  },
  "id": "panorama_7FC93955_749B_3D12_41DA_0D5C04770BB7_camera"
+},
+{
+ "automaticZoomSpeed": 10,
+ "class": "PanoramaCamera",
+ "initialPosition": {
+  "yaw": -60.67,
+  "class": "PanoramaCameraPosition",
+  "pitch": 0
+ },
+ "initialSequence": {
+  "restartMovementOnUserInteraction": false,
+  "class": "PanoramaCameraSequence",
+  "movements": [
+   {
+    "yawDelta": 18.5,
+    "yawSpeed": 7.96,
+    "easing": "cubic_in",
+    "class": "DistancePanoramaCameraMovement"
+   },
+   {
+    "yawDelta": 323,
+    "yawSpeed": 7.96,
+    "easing": "linear",
+    "class": "DistancePanoramaCameraMovement"
+   },
+   {
+    "yawDelta": 18.5,
+    "yawSpeed": 7.96,
+    "easing": "cubic_out",
+    "class": "DistancePanoramaCameraMovement"
+   }
+  ]
+ },
+ "id": "camera_A7BCD754_8157_EAC0_41B8_B6233C119E16"
 },
 {
  "automaticZoomSpeed": 10,
@@ -13951,40 +13985,6 @@
  "id": "panorama_7FD2FEB6_749B_771E_41B4_B010F2AA4C70_camera"
 },
 {
- "automaticZoomSpeed": 10,
- "class": "PanoramaCamera",
- "initialPosition": {
-  "yaw": -8.44,
-  "class": "PanoramaCameraPosition",
-  "pitch": 0
- },
- "initialSequence": {
-  "restartMovementOnUserInteraction": false,
-  "class": "PanoramaCameraSequence",
-  "movements": [
-   {
-    "yawDelta": 18.5,
-    "yawSpeed": 7.96,
-    "easing": "cubic_in",
-    "class": "DistancePanoramaCameraMovement"
-   },
-   {
-    "yawDelta": 323,
-    "yawSpeed": 7.96,
-    "easing": "linear",
-    "class": "DistancePanoramaCameraMovement"
-   },
-   {
-    "yawDelta": 18.5,
-    "yawSpeed": 7.96,
-    "easing": "cubic_out",
-    "class": "DistancePanoramaCameraMovement"
-   }
-  ]
- },
- "id": "camera_A2C6F789_81F1_EA40_41DB_317D34716FC3"
-},
-{
  "transitionDuration": 500,
  "data": {
   "name": "Main Viewer"
@@ -14243,7 +14243,6 @@
  "scrollBarVisible": "rollOver",
  "minHeight": 1,
  "backgroundColorDirection": "vertical",
- "creationPolicy": "inAdvance",
  "paddingRight": 0,
  "bottom": "0%",
  "contentOpaque": false,
@@ -14263,7 +14262,6 @@
  "shadow": false,
  "backgroundOpacity": 0.6,
  "borderRadius": 0,
- "visible": false,
  "paddingBottom": 0,
  "overflow": "scroll",
  "data": {
@@ -14672,7 +14670,7 @@
  "rollOverDisplay": false,
  "areas": [
   {
-   "click": "this.startPanoramaWithCamera(this.panorama_7FC7CD76_7499_151E_41D8_2AAFAFF10D8B, this.camera_A296E7C7_81F1_E9C0_41DF_EE16F2E7E8D9); this.mainPlayList.set('selectedIndex', 0)",
+   "click": "this.startPanoramaWithCamera(this.panorama_7FC7CD76_7499_151E_41D8_2AAFAFF10D8B, this.camera_A73097F0_8157_E9C0_41C7_5CFF02FEDC31); this.mainPlayList.set('selectedIndex', 0)",
    "class": "HotspotPanoramaOverlayArea",
    "mapColor": "#FF0000"
   }
@@ -14718,7 +14716,7 @@
  "rollOverDisplay": false,
  "areas": [
   {
-   "click": "this.startPanoramaWithCamera(this.panorama_7FD143C1_7499_2D72_41A1_4ABE60A998B1, this.camera_A28287C7_81F1_E9C0_41B1_362D5F472743); this.mainPlayList.set('selectedIndex', 1)",
+   "click": "this.startPanoramaWithCamera(this.panorama_7FD143C1_7499_2D72_41A1_4ABE60A998B1, this.camera_A745C800_8157_E640_41DC_5549891F9344); this.mainPlayList.set('selectedIndex', 1)",
    "class": "HotspotPanoramaOverlayArea",
    "mapColor": "#FF0000"
   }
@@ -14805,126 +14803,6 @@
  ]
 },
 {
- "transparencyActive": true,
- "maxHeight": 58,
- "propagateClick": true,
- "id": "IconButton_EF7806FA_E38F_8606_41E5_5C4557EBCACB",
- "horizontalAlign": "center",
- "width": 58,
- "borderSize": 0,
- "minHeight": 1,
- "verticalAlign": "middle",
- "iconURL": "skin/IconButton_EF7806FA_E38F_8606_41E5_5C4557EBCACB.png",
- "paddingRight": 0,
- "minWidth": 1,
- "mode": "push",
- "class": "IconButton",
- "paddingLeft": 0,
- "height": 58,
- "rollOverIconURL": "skin/IconButton_EF7806FA_E38F_8606_41E5_5C4557EBCACB_rollover.png",
- "paddingTop": 0,
- "shadow": false,
- "backgroundOpacity": 0,
- "borderRadius": 0,
- "visible": false,
- "paddingBottom": 0,
- "cursor": "hand",
- "maxWidth": 58,
- "data": {
-  "name": "IconButton VR"
- }
-},
-{
- "transparencyActive": true,
- "maxHeight": 37,
- "propagateClick": true,
- "id": "IconButton_1B9ADD00_16C4_0505_41B4_B043CA1AA270",
- "horizontalAlign": "center",
- "right": 30,
- "width": 100,
- "borderSize": 0,
- "minHeight": 1,
- "verticalAlign": "middle",
- "iconURL": "skin/IconButton_1B9ADD00_16C4_0505_41B4_B043CA1AA270.png",
- "paddingRight": 0,
- "bottom": 8,
- "minWidth": 1,
- "mode": "push",
- "class": "IconButton",
- "paddingLeft": 0,
- "height": 75,
- "rollOverIconURL": "skin/IconButton_1B9ADD00_16C4_0505_41B4_B043CA1AA270_rollover.png",
- "paddingTop": 0,
- "shadow": false,
- "backgroundOpacity": 0,
- "borderRadius": 0,
- "pressedIconURL": "skin/IconButton_1B9ADD00_16C4_0505_41B4_B043CA1AA270_pressed.png",
- "paddingBottom": 0,
- "cursor": "hand",
- "maxWidth": 49,
- "data": {
-  "name": "IconButton VR"
- }
-},
-{
- "transparencyActive": true,
- "maxHeight": 58,
- "propagateClick": true,
- "id": "IconButton_EEEB3760_E38B_8603_41D6_FE6B11A3DA96",
- "horizontalAlign": "center",
- "width": 58,
- "borderSize": 0,
- "minHeight": 1,
- "verticalAlign": "middle",
- "iconURL": "skin/IconButton_EEEB3760_E38B_8603_41D6_FE6B11A3DA96.png",
- "paddingRight": 0,
- "minWidth": 1,
- "mode": "toggle",
- "class": "IconButton",
- "paddingLeft": 0,
- "height": 58,
- "paddingTop": 0,
- "shadow": false,
- "backgroundOpacity": 0,
- "borderRadius": 0,
- "pressedIconURL": "skin/IconButton_EEEB3760_E38B_8603_41D6_FE6B11A3DA96_pressed.png",
- "paddingBottom": 0,
- "cursor": "hand",
- "maxWidth": 58,
- "data": {
-  "name": "IconButton HS "
- }
-},
-{
- "transparencyActive": true,
- "maxHeight": 58,
- "propagateClick": true,
- "id": "IconButton_EE9FBAB2_E389_8E06_41D7_903ABEDD153A",
- "horizontalAlign": "center",
- "width": 58,
- "borderSize": 0,
- "minHeight": 1,
- "verticalAlign": "middle",
- "iconURL": "skin/IconButton_EE9FBAB2_E389_8E06_41D7_903ABEDD153A.png",
- "paddingRight": 0,
- "minWidth": 1,
- "mode": "toggle",
- "class": "IconButton",
- "paddingLeft": 0,
- "height": 58,
- "paddingTop": 0,
- "shadow": false,
- "backgroundOpacity": 0,
- "borderRadius": 0,
- "pressedIconURL": "skin/IconButton_EE9FBAB2_E389_8E06_41D7_903ABEDD153A_pressed.png",
- "paddingBottom": 0,
- "cursor": "hand",
- "maxWidth": 58,
- "data": {
-  "name": "IconButton GYRO"
- }
-},
-{
  "enabledInCardboard": true,
  "rollOverDisplay": false,
  "class": "HotspotPanoramaOverlay",
@@ -14974,7 +14852,7 @@
  "rollOverDisplay": false,
  "areas": [
   {
-   "click": "this.startPanoramaWithCamera(this.panorama_7F314191_7499_ED12_41CA_ED7ED0661FAF, this.camera_A2DC8769_81F1_EAC3_41DD_1A94442994E7); this.mainPlayList.set('selectedIndex', 2)",
+   "click": "this.startPanoramaWithCamera(this.panorama_7F314191_7499_ED12_41CA_ED7ED0661FAF, this.camera_A7D1A783_8157_EA40_41A1_022A8DD31254); this.mainPlayList.set('selectedIndex', 2)",
    "class": "HotspotPanoramaOverlayArea",
    "mapColor": "#FF0000"
   }
@@ -15138,7 +15016,7 @@
  "rollOverDisplay": false,
  "areas": [
   {
-   "click": "this.startPanoramaWithCamera(this.panorama_7F314191_7499_ED12_41CA_ED7ED0661FAF, this.camera_A349C7F6_81F1_E9C0_4180_7E14F85BD4B2); this.mainPlayList.set('selectedIndex', 2)",
+   "click": "this.startPanoramaWithCamera(this.panorama_7F314191_7499_ED12_41CA_ED7ED0661FAF, this.camera_A4FB087D_8157_E6C0_41A4_BAFAD32B8A3A); this.mainPlayList.set('selectedIndex', 2)",
    "class": "HotspotPanoramaOverlayArea",
    "mapColor": "#FF0000"
   }
@@ -15306,7 +15184,7 @@
 {
  "shadow": false,
  "propagateClick": false,
- "id": "htmlText_96B6927F_8152_6AC0_41B0_CA5F2CB0DD3E",
+ "id": "htmlText_6A30BD88_7F4E_7E40_41DB_E1A5CCD790D7",
  "scrollBarColor": "#000000",
  "scrollBarOpacity": 0.5,
  "borderSize": 0,
@@ -15322,7 +15200,7 @@
  "paddingTop": 10,
  "backgroundOpacity": 0,
  "borderRadius": 0,
- "html": "<div style=\"text-align:left; color:#000; \"><DIV STYLE=\"text-align:left;\"><SPAN STYLE=\"letter-spacing:0px;color:#000000;font-family:Arial, Helvetica, sans-serif;\"><SPAN STYLE=\"font-size:15px;\"> \u2022 Arah pintu masuk gerbang utara</SPAN></SPAN></DIV><DIV STYLE=\"text-align:left;\"><SPAN STYLE=\"letter-spacing:0px;color:#000000;font-family:Arial, Helvetica, sans-serif;\"><SPAN STYLE=\"font-size:15px;\"> \u2022 Arah pintu masuk orang tua siswa kelas XIII RPL 1-7</SPAN></SPAN></DIV><p STYLE=\"margin:0; line-height:15px;\"><BR STYLE=\"letter-spacing:0px;color:#000000;font-size:12px;font-family:Arial, Helvetica, sans-serif;\"/></p></div>",
+ "html": "<div style=\"text-align:left; color:#000; \"><DIV STYLE=\"text-align:left;\"><SPAN STYLE=\"letter-spacing:0px;color:#000000;font-family:Arial, Helvetica, sans-serif;\"><SPAN STYLE=\"font-size:15px;\"> \u2022 Area tempat duduk guru karyawan</SPAN></SPAN></DIV><DIV STYLE=\"text-align:left;\"><SPAN STYLE=\"letter-spacing:0px;color:#000000;font-family:Arial, Helvetica, sans-serif;\"><SPAN STYLE=\"font-size:15px;\"> \u2022 Posisi di belakang sofa tamu VIP</SPAN></SPAN></DIV><DIV STYLE=\"text-align:left;\"><SPAN STYLE=\"letter-spacing:0px;color:#000000;font-family:Arial, Helvetica, sans-serif;\"><SPAN STYLE=\"font-size:15px;\"> </SPAN></SPAN></DIV><p STYLE=\"margin:0; line-height:15px;\"><BR STYLE=\"letter-spacing:0px;color:#000000;font-size:12px;font-family:Arial, Helvetica, sans-serif;\"/></p></div>",
  "paddingBottom": 10,
  "scrollBarWidth": 10,
  "data": {
@@ -15384,7 +15262,7 @@
 {
  "shadow": false,
  "propagateClick": false,
- "id": "htmlText_6A30BD88_7F4E_7E40_41DB_E1A5CCD790D7",
+ "id": "htmlText_96B6927F_8152_6AC0_41B0_CA5F2CB0DD3E",
  "scrollBarColor": "#000000",
  "scrollBarOpacity": 0.5,
  "borderSize": 0,
@@ -15400,7 +15278,7 @@
  "paddingTop": 10,
  "backgroundOpacity": 0,
  "borderRadius": 0,
- "html": "<div style=\"text-align:left; color:#000; \"><DIV STYLE=\"text-align:left;\"><SPAN STYLE=\"letter-spacing:0px;color:#000000;font-family:Arial, Helvetica, sans-serif;\"><SPAN STYLE=\"font-size:15px;\"> \u2022 Area tempat duduk guru karyawan</SPAN></SPAN></DIV><DIV STYLE=\"text-align:left;\"><SPAN STYLE=\"letter-spacing:0px;color:#000000;font-family:Arial, Helvetica, sans-serif;\"><SPAN STYLE=\"font-size:15px;\"> \u2022 Posisi di belakang sofa tamu VIP</SPAN></SPAN></DIV><DIV STYLE=\"text-align:left;\"><SPAN STYLE=\"letter-spacing:0px;color:#000000;font-family:Arial, Helvetica, sans-serif;\"><SPAN STYLE=\"font-size:15px;\"> </SPAN></SPAN></DIV><p STYLE=\"margin:0; line-height:15px;\"><BR STYLE=\"letter-spacing:0px;color:#000000;font-size:12px;font-family:Arial, Helvetica, sans-serif;\"/></p></div>",
+ "html": "<div style=\"text-align:left; color:#000; \"><DIV STYLE=\"text-align:left;\"><SPAN STYLE=\"letter-spacing:0px;color:#000000;font-family:Arial, Helvetica, sans-serif;\"><SPAN STYLE=\"font-size:15px;\"> \u2022 Arah pintu masuk gerbang utara</SPAN></SPAN></DIV><DIV STYLE=\"text-align:left;\"><SPAN STYLE=\"letter-spacing:0px;color:#000000;font-family:Arial, Helvetica, sans-serif;\"><SPAN STYLE=\"font-size:15px;\"> \u2022 Arah pintu masuk orang tua siswa kelas XIII RPL 1-7</SPAN></SPAN></DIV><p STYLE=\"margin:0; line-height:15px;\"><BR STYLE=\"letter-spacing:0px;color:#000000;font-size:12px;font-family:Arial, Helvetica, sans-serif;\"/></p></div>",
  "paddingBottom": 10,
  "scrollBarWidth": 10,
  "data": {
@@ -15453,32 +15331,6 @@
  "backgroundOpacity": 0,
  "borderRadius": 0,
  "html": "<div style=\"text-align:left; color:#000; \"><DIV STYLE=\"text-align:left;\"><SPAN STYLE=\"letter-spacing:0px;color:#000000;font-family:Arial, Helvetica, sans-serif;\"><SPAN STYLE=\"font-size:15px;\"> \u2022 Lokasi parkir wisudawan dan panitia</SPAN></SPAN></DIV><DIV STYLE=\"text-align:left;\"><SPAN STYLE=\"letter-spacing:0px;color:#000000;font-family:Arial, Helvetica, sans-serif;\"><SPAN STYLE=\"font-size:15px;\"> \u2022 Titik kumpul wisudawan sebelum masuk ke hall wisuda</SPAN></SPAN></DIV><DIV STYLE=\"text-align:left;\"><SPAN STYLE=\"letter-spacing:0px;color:#000000;font-family:Arial, Helvetica, sans-serif;\"><SPAN STYLE=\"font-size:15px;\"> \u2022 Wisudawan hadir maksimal jam 06:45 WIB</SPAN></SPAN></DIV><DIV STYLE=\"text-align:left;\"><SPAN STYLE=\"letter-spacing:0px;color:#000000;font-family:Arial, Helvetica, sans-serif;\"><SPAN STYLE=\"font-size:15px;\"> \u2022 Registrasi kehadiran</SPAN></SPAN></DIV><DIV STYLE=\"text-align:left;\"><SPAN STYLE=\"letter-spacing:0px;color:#000000;font-family:Arial, Helvetica, sans-serif;\"><SPAN STYLE=\"font-size:15px;\"> \u2022 Pembagian Gordon</SPAN></SPAN></DIV></div>",
- "paddingBottom": 10,
- "scrollBarWidth": 10,
- "data": {
-  "name": "HTMLText8404"
- }
-},
-{
- "shadow": false,
- "propagateClick": false,
- "id": "htmlText_6969778E_7F76_6A41_41D7_7A08C295BEDF",
- "scrollBarColor": "#000000",
- "scrollBarOpacity": 0.5,
- "borderSize": 0,
- "scrollBarVisible": "rollOver",
- "minHeight": 0,
- "width": "100%",
- "paddingRight": 10,
- "scrollBarMargin": 2,
- "class": "HTMLText",
- "minWidth": 0,
- "paddingLeft": 10,
- "height": "100%",
- "paddingTop": 10,
- "backgroundOpacity": 0,
- "borderRadius": 0,
- "html": "<div style=\"text-align:left; color:#000; \"><DIV STYLE=\"text-align:left;\"><SPAN STYLE=\"letter-spacing:0px;color:#000000;font-family:Arial, Helvetica, sans-serif;\"><SPAN STYLE=\"font-size:15px;\"> \u2022 Scan barcode undangan orang tua</SPAN></SPAN></DIV><DIV STYLE=\"text-align:left;\"><SPAN STYLE=\"letter-spacing:0px;color:#000000;font-family:Arial, Helvetica, sans-serif;\"><SPAN STYLE=\"font-size:15px;\"> \u2022 Khusus kelas XII RPL 8 dan XII TKJ 1-6</SPAN></SPAN></DIV></div>",
  "paddingBottom": 10,
  "scrollBarWidth": 10,
  "data": {
@@ -15580,79 +15432,7 @@
  "rollOverDisplay": false,
  "areas": [
   {
-   "click": "this.mainPlayList.set('selectedIndex', 7)",
-   "class": "HotspotPanoramaOverlayArea",
-   "mapColor": "#FF0000"
-  }
- ],
- "class": "HotspotPanoramaOverlay",
- "useHandCursor": true,
- "items": [
-  {
-   "class": "HotspotPanoramaOverlayImage",
-   "hfov": 17.73,
-   "image": "this.AnimatedImageResource_9D480458_81D2_6EC0_41DA_D317B718A7ED",
-   "pitch": -16.87,
-   "yaw": -9.3,
-   "distance": 100
-  }
- ],
- "id": "overlay_982B6950_81B2_E6C0_41C9_ACDFA17B5BB8",
- "data": {
-  "label": "Circle Arrow 02a"
- },
- "maps": [
-  {
-   "hfov": 17.73,
-   "yaw": -9.3,
-   "class": "HotspotPanoramaOverlayMap",
-   "image": {
-    "class": "ImageResource",
-    "levels": [
-     {
-      "url": "media/panorama_7FD9FA2B_7499_1F37_41D3_1E72039D25BA_0_HS_0_0_0_map.gif",
-      "width": 28,
-      "class": "ImageResourceLevel",
-      "height": 16
-     }
-    ]
-   },
-   "pitch": -16.87
-  }
- ]
-},
-{
- "shadow": false,
- "propagateClick": false,
- "id": "htmlText_6A090244_7F52_2AC0_41D9_61FF19889E34",
- "scrollBarColor": "#000000",
- "scrollBarOpacity": 0.5,
- "borderSize": 0,
- "scrollBarVisible": "rollOver",
- "minHeight": 0,
- "width": "100%",
- "paddingRight": 10,
- "scrollBarMargin": 2,
- "class": "HTMLText",
- "minWidth": 0,
- "paddingLeft": 10,
- "height": "100%",
- "paddingTop": 10,
- "backgroundOpacity": 0,
- "borderRadius": 0,
- "html": "<div style=\"text-align:left; color:#000; \"><DIV STYLE=\"text-align:left;\"><SPAN STYLE=\"letter-spacing:0px;color:#000000;font-family:Arial, Helvetica, sans-serif;\"><SPAN STYLE=\"font-size:15px;\"> \u2022 Tempat duduk keluarga tanpa undangan</SPAN></SPAN></DIV><DIV STYLE=\"text-align:left;\"><SPAN STYLE=\"letter-spacing:0px;color:#000000;font-family:Arial, Helvetica, sans-serif;\"><SPAN STYLE=\"font-size:15px;\"> </SPAN></SPAN></DIV><p STYLE=\"margin:0; line-height:15px;\"><BR STYLE=\"letter-spacing:0px;color:#000000;font-size:12px;font-family:Arial, Helvetica, sans-serif;\"/></p></div>",
- "paddingBottom": 10,
- "scrollBarWidth": 10,
- "data": {
-  "name": "HTMLText8404"
- }
-},
-{
- "enabledInCardboard": true,
- "rollOverDisplay": false,
- "areas": [
-  {
-   "click": "this.startPanoramaWithCamera(this.panorama_7FE13825_7499_1B32_41D0_2F851ABA3552, this.camera_A22C274A_81F1_EAC0_4193_96AA57BDE2E9); this.mainPlayList.set('selectedIndex', 10)",
+   "click": "this.startPanoramaWithCamera(this.panorama_7FE13825_7499_1B32_41D0_2F851ABA3552, this.camera_A7BCD754_8157_EAC0_41B8_B6233C119E16); this.mainPlayList.set('selectedIndex', 10)",
    "class": "HotspotPanoramaOverlayArea",
    "mapColor": "#FF0000"
   }
@@ -15698,7 +15478,7 @@
  "rollOverDisplay": false,
  "areas": [
   {
-   "click": "this.startPanoramaWithCamera(this.panorama_7FC7AF97_7499_751E_41BC_34F2046F335C, this.camera_A228A73A_81F1_EA41_41C5_298AF13BCE73); this.mainPlayList.set('selectedIndex', 9)",
+   "click": "this.startPanoramaWithCamera(this.panorama_7FC7AF97_7499_751E_41BC_34F2046F335C, this.camera_A7ABE744_8157_EAC0_41CC_5FD7A935200A); this.mainPlayList.set('selectedIndex', 9)",
    "class": "HotspotPanoramaOverlayArea",
    "mapColor": "#FF0000"
   }
@@ -15831,11 +15611,37 @@
  ]
 },
 {
+ "shadow": false,
+ "propagateClick": false,
+ "id": "htmlText_6969778E_7F76_6A41_41D7_7A08C295BEDF",
+ "scrollBarColor": "#000000",
+ "scrollBarOpacity": 0.5,
+ "borderSize": 0,
+ "scrollBarVisible": "rollOver",
+ "minHeight": 0,
+ "width": "100%",
+ "paddingRight": 10,
+ "scrollBarMargin": 2,
+ "class": "HTMLText",
+ "minWidth": 0,
+ "paddingLeft": 10,
+ "height": "100%",
+ "paddingTop": 10,
+ "backgroundOpacity": 0,
+ "borderRadius": 0,
+ "html": "<div style=\"text-align:left; color:#000; \"><DIV STYLE=\"text-align:left;\"><SPAN STYLE=\"letter-spacing:0px;color:#000000;font-family:Arial, Helvetica, sans-serif;\"><SPAN STYLE=\"font-size:15px;\"> \u2022 Scan barcode undangan orang tua</SPAN></SPAN></DIV><DIV STYLE=\"text-align:left;\"><SPAN STYLE=\"letter-spacing:0px;color:#000000;font-family:Arial, Helvetica, sans-serif;\"><SPAN STYLE=\"font-size:15px;\"> \u2022 Khusus kelas XII RPL 8 dan XII TKJ 1-6</SPAN></SPAN></DIV></div>",
+ "paddingBottom": 10,
+ "scrollBarWidth": 10,
+ "data": {
+  "name": "HTMLText8404"
+ }
+},
+{
  "enabledInCardboard": true,
  "rollOverDisplay": false,
  "areas": [
   {
-   "click": "this.startPanoramaWithCamera(this.panorama_7F314191_7499_ED12_41CA_ED7ED0661FAF, this.camera_A2BF77D7_81F1_E9C0_41CE_330A4999CBCC); this.mainPlayList.set('selectedIndex', 2)",
+   "click": "this.startPanoramaWithCamera(this.panorama_7F314191_7499_ED12_41CA_ED7ED0661FAF, this.camera_A748D80F_8157_E65F_4180_3F0B01515B87); this.mainPlayList.set('selectedIndex', 2)",
    "class": "HotspotPanoramaOverlayArea",
    "mapColor": "#FF0000"
   }
@@ -15969,6 +15775,78 @@
  ]
 },
 {
+ "enabledInCardboard": true,
+ "rollOverDisplay": false,
+ "areas": [
+  {
+   "click": "this.mainPlayList.set('selectedIndex', 7)",
+   "class": "HotspotPanoramaOverlayArea",
+   "mapColor": "#FF0000"
+  }
+ ],
+ "class": "HotspotPanoramaOverlay",
+ "useHandCursor": true,
+ "items": [
+  {
+   "class": "HotspotPanoramaOverlayImage",
+   "hfov": 17.73,
+   "image": "this.AnimatedImageResource_9D480458_81D2_6EC0_41DA_D317B718A7ED",
+   "pitch": -16.87,
+   "yaw": -9.3,
+   "distance": 100
+  }
+ ],
+ "id": "overlay_982B6950_81B2_E6C0_41C9_ACDFA17B5BB8",
+ "data": {
+  "label": "Circle Arrow 02a"
+ },
+ "maps": [
+  {
+   "hfov": 17.73,
+   "yaw": -9.3,
+   "class": "HotspotPanoramaOverlayMap",
+   "image": {
+    "class": "ImageResource",
+    "levels": [
+     {
+      "url": "media/panorama_7FD9FA2B_7499_1F37_41D3_1E72039D25BA_0_HS_0_0_0_map.gif",
+      "width": 28,
+      "class": "ImageResourceLevel",
+      "height": 16
+     }
+    ]
+   },
+   "pitch": -16.87
+  }
+ ]
+},
+{
+ "shadow": false,
+ "propagateClick": false,
+ "id": "htmlText_6A090244_7F52_2AC0_41D9_61FF19889E34",
+ "scrollBarColor": "#000000",
+ "scrollBarOpacity": 0.5,
+ "borderSize": 0,
+ "scrollBarVisible": "rollOver",
+ "minHeight": 0,
+ "width": "100%",
+ "paddingRight": 10,
+ "scrollBarMargin": 2,
+ "class": "HTMLText",
+ "minWidth": 0,
+ "paddingLeft": 10,
+ "height": "100%",
+ "paddingTop": 10,
+ "backgroundOpacity": 0,
+ "borderRadius": 0,
+ "html": "<div style=\"text-align:left; color:#000; \"><DIV STYLE=\"text-align:left;\"><SPAN STYLE=\"letter-spacing:0px;color:#000000;font-family:Arial, Helvetica, sans-serif;\"><SPAN STYLE=\"font-size:15px;\"> \u2022 Tempat duduk keluarga tanpa undangan</SPAN></SPAN></DIV><DIV STYLE=\"text-align:left;\"><SPAN STYLE=\"letter-spacing:0px;color:#000000;font-family:Arial, Helvetica, sans-serif;\"><SPAN STYLE=\"font-size:15px;\"> </SPAN></SPAN></DIV><p STYLE=\"margin:0; line-height:15px;\"><BR STYLE=\"letter-spacing:0px;color:#000000;font-size:12px;font-family:Arial, Helvetica, sans-serif;\"/></p></div>",
+ "paddingBottom": 10,
+ "scrollBarWidth": 10,
+ "data": {
+  "name": "HTMLText8404"
+ }
+},
+{
  "shadow": false,
  "propagateClick": false,
  "id": "htmlText_6A1FF1ED_7F4E_69C0_41C7_B406A9F27A30",
@@ -15999,7 +15877,7 @@
  "rollOverDisplay": false,
  "areas": [
   {
-   "click": "this.startPanoramaWithCamera(this.panorama_7FF15716_7499_751E_41B5_3AAD4B2AE01C, this.camera_A2C6F789_81F1_EA40_41DB_317D34716FC3); this.mainPlayList.set('selectedIndex', 8)",
+   "click": "this.startPanoramaWithCamera(this.panorama_7FF15716_7499_751E_41B5_3AAD4B2AE01C, this.camera_A7FC57B2_8157_EA40_41C7_34E7C8D32923); this.mainPlayList.set('selectedIndex', 8)",
    "class": "HotspotPanoramaOverlayArea",
    "mapColor": "#FF0000"
   }
@@ -16045,7 +15923,7 @@
  "rollOverDisplay": false,
  "areas": [
   {
-   "click": "this.startPanoramaWithCamera(this.panorama_7FDA84BB_7499_2B16_41D2_4571F93FFF66, this.camera_A2F6E798_81F1_EA40_41D6_F71AA24C2519); this.mainPlayList.set('selectedIndex', 7)",
+   "click": "this.startPanoramaWithCamera(this.panorama_7FDA84BB_7499_2B16_41D2_4571F93FFF66, this.camera_A71447D1_8157_E9C0_41D3_2F69A8A2C431); this.mainPlayList.set('selectedIndex', 7)",
    "class": "HotspotPanoramaOverlayArea",
    "mapColor": "#FF0000"
   }
@@ -16320,7 +16198,7 @@
  "rollOverDisplay": false,
  "areas": [
   {
-   "click": "this.startPanoramaWithCamera(this.panorama_7FC7FBF1_7499_3D13_41D8_74E578FE7A21, this.camera_A29A87B7_81F1_EA4F_41DE_B6B415550D22); this.mainPlayList.set('selectedIndex', 6)",
+   "click": "this.startPanoramaWithCamera(this.panorama_7FC7FBF1_7499_3D13_41D8_74E578FE7A21, this.camera_A72CF7E1_8157_E9C0_41BF_AAD2D5B76E26); this.mainPlayList.set('selectedIndex', 6)",
    "class": "HotspotPanoramaOverlayArea",
    "mapColor": "#FF0000"
   }
@@ -16366,7 +16244,7 @@
  "rollOverDisplay": false,
  "areas": [
   {
-   "click": "this.startPanoramaWithCamera(this.panorama_7FCCEAE9_7499_FF33_4197_451F12024186, this.camera_A2FE8798_81F1_EA40_41DC_37901C137335); this.mainPlayList.set('selectedIndex', 3)",
+   "click": "this.startPanoramaWithCamera(this.panorama_7FCCEAE9_7499_FF33_4197_451F12024186, this.camera_A70197C1_8157_E9C3_41AF_E584A1BDD70B); this.mainPlayList.set('selectedIndex', 3)",
    "class": "HotspotPanoramaOverlayArea",
    "mapColor": "#FF0000"
   }
@@ -16412,7 +16290,7 @@
  "rollOverDisplay": false,
  "areas": [
   {
-   "click": "this.startPanoramaWithCamera(this.panorama_7FD10316_7499_ED1E_41D5_1FBD1FCD7342, this.camera_A2EC57A8_81F1_EA40_41D2_6ADFEE2F2DC8); this.mainPlayList.set('selectedIndex', 4)",
+   "click": "this.startPanoramaWithCamera(this.panorama_7FD10316_7499_ED1E_41D5_1FBD1FCD7342, this.camera_A71817D1_8157_E9C0_41DB_72E4E344EF44); this.mainPlayList.set('selectedIndex', 4)",
    "class": "HotspotPanoramaOverlayArea",
    "mapColor": "#FF0000"
   }
@@ -17228,6 +17106,32 @@
  }
 },
 {
+ "shadow": false,
+ "propagateClick": false,
+ "id": "htmlText_9A1B2AC4_81B2_5BC0_41B4_F7AC640398E2",
+ "scrollBarColor": "#000000",
+ "scrollBarOpacity": 0.5,
+ "borderSize": 0,
+ "scrollBarVisible": "rollOver",
+ "minHeight": 0,
+ "width": "100%",
+ "paddingRight": 10,
+ "scrollBarMargin": 2,
+ "class": "HTMLText",
+ "minWidth": 0,
+ "paddingLeft": 10,
+ "height": "100%",
+ "paddingTop": 10,
+ "backgroundOpacity": 0,
+ "borderRadius": 0,
+ "html": "<div style=\"text-align:left; color:#000; \"><DIV STYLE=\"text-align:left;\"><SPAN STYLE=\"letter-spacing:0px;color:#000000;font-family:Arial, Helvetica, sans-serif;\"><SPAN STYLE=\"font-size:15px;\"> \u2022 Area backdrop photobooth 3D</SPAN></SPAN></DIV><DIV STYLE=\"text-align:left;\"><SPAN STYLE=\"letter-spacing:0px;color:#000000;font-family:Arial, Helvetica, sans-serif;\"><SPAN STYLE=\"font-size:15px;\"> </SPAN></SPAN></DIV><p STYLE=\"margin:0; line-height:15px;\"><BR STYLE=\"letter-spacing:0px;color:#000000;font-size:12px;font-family:Arial, Helvetica, sans-serif;\"/></p></div>",
+ "paddingBottom": 10,
+ "scrollBarWidth": 10,
+ "data": {
+  "name": "HTMLText8404"
+ }
+},
+{
  "enabledInCardboard": true,
  "rollOverDisplay": false,
  "areas": [
@@ -17324,7 +17228,7 @@
  "rollOverDisplay": false,
  "areas": [
   {
-   "click": "this.startPanoramaWithCamera(this.panorama_7F314191_7499_ED12_41CA_ED7ED0661FAF, this.camera_A2CD4779_81F1_EAC0_41B0_B65A769313C3); this.mainPlayList.set('selectedIndex', 2)",
+   "click": "this.startPanoramaWithCamera(this.panorama_7F314191_7499_ED12_41CA_ED7ED0661FAF, this.camera_A7E967A2_8157_EA40_41C5_2349CC1EBF91); this.mainPlayList.set('selectedIndex', 2)",
    "class": "HotspotPanoramaOverlayArea",
    "mapColor": "#FF0000"
   }
@@ -17411,63 +17315,11 @@
  ]
 },
 {
- "shadow": false,
- "propagateClick": false,
- "id": "htmlText_9A1B2AC4_81B2_5BC0_41B4_F7AC640398E2",
- "scrollBarColor": "#000000",
- "scrollBarOpacity": 0.5,
- "borderSize": 0,
- "scrollBarVisible": "rollOver",
- "minHeight": 0,
- "width": "100%",
- "paddingRight": 10,
- "scrollBarMargin": 2,
- "class": "HTMLText",
- "minWidth": 0,
- "paddingLeft": 10,
- "height": "100%",
- "paddingTop": 10,
- "backgroundOpacity": 0,
- "borderRadius": 0,
- "html": "<div style=\"text-align:left; color:#000; \"><DIV STYLE=\"text-align:left;\"><SPAN STYLE=\"letter-spacing:0px;color:#000000;font-family:Arial, Helvetica, sans-serif;\"><SPAN STYLE=\"font-size:15px;\"> \u2022 Area backdrop photobooth 3D</SPAN></SPAN></DIV><DIV STYLE=\"text-align:left;\"><SPAN STYLE=\"letter-spacing:0px;color:#000000;font-family:Arial, Helvetica, sans-serif;\"><SPAN STYLE=\"font-size:15px;\"> </SPAN></SPAN></DIV><p STYLE=\"margin:0; line-height:15px;\"><BR STYLE=\"letter-spacing:0px;color:#000000;font-size:12px;font-family:Arial, Helvetica, sans-serif;\"/></p></div>",
- "paddingBottom": 10,
- "scrollBarWidth": 10,
- "data": {
-  "name": "HTMLText8404"
- }
-},
-{
- "shadow": false,
- "propagateClick": false,
- "id": "htmlText_6AFEB7D4_7F52_E9C0_41C9_7CCFACE8ED2C",
- "scrollBarColor": "#000000",
- "scrollBarOpacity": 0.5,
- "borderSize": 0,
- "scrollBarVisible": "rollOver",
- "minHeight": 0,
- "width": "100%",
- "paddingRight": 10,
- "scrollBarMargin": 2,
- "class": "HTMLText",
- "minWidth": 0,
- "paddingLeft": 10,
- "height": "100%",
- "paddingTop": 10,
- "backgroundOpacity": 0,
- "borderRadius": 0,
- "html": "<div style=\"text-align:left; color:#000; \"><DIV STYLE=\"text-align:left;\"><SPAN STYLE=\"letter-spacing:0px;color:#000000;font-family:Arial, Helvetica, sans-serif;\"><SPAN STYLE=\"font-size:15px;\"> \u2022 Area penerima tamu orang tua di pintu utara</SPAN></SPAN></DIV><DIV STYLE=\"text-align:left;\"><SPAN STYLE=\"letter-spacing:0px;color:#000000;font-family:Arial, Helvetica, sans-serif;\"><SPAN STYLE=\"font-size:15px;\"> </SPAN></SPAN></DIV><p STYLE=\"margin:0; line-height:15px;\"><BR STYLE=\"letter-spacing:0px;color:#000000;font-size:12px;font-family:Arial, Helvetica, sans-serif;\"/></p></div>",
- "paddingBottom": 10,
- "scrollBarWidth": 10,
- "data": {
-  "name": "HTMLText8404"
- }
-},
-{
  "enabledInCardboard": true,
  "rollOverDisplay": false,
  "areas": [
   {
-   "click": "this.startPanoramaWithCamera(this.panorama_7F314191_7499_ED12_41CA_ED7ED0661FAF, this.camera_A359B7E6_81F1_E9C1_41C9_796D095E1B27); this.mainPlayList.set('selectedIndex', 2)",
+   "click": "this.startPanoramaWithCamera(this.panorama_7F314191_7499_ED12_41CA_ED7ED0661FAF, this.camera_A4FF886D_8157_E6C0_418E_36576432350B); this.mainPlayList.set('selectedIndex', 2)",
    "class": "HotspotPanoramaOverlayArea",
    "mapColor": "#FF0000"
   }
@@ -17513,7 +17365,7 @@
  "rollOverDisplay": false,
  "areas": [
   {
-   "click": "this.startPanoramaWithCamera(this.panorama_7FD143C1_7499_2D72_41A1_4ABE60A998B1, this.camera_A2AF97E6_81F1_E9C1_41C2_6C70A2E86E02); this.mainPlayList.set('selectedIndex', 1)",
+   "click": "this.startPanoramaWithCamera(this.panorama_7FD143C1_7499_2D72_41A1_4ABE60A998B1, this.camera_A75EB80F_8157_E65F_418F_05B09D2D184F); this.mainPlayList.set('selectedIndex', 1)",
    "class": "HotspotPanoramaOverlayArea",
    "mapColor": "#FF0000"
   }
@@ -17923,6 +17775,32 @@
 {
  "shadow": false,
  "propagateClick": false,
+ "id": "htmlText_6AFEB7D4_7F52_E9C0_41C9_7CCFACE8ED2C",
+ "scrollBarColor": "#000000",
+ "scrollBarOpacity": 0.5,
+ "borderSize": 0,
+ "scrollBarVisible": "rollOver",
+ "minHeight": 0,
+ "width": "100%",
+ "paddingRight": 10,
+ "scrollBarMargin": 2,
+ "class": "HTMLText",
+ "minWidth": 0,
+ "paddingLeft": 10,
+ "height": "100%",
+ "paddingTop": 10,
+ "backgroundOpacity": 0,
+ "borderRadius": 0,
+ "html": "<div style=\"text-align:left; color:#000; \"><DIV STYLE=\"text-align:left;\"><SPAN STYLE=\"letter-spacing:0px;color:#000000;font-family:Arial, Helvetica, sans-serif;\"><SPAN STYLE=\"font-size:15px;\"> \u2022 Area penerima tamu orang tua di pintu utara</SPAN></SPAN></DIV><DIV STYLE=\"text-align:left;\"><SPAN STYLE=\"letter-spacing:0px;color:#000000;font-family:Arial, Helvetica, sans-serif;\"><SPAN STYLE=\"font-size:15px;\"> </SPAN></SPAN></DIV><p STYLE=\"margin:0; line-height:15px;\"><BR STYLE=\"letter-spacing:0px;color:#000000;font-size:12px;font-family:Arial, Helvetica, sans-serif;\"/></p></div>",
+ "paddingBottom": 10,
+ "scrollBarWidth": 10,
+ "data": {
+  "name": "HTMLText8404"
+ }
+},
+{
+ "shadow": false,
+ "propagateClick": false,
  "id": "htmlText_6A0C024B_7F52_2AC7_41D4_ACED18FB5C3F",
  "scrollBarColor": "#000000",
  "scrollBarOpacity": 0.5,
@@ -18003,7 +17881,7 @@
  "rollOverDisplay": false,
  "areas": [
   {
-   "click": "this.startPanoramaWithCamera(this.panorama_7FE13825_7499_1B32_41D0_2F851ABA3552, this.camera_A2D9A75A_81F1_EAC0_41CB_0B58E42001FF); this.mainPlayList.set('selectedIndex', 10)",
+   "click": "this.startPanoramaWithCamera(this.panorama_7FE13825_7499_1B32_41D0_2F851ABA3552, this.camera_A7CF4774_8157_EAC1_41DF_166C0D126AB5); this.mainPlayList.set('selectedIndex', 10)",
    "class": "HotspotPanoramaOverlayArea",
    "mapColor": "#FF0000"
   }
@@ -18049,7 +17927,7 @@
  "rollOverDisplay": false,
  "areas": [
   {
-   "click": "this.startPanoramaWithCamera(this.panorama_7FDA84BB_7499_2B16_41D2_4571F93FFF66, this.camera_A227F75A_81F1_EAC0_41DF_8F80EFA09557); this.mainPlayList.set('selectedIndex', 7)",
+   "click": "this.startPanoramaWithCamera(this.panorama_7FDA84BB_7499_2B16_41D2_4571F93FFF66, this.camera_A7C44763_8157_EAC7_41D2_7D02B44C0198); this.mainPlayList.set('selectedIndex', 7)",
    "class": "HotspotPanoramaOverlayArea",
    "mapColor": "#FF0000"
   }
@@ -18134,6 +18012,126 @@
    "pitch": 2.99
   }
  ]
+},
+{
+ "transparencyActive": true,
+ "maxHeight": 58,
+ "propagateClick": true,
+ "id": "IconButton_EF7806FA_E38F_8606_41E5_5C4557EBCACB",
+ "horizontalAlign": "center",
+ "width": 58,
+ "borderSize": 0,
+ "minHeight": 1,
+ "verticalAlign": "middle",
+ "iconURL": "skin/IconButton_EF7806FA_E38F_8606_41E5_5C4557EBCACB.png",
+ "paddingRight": 0,
+ "minWidth": 1,
+ "mode": "push",
+ "class": "IconButton",
+ "paddingLeft": 0,
+ "height": 58,
+ "rollOverIconURL": "skin/IconButton_EF7806FA_E38F_8606_41E5_5C4557EBCACB_rollover.png",
+ "paddingTop": 0,
+ "shadow": false,
+ "backgroundOpacity": 0,
+ "borderRadius": 0,
+ "visible": false,
+ "paddingBottom": 0,
+ "cursor": "hand",
+ "maxWidth": 58,
+ "data": {
+  "name": "IconButton VR"
+ }
+},
+{
+ "transparencyActive": true,
+ "maxHeight": 37,
+ "propagateClick": true,
+ "id": "IconButton_1B9ADD00_16C4_0505_41B4_B043CA1AA270",
+ "horizontalAlign": "center",
+ "right": 30,
+ "width": 100,
+ "borderSize": 0,
+ "minHeight": 1,
+ "verticalAlign": "middle",
+ "iconURL": "skin/IconButton_1B9ADD00_16C4_0505_41B4_B043CA1AA270.png",
+ "paddingRight": 0,
+ "bottom": 8,
+ "minWidth": 1,
+ "mode": "push",
+ "class": "IconButton",
+ "paddingLeft": 0,
+ "height": 75,
+ "rollOverIconURL": "skin/IconButton_1B9ADD00_16C4_0505_41B4_B043CA1AA270_rollover.png",
+ "paddingTop": 0,
+ "shadow": false,
+ "backgroundOpacity": 0,
+ "borderRadius": 0,
+ "pressedIconURL": "skin/IconButton_1B9ADD00_16C4_0505_41B4_B043CA1AA270_pressed.png",
+ "paddingBottom": 0,
+ "cursor": "hand",
+ "maxWidth": 49,
+ "data": {
+  "name": "IconButton VR"
+ }
+},
+{
+ "transparencyActive": true,
+ "maxHeight": 58,
+ "propagateClick": true,
+ "id": "IconButton_EEEB3760_E38B_8603_41D6_FE6B11A3DA96",
+ "horizontalAlign": "center",
+ "width": 58,
+ "borderSize": 0,
+ "minHeight": 1,
+ "verticalAlign": "middle",
+ "iconURL": "skin/IconButton_EEEB3760_E38B_8603_41D6_FE6B11A3DA96.png",
+ "paddingRight": 0,
+ "minWidth": 1,
+ "mode": "toggle",
+ "class": "IconButton",
+ "paddingLeft": 0,
+ "height": 58,
+ "paddingTop": 0,
+ "shadow": false,
+ "backgroundOpacity": 0,
+ "borderRadius": 0,
+ "pressedIconURL": "skin/IconButton_EEEB3760_E38B_8603_41D6_FE6B11A3DA96_pressed.png",
+ "paddingBottom": 0,
+ "cursor": "hand",
+ "maxWidth": 58,
+ "data": {
+  "name": "IconButton HS "
+ }
+},
+{
+ "transparencyActive": true,
+ "maxHeight": 58,
+ "propagateClick": true,
+ "id": "IconButton_EE9FBAB2_E389_8E06_41D7_903ABEDD153A",
+ "horizontalAlign": "center",
+ "width": 58,
+ "borderSize": 0,
+ "minHeight": 1,
+ "verticalAlign": "middle",
+ "iconURL": "skin/IconButton_EE9FBAB2_E389_8E06_41D7_903ABEDD153A.png",
+ "paddingRight": 0,
+ "minWidth": 1,
+ "mode": "toggle",
+ "class": "IconButton",
+ "paddingLeft": 0,
+ "height": 58,
+ "paddingTop": 0,
+ "shadow": false,
+ "backgroundOpacity": 0,
+ "borderRadius": 0,
+ "pressedIconURL": "skin/IconButton_EE9FBAB2_E389_8E06_41D7_903ABEDD153A_pressed.png",
+ "paddingBottom": 0,
+ "cursor": "hand",
+ "maxWidth": 58,
+ "data": {
+  "name": "IconButton GYRO"
+ }
 },
 {
  "shadow": false,
@@ -18361,7 +18359,7 @@
  "rollOverDisplay": false,
  "areas": [
   {
-   "click": "this.startPanoramaWithCamera(this.panorama_7FC7CD76_7499_151E_41D8_2AAFAFF10D8B, this.camera_A2D50779_81F1_EAC0_41C4_02CA98B63DD3); this.mainPlayList.set('selectedIndex', 0)",
+   "click": "this.startPanoramaWithCamera(this.panorama_7FC7CD76_7499_151E_41D8_2AAFAFF10D8B, this.camera_A7E5B793_8157_EA40_41B1_1C7B951C640C); this.mainPlayList.set('selectedIndex', 0)",
    "class": "HotspotPanoramaOverlayArea",
    "mapColor": "#FF0000"
   }
@@ -19888,22 +19886,6 @@
  "class": "AnimatedImageResource",
  "levels": [
   {
-   "url": "media/panorama_7FD9FA2B_7499_1F37_41D3_1E72039D25BA_0_HS_0_0.png",
-   "width": 1080,
-   "class": "ImageResourceLevel",
-   "height": 900
-  }
- ],
- "colCount": 4,
- "id": "AnimatedImageResource_9D480458_81D2_6EC0_41DA_D317B718A7ED",
- "frameDuration": 41
-},
-{
- "rowCount": 6,
- "frameCount": 24,
- "class": "AnimatedImageResource",
- "levels": [
-  {
    "url": "media/panorama_7FC7CD76_7499_151E_41D8_2AAFAFF10D8B_1_HS_0_0.png",
    "width": 536,
    "class": "ImageResourceLevel",
@@ -20008,6 +19990,22 @@
  ],
  "colCount": 4,
  "id": "AnimatedImageResource_50B97A4C_75A9_1F72_41D1_10577FECD272",
+ "frameDuration": 41
+},
+{
+ "rowCount": 6,
+ "frameCount": 24,
+ "class": "AnimatedImageResource",
+ "levels": [
+  {
+   "url": "media/panorama_7FD9FA2B_7499_1F37_41D3_1E72039D25BA_0_HS_0_0.png",
+   "width": 1080,
+   "class": "ImageResourceLevel",
+   "height": 900
+  }
+ ],
+ "colCount": 4,
+ "id": "AnimatedImageResource_9D480458_81D2_6EC0_41DA_D317B718A7ED",
  "frameDuration": 41
 },
 {
@@ -23652,7 +23650,7 @@
  "paddingTop": 0,
  "backgroundOpacity": 0,
  "borderRadius": 0,
- "html": "<div style=\"text-align:left; color:#000; \"><DIV STYLE=\"text-align:left;\"><SPAN STYLE=\"letter-spacing:0vh;color:#000000;font-family:Arial, Helvetica, sans-serif;\"><SPAN STYLE=\"color:#04a3e1;font-size:7.53vh;font-family:'Bebas Neue Bold';\">___</SPAN></SPAN></DIV><DIV STYLE=\"text-align:left;\"><SPAN STYLE=\"letter-spacing:0vh;color:#000000;font-family:Arial, Helvetica, sans-serif;\"><SPAN STYLE=\"font-size:6.66vh;font-family:'Bebas Neue Bold';\">TATA TERTIB</SPAN></SPAN></DIV><p STYLE=\"margin:0; line-height:3.33vh;\"><BR STYLE=\"letter-spacing:0vh;color:#000000;font-size:0.87vh;font-family:Arial, Helvetica, sans-serif;\"/></p><DIV STYLE=\"text-align:left;\"><SPAN STYLE=\"letter-spacing:0vh;color:#000000;font-family:Arial, Helvetica, sans-serif;\"><SPAN STYLE=\"color:#00a0e3;font-size:1.45vh;\"><B>TATA TERTIB WISUDAWAN</B></SPAN></SPAN></DIV><DIV STYLE=\"text-align:left;\"><SPAN STYLE=\"letter-spacing:0vh;color:#000000;font-family:Arial, Helvetica, sans-serif;\"><SPAN STYLE=\"font-size:1.16vh;\">1. Kehadiran</SPAN></SPAN></DIV><DIV STYLE=\"text-align:left;\"><SPAN STYLE=\"letter-spacing:0vh;color:#000000;font-family:Arial, Helvetica, sans-serif;\"><SPAN STYLE=\"font-size:1.16vh;\">Wisudawan hadir di Graha Cakrawala Universitas Negeri Malang paling lambat pada Pukul 06.00 WIB</SPAN></SPAN></DIV><p STYLE=\"margin:0; line-height:1.16vh;\"><BR STYLE=\"letter-spacing:0vh;color:#000000;font-size:0.87vh;font-family:Arial, Helvetica, sans-serif;\"/></p><DIV STYLE=\"text-align:left;\"><SPAN STYLE=\"letter-spacing:0vh;color:#000000;font-family:Arial, Helvetica, sans-serif;\"><SPAN STYLE=\"font-size:1.16vh;\">Wisudawan berbaris sesuai dengan kelompok kelas di basement Graha Cakrawala Universitas Negeri Malang dan mengambil kartu panggil yang akan dibagikan oleh wali kelas/panitia.</SPAN></SPAN></DIV><p STYLE=\"margin:0; line-height:1.16vh;\"><BR STYLE=\"letter-spacing:0vh;color:#000000;font-size:0.87vh;font-family:Arial, Helvetica, sans-serif;\"/></p><DIV STYLE=\"text-align:left;\"><SPAN STYLE=\"letter-spacing:0vh;color:#000000;font-family:Arial, Helvetica, sans-serif;\"><SPAN STYLE=\"font-size:1.16vh;\">2. Pakaian</SPAN></SPAN></DIV><DIV STYLE=\"text-align:left;\"><SPAN STYLE=\"letter-spacing:0vh;color:#000000;font-family:Arial, Helvetica, sans-serif;\"><SPAN STYLE=\"font-size:1.16vh;\">Pada saat prosesi wisuda, mohon mematuhi pakaian yang telah ditentukan oleh panitia. Adapun ketentuannya sebagai berikut : </SPAN></SPAN></DIV><DIV STYLE=\"text-align:left;\"><SPAN STYLE=\"letter-spacing:0vh;color:#000000;font-family:Arial, Helvetica, sans-serif;\"><SPAN STYLE=\"font-size:1.16vh;\">Wisudawan putri menggunakan pakaian nasional, bersepatu, dan menggunakan jilbab (bagi yang berjilbab).</SPAN></SPAN></DIV><DIV STYLE=\"text-align:left;\"><SPAN STYLE=\"letter-spacing:0vh;color:#000000;font-family:Arial, Helvetica, sans-serif;\"><SPAN STYLE=\"font-size:1.16vh;\">Untuk wisudawan putri dilarang : </SPAN></SPAN></DIV><DIV STYLE=\"text-align:left;\"><SPAN STYLE=\"letter-spacing:0vh;color:#000000;font-family:Arial, Helvetica, sans-serif;\"><SPAN STYLE=\"font-size:1.16vh;\">Menggunakan kebaya dengan belahan dada terbuka, baju dengan bahan kain yang menerawang, serta rok terlalu pendek/ panjang menjuntai ke lantai.</SPAN></SPAN></DIV><DIV STYLE=\"text-align:left;\"><SPAN STYLE=\"letter-spacing:0vh;color:#000000;font-family:Arial, Helvetica, sans-serif;\"><SPAN STYLE=\"font-size:1.16vh;\">Memakai sepatu dengan jenis highheels dengan tinggi lebih dari 3cm.</SPAN></SPAN></DIV><p STYLE=\"margin:0; line-height:1.16vh;\"><BR STYLE=\"letter-spacing:0vh;color:#000000;font-size:0.87vh;font-family:Arial, Helvetica, sans-serif;\"/></p><DIV STYLE=\"text-align:left;\"><SPAN STYLE=\"letter-spacing:0vh;color:#000000;font-family:Arial, Helvetica, sans-serif;\"><SPAN STYLE=\"font-size:1.16vh;\">Wisudawan putra menggunakan jas hitam dengan kemeja putih, berdasi, dan menggunakan sepatu pantofel berwarna hitam</SPAN></SPAN></DIV><DIV STYLE=\"text-align:left;\"><SPAN STYLE=\"letter-spacing:0vh;color:#000000;font-family:Arial, Helvetica, sans-serif;\"><SPAN STYLE=\"font-size:1.16vh;\">Penyelenggaraan Acara</SPAN></SPAN></DIV><DIV STYLE=\"text-align:left;\"><SPAN STYLE=\"letter-spacing:0vh;color:#000000;font-family:Arial, Helvetica, sans-serif;\"><SPAN STYLE=\"font-size:1.16vh;\">Selama acara berlangsung, wisudawan diharapkan untuk menjaga ketertiban dan mengikuti arahan dari panitia dengan penuh disiplin.</SPAN></SPAN></DIV><DIV STYLE=\"text-align:left;\"><SPAN STYLE=\"letter-spacing:0vh;color:#000000;font-family:Arial, Helvetica, sans-serif;\"><SPAN STYLE=\"font-size:1.16vh;\">Selama prosesi berjalan, diharapkan untuk mematikan ponsel dan memberikan perhatian penuh kepada acara yang sedang berlangsung.</SPAN></SPAN></DIV><DIV STYLE=\"text-align:left;\"><SPAN STYLE=\"letter-spacing:0vh;color:#000000;font-family:Arial, Helvetica, sans-serif;\"><SPAN STYLE=\"font-size:1.16vh;\">Pemberian Penghargaan</SPAN></SPAN></DIV><DIV STYLE=\"text-align:left;\"><SPAN STYLE=\"letter-spacing:0vh;color:#000000;font-family:Arial, Helvetica, sans-serif;\"><SPAN STYLE=\"font-size:1.16vh;\">Selama pemberian penghargaan, wisudawan diharapkan untuk memberikan tepuk tangan sebagai bentuk penghargaan kepada rekan-rekan yang menerima penghargaan.</SPAN></SPAN></DIV><DIV STYLE=\"text-align:left;\"><SPAN STYLE=\"letter-spacing:0vh;color:#000000;font-family:Arial, Helvetica, sans-serif;\"><SPAN STYLE=\"font-size:1.16vh;\">Pengambilan Gordon</SPAN></SPAN></DIV><DIV STYLE=\"text-align:left;\"><SPAN STYLE=\"letter-spacing:0vh;color:#000000;font-family:Arial, Helvetica, sans-serif;\"><SPAN STYLE=\"font-size:1.16vh;\">Wisudawan diharapkan untuk melakukan pengambilan gordon pada wali kelas masing - masing pada hari H sebelum prosesi wisuda dimulai. </SPAN></SPAN></DIV><DIV STYLE=\"text-align:left;\"><SPAN STYLE=\"letter-spacing:0vh;color:#000000;font-family:Arial, Helvetica, sans-serif;\"><SPAN STYLE=\"font-size:1.16vh;\">Fotografi</SPAN></SPAN></DIV><DIV STYLE=\"text-align:left;\"><SPAN STYLE=\"letter-spacing:0vh;color:#000000;font-family:Arial, Helvetica, sans-serif;\"><SPAN STYLE=\"font-size:1.16vh;\">Foto bersama wali kelas akan dilaksanakan sebelum prosesi wisuda dimulai. Wisudawan berbaris sesuai kelas sesuai arahan dari petugas alur</SPAN></SPAN></DIV><DIV STYLE=\"text-align:left;\"><SPAN STYLE=\"letter-spacing:0vh;color:#000000;font-family:Arial, Helvetica, sans-serif;\"><SPAN STYLE=\"font-size:1.16vh;\">Selama acara berlangsung, akan ada momen-momen yang diabadikan oleh fotografer resmi. Wisudawan diharapkan untuk mengikuti petunjuk dari fotografer untuk mendapatkan foto yang terbaik.</SPAN></SPAN></DIV><DIV STYLE=\"text-align:left;\"><SPAN STYLE=\"letter-spacing:0vh;color:#000000;font-family:Arial, Helvetica, sans-serif;\"><SPAN STYLE=\"font-size:1.16vh;\">Fotografer pribadi dilarang masuk ke dalam gedung Graha Cakrawala Universitas Negeri Malang selama prosesi acara berlangsung.</SPAN></SPAN></DIV><DIV STYLE=\"text-align:left;\"><SPAN STYLE=\"letter-spacing:0vh;color:#000000;font-family:Arial, Helvetica, sans-serif;\"><SPAN STYLE=\"font-size:1.16vh;\">Etika dan Sopan Santun</SPAN></SPAN></DIV><DIV STYLE=\"text-align:left;\"><SPAN STYLE=\"letter-spacing:0vh;color:#000000;font-family:Arial, Helvetica, sans-serif;\"><SPAN STYLE=\"font-size:1.16vh;\">Selama prosesi wisuda, wisudawan diharapkan untuk menjaga etika dan sopan santun baik dalam tutur kata dan perbuatan</SPAN></SPAN></DIV><DIV STYLE=\"text-align:left;\"><SPAN STYLE=\"letter-spacing:0vh;color:#000000;font-family:Arial, Helvetica, sans-serif;\"><SPAN STYLE=\"font-size:1.16vh;\">Wisudawan menggunakan pakaian yang telah ditentukan, dengan tata rias yang rapi dan sopan.</SPAN></SPAN></DIV><DIV STYLE=\"text-align:left;\"><SPAN STYLE=\"letter-spacing:0vh;color:#000000;font-family:Arial, Helvetica, sans-serif;\"><SPAN STYLE=\"font-size:1.16vh;\">Untuk wisudawan dilarang membawa,memakai, dan menampilkan atribut dalam bentuk apapun selain atribut yang sudah ditentukan oleh panitia. </SPAN></SPAN></DIV><DIV STYLE=\"text-align:left;\"><SPAN STYLE=\"letter-spacing:0vh;color:#000000;font-family:Arial, Helvetica, sans-serif;\"><SPAN STYLE=\"font-size:1.16vh;\">Selama prosesi wisuda, wisudawan dilarang : </SPAN></SPAN></DIV><DIV STYLE=\"text-align:left;\"><SPAN STYLE=\"letter-spacing:0vh;color:#000000;font-family:Arial, Helvetica, sans-serif;\"><SPAN STYLE=\"font-size:1.16vh;\">merokok,</SPAN></SPAN></DIV><DIV STYLE=\"text-align:left;\"><SPAN STYLE=\"letter-spacing:0vh;color:#000000;font-family:Arial, Helvetica, sans-serif;\"><SPAN STYLE=\"font-size:1.16vh;\">keluar masuk dari ruang prosesi tanpa izin wali kelas/panitia, </SPAN></SPAN></DIV><DIV STYLE=\"text-align:left;\"><SPAN STYLE=\"letter-spacing:0vh;color:#000000;font-family:Arial, Helvetica, sans-serif;\"><SPAN STYLE=\"font-size:1.16vh;\">mengaktifkan nada dering pada handphone,</SPAN></SPAN></DIV><DIV STYLE=\"text-align:left;\"><SPAN STYLE=\"letter-spacing:0vh;color:#000000;font-family:Arial, Helvetica, sans-serif;\"><SPAN STYLE=\"font-size:1.16vh;\">berbicara, dan membuat gaduh hingga menyebabkan terganggunya prosesi wisuda.</SPAN></SPAN></DIV><DIV STYLE=\"text-align:left;\"><SPAN STYLE=\"letter-spacing:0vh;color:#000000;font-family:Arial, Helvetica, sans-serif;\"><SPAN STYLE=\"font-size:1.16vh;\">melakukan selebrasi yang berlebihan di area panggung (salto, mengacungkan jari tengah, membuat tulisan - tulisan dsb)</SPAN></SPAN></DIV><DIV STYLE=\"text-align:left;\"><SPAN STYLE=\"letter-spacing:0vh;color:#000000;font-family:Arial, Helvetica, sans-serif;\"><SPAN STYLE=\"font-size:1.16vh;\">Penutupan Acara</SPAN></SPAN></DIV><DIV STYLE=\"text-align:left;\"><SPAN STYLE=\"letter-spacing:0vh;color:#000000;font-family:Arial, Helvetica, sans-serif;\"><SPAN STYLE=\"font-size:1.16vh;\">Setelah acara selesai, wisudawan diharapkan untuk meninggalkan tempat acara dengan tetap menjaga kebersihan, ketertiban dan kerapian.</SPAN></SPAN></DIV><DIV STYLE=\"text-align:left;\"><SPAN STYLE=\"letter-spacing:0vh;color:#000000;font-family:Arial, Helvetica, sans-serif;\"><SPAN STYLE=\"font-size:1.16vh;\">Bagi yang ingin berfoto atau berkumpul setelah acara, diharapkan untuk melakukannya di tempat yang telah ditentukan oleh panitia.</SPAN></SPAN></DIV><p STYLE=\"margin:0; line-height:1.16vh;\"><BR STYLE=\"letter-spacing:0vh;color:#000000;font-size:0.87vh;font-family:Arial, Helvetica, sans-serif;\"/></p><DIV STYLE=\"text-align:left;\"><SPAN STYLE=\"letter-spacing:0vh;color:#000000;font-family:Arial, Helvetica, sans-serif;\"><SPAN STYLE=\"color:#00a6e3;font-size:1.45vh;\"><B>TATA TERTIB TAMU UNDANGAN WISUDA</B></SPAN></SPAN></DIV><DIV STYLE=\"text-align:left;\"><SPAN STYLE=\"letter-spacing:0vh;color:#000000;font-family:Arial, Helvetica, sans-serif;\"><SPAN STYLE=\"font-size:1.16vh;\">Kehadiran</SPAN></SPAN></DIV><DIV STYLE=\"text-align:left;\"><SPAN STYLE=\"letter-spacing:0vh;color:#000000;font-family:Arial, Helvetica, sans-serif;\"><SPAN STYLE=\"font-size:1.16vh;\">Tamu undangan diharapkan hadir tepat waktu sesuai dengan jadwal yang telah ditentukan oleh panitia wisuda.</SPAN></SPAN></DIV><DIV STYLE=\"text-align:left;\"><SPAN STYLE=\"letter-spacing:0vh;color:#000000;font-family:Arial, Helvetica, sans-serif;\"><SPAN STYLE=\"font-size:1.16vh;\">Kehadiran haruslah dalam busana formal atau sesuai dengan dress code yang telah ditentukan.</SPAN></SPAN></DIV><DIV STYLE=\"text-align:left;\"><SPAN STYLE=\"letter-spacing:0vh;color:#000000;font-family:Arial, Helvetica, sans-serif;\"><SPAN STYLE=\"font-size:1.16vh;\">Bagi yang membawa kendaraan, dimohon untuk memarkir kendaraan di tempat yang telah ditentukan dan disediakan oleh panitia.</SPAN></SPAN></DIV><DIV STYLE=\"text-align:left;\"><SPAN STYLE=\"letter-spacing:0vh;color:#000000;font-family:Arial, Helvetica, sans-serif;\"><SPAN STYLE=\"font-size:1.16vh;\">Registrasi</SPAN></SPAN></DIV><DIV STYLE=\"text-align:left;\"><SPAN STYLE=\"letter-spacing:0vh;color:#000000;font-family:Arial, Helvetica, sans-serif;\"><SPAN STYLE=\"font-size:1.16vh;\">Setiap tamu undangan diwajibkan membawa kartu undang dan menunjukkan barcode kepada petugas untuk melakukan registrasi di meja pendaftaran yang telah disediakan sebelum memasuki area acara.</SPAN></SPAN></DIV><DIV STYLE=\"text-align:left;\"><SPAN STYLE=\"letter-spacing:0vh;color:#000000;font-family:Arial, Helvetica, sans-serif;\"><SPAN STYLE=\"font-size:1.16vh;\">Penghormatan</SPAN></SPAN></DIV><DIV STYLE=\"text-align:left;\"><SPAN STYLE=\"letter-spacing:0vh;color:#000000;font-family:Arial, Helvetica, sans-serif;\"><SPAN STYLE=\"font-size:1.16vh;\">Tamu undangan diharapkan memberikan penghormatan kepada prosesi dan pembicara dengan tetap diam dan fokus selama acara berlangsung.</SPAN></SPAN></DIV><DIV STYLE=\"text-align:left;\"><SPAN STYLE=\"letter-spacing:0vh;color:#000000;font-family:Arial, Helvetica, sans-serif;\"><SPAN STYLE=\"font-size:1.16vh;\">Penggunaan ponsel selama acara sebaiknya dibatasi atau dimatikan untuk menghindari gangguan.</SPAN></SPAN></DIV><DIV STYLE=\"text-align:left;\"><SPAN STYLE=\"letter-spacing:0vh;color:#000000;font-family:Arial, Helvetica, sans-serif;\"><SPAN STYLE=\"font-size:1.16vh;\">Tamu undangan dilarang membuat gaduh selama prosesi acara wisuda berlangsung.</SPAN></SPAN></DIV><DIV STYLE=\"text-align:left;\"><SPAN STYLE=\"letter-spacing:0vh;color:#000000;font-family:Arial, Helvetica, sans-serif;\"><SPAN STYLE=\"font-size:1.16vh;\">Fotografi</SPAN></SPAN></DIV><DIV STYLE=\"text-align:left;\"><SPAN STYLE=\"letter-spacing:0vh;color:#000000;font-family:Arial, Helvetica, sans-serif;\"><SPAN STYLE=\"font-size:1.16vh;\">Selama acara berlangsung, tamu undangan diizinkan untuk mengambil foto, namun diharapkan untuk tidak mengganggu prosesi atau menghalangi pandangan orang lain.</SPAN></SPAN></DIV><DIV STYLE=\"text-align:left;\"><SPAN STYLE=\"letter-spacing:0vh;color:#000000;font-family:Arial, Helvetica, sans-serif;\"><SPAN STYLE=\"font-size:1.16vh;\">Tamu dihimbau untuk menghormati kebijakan fotografi yang mungkin ada, seperti tidak menggunakan flash saat pengambilan foto.</SPAN></SPAN></DIV><DIV STYLE=\"text-align:left;\"><SPAN STYLE=\"letter-spacing:0vh;color:#000000;font-family:Arial, Helvetica, sans-serif;\"><SPAN STYLE=\"font-size:1.16vh;\">Interaksi dengan Wisudawan</SPAN></SPAN></DIV><DIV STYLE=\"text-align:left;\"><SPAN STYLE=\"letter-spacing:0vh;color:#000000;font-family:Arial, Helvetica, sans-serif;\"><SPAN STYLE=\"font-size:1.16vh;\">Tamu undangan diperbolehkan untuk memberikan ucapan selamat kepada wisudawan setelah acara selesai atau pada waktu yang telah ditentukan oleh panitia.</SPAN></SPAN></DIV><DIV STYLE=\"text-align:left;\"><SPAN STYLE=\"letter-spacing:0vh;color:#000000;font-family:Arial, Helvetica, sans-serif;\"><SPAN STYLE=\"font-size:1.16vh;\">Untuk menghindari gangguan, interaksi dengan wisudawan sebaiknya dilakukan setelah prosesi acara utama selesai.</SPAN></SPAN></DIV><DIV STYLE=\"text-align:left;\"><SPAN STYLE=\"letter-spacing:0vh;color:#000000;font-family:Arial, Helvetica, sans-serif;\"><SPAN STYLE=\"font-size:1.16vh;\">Penutupan Acara</SPAN></SPAN></DIV><DIV STYLE=\"text-align:left;\"><SPAN STYLE=\"letter-spacing:0vh;color:#000000;font-family:Arial, Helvetica, sans-serif;\"><SPAN STYLE=\"font-size:1.16vh;\">Setelah acara selesai, tamu undangan diharapkan meninggalkan tempat acara dengan tertib dan rapi.</SPAN></SPAN></DIV><DIV STYLE=\"text-align:left;\"><SPAN STYLE=\"letter-spacing:0vh;color:#000000;font-family:Arial, Helvetica, sans-serif;\"><SPAN STYLE=\"font-size:1.16vh;\">Bagi tamu yang ingin berfoto bersama keluarga atau teman, diharapkan untuk melakukannya di area yang telah ditentukan oleh panitia.</SPAN></SPAN></DIV></div>",
+ "html": "<div style=\"text-align:left; color:#000; \"><DIV STYLE=\"text-align:left;\"><SPAN STYLE=\"letter-spacing:0vh;color:#000000;font-family:Arial, Helvetica, sans-serif;\"><SPAN STYLE=\"color:#04a3e1;font-size:7.53vh;font-family:'Bebas Neue Bold';\">___</SPAN></SPAN></DIV><DIV STYLE=\"text-align:left;\"><SPAN STYLE=\"letter-spacing:0vh;color:#000000;font-family:Arial, Helvetica, sans-serif;\"><SPAN STYLE=\"font-size:6.66vh;font-family:'Bebas Neue Bold';\">TATA TERTIB</SPAN></SPAN></DIV><p STYLE=\"margin:0; line-height:3.33vh;\"><BR STYLE=\"letter-spacing:0vh;color:#000000;font-size:0.87vh;font-family:Arial, Helvetica, sans-serif;\"/></p><DIV STYLE=\"text-align:left;\"><SPAN STYLE=\"letter-spacing:0vh;color:#000000;font-family:Arial, Helvetica, sans-serif;\"><SPAN STYLE=\"color:#00a0e3;font-size:1.45vh;\"><B>TATA TERTIB WISUDAWAN</B></SPAN></SPAN></DIV><DIV STYLE=\"text-align:left;\"><SPAN STYLE=\"letter-spacing:0vh;color:#000000;font-family:Arial, Helvetica, sans-serif;\"><SPAN STYLE=\"font-size:1.45vh;\">1. Kehadiran</SPAN></SPAN></DIV><DIV STYLE=\"text-align:left;\"><SPAN STYLE=\"letter-spacing:0vh;color:#000000;font-family:Arial, Helvetica, sans-serif;\"><SPAN STYLE=\"font-size:1.45vh;\">Wisudawan hadir di Graha Cakrawala Universitas Negeri Malang paling lambat pada Pukul 06.00 WIB</SPAN></SPAN></DIV><p STYLE=\"margin:0; line-height:1.45vh;\"><BR STYLE=\"letter-spacing:0vh;color:#000000;font-size:0.87vh;font-family:Arial, Helvetica, sans-serif;\"/></p><DIV STYLE=\"text-align:left;\"><SPAN STYLE=\"letter-spacing:0vh;color:#000000;font-family:Arial, Helvetica, sans-serif;\"><SPAN STYLE=\"font-size:1.45vh;\">Wisudawan berbaris sesuai dengan kelompok kelas di basement Graha Cakrawala Universitas Negeri Malang dan mengambil kartu panggil yang akan dibagikan oleh wali kelas/panitia.</SPAN></SPAN></DIV><p STYLE=\"margin:0; line-height:1.45vh;\"><BR STYLE=\"letter-spacing:0vh;color:#000000;font-size:0.87vh;font-family:Arial, Helvetica, sans-serif;\"/></p><DIV STYLE=\"text-align:left;\"><SPAN STYLE=\"letter-spacing:0vh;color:#000000;font-family:Arial, Helvetica, sans-serif;\"><SPAN STYLE=\"font-size:1.45vh;\">2. Pakaian</SPAN></SPAN></DIV><DIV STYLE=\"text-align:left;\"><SPAN STYLE=\"letter-spacing:0vh;color:#000000;font-family:Arial, Helvetica, sans-serif;\"><SPAN STYLE=\"font-size:1.45vh;\">Pada saat prosesi wisuda, mohon mematuhi pakaian yang telah ditentukan oleh panitia. Adapun ketentuannya sebagai berikut : </SPAN></SPAN></DIV><DIV STYLE=\"text-align:left;\"><SPAN STYLE=\"letter-spacing:0vh;color:#000000;font-family:Arial, Helvetica, sans-serif;\"><SPAN STYLE=\"font-size:1.45vh;\">Wisudawan putri menggunakan pakaian nasional, bersepatu, dan menggunakan jilbab (bagi yang berjilbab).</SPAN></SPAN></DIV><DIV STYLE=\"text-align:left;\"><SPAN STYLE=\"letter-spacing:0vh;color:#000000;font-family:Arial, Helvetica, sans-serif;\"><SPAN STYLE=\"font-size:1.45vh;\">Untuk wisudawan putri dilarang : </SPAN></SPAN></DIV><DIV STYLE=\"text-align:left;\"><SPAN STYLE=\"letter-spacing:0vh;color:#000000;font-family:Arial, Helvetica, sans-serif;\"><SPAN STYLE=\"font-size:1.45vh;\">Menggunakan kebaya dengan belahan dada terbuka, baju dengan bahan kain yang menerawang, serta rok terlalu pendek/ panjang menjuntai ke lantai.</SPAN></SPAN></DIV><DIV STYLE=\"text-align:left;\"><SPAN STYLE=\"letter-spacing:0vh;color:#000000;font-family:Arial, Helvetica, sans-serif;\"><SPAN STYLE=\"font-size:1.45vh;\">Memakai sepatu dengan jenis highheels dengan tinggi lebih dari 3cm.</SPAN></SPAN></DIV><p STYLE=\"margin:0; line-height:1.45vh;\"><BR STYLE=\"letter-spacing:0vh;color:#000000;font-size:0.87vh;font-family:Arial, Helvetica, sans-serif;\"/></p><DIV STYLE=\"text-align:left;\"><SPAN STYLE=\"letter-spacing:0vh;color:#000000;font-family:Arial, Helvetica, sans-serif;\"><SPAN STYLE=\"font-size:1.45vh;\">Wisudawan putra menggunakan jas hitam dengan kemeja putih, berdasi, dan menggunakan sepatu pantofel berwarna hitam</SPAN></SPAN></DIV><DIV STYLE=\"text-align:left;\"><SPAN STYLE=\"letter-spacing:0vh;color:#000000;font-family:Arial, Helvetica, sans-serif;\"><SPAN STYLE=\"font-size:1.45vh;\">Penyelenggaraan Acara</SPAN></SPAN></DIV><DIV STYLE=\"text-align:left;\"><SPAN STYLE=\"letter-spacing:0vh;color:#000000;font-family:Arial, Helvetica, sans-serif;\"><SPAN STYLE=\"font-size:1.45vh;\">Selama acara berlangsung, wisudawan diharapkan untuk menjaga ketertiban dan mengikuti arahan dari panitia dengan penuh disiplin.</SPAN></SPAN></DIV><DIV STYLE=\"text-align:left;\"><SPAN STYLE=\"letter-spacing:0vh;color:#000000;font-family:Arial, Helvetica, sans-serif;\"><SPAN STYLE=\"font-size:1.45vh;\">Selama prosesi berjalan, diharapkan untuk mematikan ponsel dan memberikan perhatian penuh kepada acara yang sedang berlangsung.</SPAN></SPAN></DIV><DIV STYLE=\"text-align:left;\"><SPAN STYLE=\"letter-spacing:0vh;color:#000000;font-family:Arial, Helvetica, sans-serif;\"><SPAN STYLE=\"font-size:1.45vh;\">Pemberian Penghargaan</SPAN></SPAN></DIV><DIV STYLE=\"text-align:left;\"><SPAN STYLE=\"letter-spacing:0vh;color:#000000;font-family:Arial, Helvetica, sans-serif;\"><SPAN STYLE=\"font-size:1.45vh;\">Selama pemberian penghargaan, wisudawan diharapkan untuk memberikan tepuk tangan sebagai bentuk penghargaan kepada rekan-rekan yang menerima penghargaan.</SPAN></SPAN></DIV><DIV STYLE=\"text-align:left;\"><SPAN STYLE=\"letter-spacing:0vh;color:#000000;font-family:Arial, Helvetica, sans-serif;\"><SPAN STYLE=\"font-size:1.45vh;\">Pengambilan Gordon</SPAN></SPAN></DIV><DIV STYLE=\"text-align:left;\"><SPAN STYLE=\"letter-spacing:0vh;color:#000000;font-family:Arial, Helvetica, sans-serif;\"><SPAN STYLE=\"font-size:1.45vh;\">Wisudawan diharapkan untuk melakukan pengambilan gordon pada wali kelas masing - masing pada hari H sebelum prosesi wisuda dimulai. </SPAN></SPAN></DIV><DIV STYLE=\"text-align:left;\"><SPAN STYLE=\"letter-spacing:0vh;color:#000000;font-family:Arial, Helvetica, sans-serif;\"><SPAN STYLE=\"font-size:1.45vh;\">Fotografi</SPAN></SPAN></DIV><DIV STYLE=\"text-align:left;\"><SPAN STYLE=\"letter-spacing:0vh;color:#000000;font-family:Arial, Helvetica, sans-serif;\"><SPAN STYLE=\"font-size:1.45vh;\">Foto bersama wali kelas akan dilaksanakan sebelum prosesi wisuda dimulai. Wisudawan berbaris sesuai kelas sesuai arahan dari petugas alur</SPAN></SPAN></DIV><DIV STYLE=\"text-align:left;\"><SPAN STYLE=\"letter-spacing:0vh;color:#000000;font-family:Arial, Helvetica, sans-serif;\"><SPAN STYLE=\"font-size:1.45vh;\">Selama acara berlangsung, akan ada momen-momen yang diabadikan oleh fotografer resmi. Wisudawan diharapkan untuk mengikuti petunjuk dari fotografer untuk mendapatkan foto yang terbaik.</SPAN></SPAN></DIV><DIV STYLE=\"text-align:left;\"><SPAN STYLE=\"letter-spacing:0vh;color:#000000;font-family:Arial, Helvetica, sans-serif;\"><SPAN STYLE=\"font-size:1.45vh;\">Fotografer pribadi dilarang masuk ke dalam gedung Graha Cakrawala Universitas Negeri Malang selama prosesi acara berlangsung.</SPAN></SPAN></DIV><DIV STYLE=\"text-align:left;\"><SPAN STYLE=\"letter-spacing:0vh;color:#000000;font-family:Arial, Helvetica, sans-serif;\"><SPAN STYLE=\"font-size:1.45vh;\">Etika dan Sopan Santun</SPAN></SPAN></DIV><DIV STYLE=\"text-align:left;\"><SPAN STYLE=\"letter-spacing:0vh;color:#000000;font-family:Arial, Helvetica, sans-serif;\"><SPAN STYLE=\"font-size:1.45vh;\">Selama prosesi wisuda, wisudawan diharapkan untuk menjaga etika dan sopan santun baik dalam tutur kata dan perbuatan</SPAN></SPAN></DIV><DIV STYLE=\"text-align:left;\"><SPAN STYLE=\"letter-spacing:0vh;color:#000000;font-family:Arial, Helvetica, sans-serif;\"><SPAN STYLE=\"font-size:1.45vh;\">Wisudawan menggunakan pakaian yang telah ditentukan, dengan tata rias yang rapi dan sopan.</SPAN></SPAN></DIV><DIV STYLE=\"text-align:left;\"><SPAN STYLE=\"letter-spacing:0vh;color:#000000;font-family:Arial, Helvetica, sans-serif;\"><SPAN STYLE=\"font-size:1.45vh;\">Untuk wisudawan dilarang membawa,memakai, dan menampilkan atribut dalam bentuk apapun selain atribut yang sudah ditentukan oleh panitia. </SPAN></SPAN></DIV><DIV STYLE=\"text-align:left;\"><SPAN STYLE=\"letter-spacing:0vh;color:#000000;font-family:Arial, Helvetica, sans-serif;\"><SPAN STYLE=\"font-size:1.45vh;\">Selama prosesi wisuda, wisudawan dilarang : </SPAN></SPAN></DIV><DIV STYLE=\"text-align:left;\"><SPAN STYLE=\"letter-spacing:0vh;color:#000000;font-family:Arial, Helvetica, sans-serif;\"><SPAN STYLE=\"font-size:1.45vh;\">merokok,</SPAN></SPAN></DIV><DIV STYLE=\"text-align:left;\"><SPAN STYLE=\"letter-spacing:0vh;color:#000000;font-family:Arial, Helvetica, sans-serif;\"><SPAN STYLE=\"font-size:1.45vh;\">keluar masuk dari ruang prosesi tanpa izin wali kelas/panitia, </SPAN></SPAN></DIV><DIV STYLE=\"text-align:left;\"><SPAN STYLE=\"letter-spacing:0vh;color:#000000;font-family:Arial, Helvetica, sans-serif;\"><SPAN STYLE=\"font-size:1.45vh;\">mengaktifkan nada dering pada handphone,</SPAN></SPAN></DIV><DIV STYLE=\"text-align:left;\"><SPAN STYLE=\"letter-spacing:0vh;color:#000000;font-family:Arial, Helvetica, sans-serif;\"><SPAN STYLE=\"font-size:0.87vh;\">berbicara, dan membuat gaduh hingga menyebabkan terganggunya prosesi wisuda.</SPAN></SPAN></DIV><DIV STYLE=\"text-align:left;\"><SPAN STYLE=\"letter-spacing:0vh;color:#000000;font-family:Arial, Helvetica, sans-serif;\"><SPAN STYLE=\"font-size:0.87vh;\">melakukan selebrasi yang berlebihan di area panggung (salto, mengacungkan jari tengah, membuat tulisan - tulisan dsb)</SPAN></SPAN></DIV><DIV STYLE=\"text-align:left;\"><SPAN STYLE=\"letter-spacing:0vh;color:#000000;font-family:Arial, Helvetica, sans-serif;\"><SPAN STYLE=\"font-size:0.87vh;\">Penutupan Acara</SPAN></SPAN></DIV><DIV STYLE=\"text-align:left;\"><SPAN STYLE=\"letter-spacing:0vh;color:#000000;font-family:Arial, Helvetica, sans-serif;\"><SPAN STYLE=\"font-size:0.87vh;\">Setelah acara selesai, wisudawan diharapkan untuk meninggalkan tempat acara dengan tetap menjaga kebersihan, ketertiban dan kerapian.</SPAN></SPAN></DIV><DIV STYLE=\"text-align:left;\"><SPAN STYLE=\"letter-spacing:0vh;color:#000000;font-family:Arial, Helvetica, sans-serif;\"><SPAN STYLE=\"font-size:0.87vh;\">Bagi yang ingin berfoto atau berkumpul setelah acara, diharapkan untuk melakukannya di tempat yang telah ditentukan oleh panitia.</SPAN></SPAN></DIV><p STYLE=\"margin:0; line-height:1.16vh;\"><BR STYLE=\"letter-spacing:0vh;color:#000000;font-size:0.87vh;font-family:Arial, Helvetica, sans-serif;\"/></p><DIV STYLE=\"text-align:left;\"><SPAN STYLE=\"letter-spacing:0vh;color:#000000;font-family:Arial, Helvetica, sans-serif;\"><SPAN STYLE=\"color:#00a6e3;font-size:1.45vh;\"><B>TATA TERTIB TAMU UNDANGAN WISUDA</B></SPAN></SPAN></DIV><DIV STYLE=\"text-align:left;\"><SPAN STYLE=\"letter-spacing:0vh;color:#000000;font-family:Arial, Helvetica, sans-serif;\"><SPAN STYLE=\"font-size:1.16vh;\">Kehadiran</SPAN></SPAN></DIV><DIV STYLE=\"text-align:left;\"><SPAN STYLE=\"letter-spacing:0vh;color:#000000;font-family:Arial, Helvetica, sans-serif;\"><SPAN STYLE=\"font-size:1.16vh;\">Tamu undangan diharapkan hadir tepat waktu sesuai dengan jadwal yang telah ditentukan oleh panitia wisuda.</SPAN></SPAN></DIV><DIV STYLE=\"text-align:left;\"><SPAN STYLE=\"letter-spacing:0vh;color:#000000;font-family:Arial, Helvetica, sans-serif;\"><SPAN STYLE=\"font-size:1.16vh;\">Kehadiran haruslah dalam busana formal atau sesuai dengan dress code yang telah ditentukan.</SPAN></SPAN></DIV><DIV STYLE=\"text-align:left;\"><SPAN STYLE=\"letter-spacing:0vh;color:#000000;font-family:Arial, Helvetica, sans-serif;\"><SPAN STYLE=\"font-size:1.16vh;\">Bagi yang membawa kendaraan, dimohon untuk memarkir kendaraan di tempat yang telah ditentukan dan disediakan oleh panitia.</SPAN></SPAN></DIV><DIV STYLE=\"text-align:left;\"><SPAN STYLE=\"letter-spacing:0vh;color:#000000;font-family:Arial, Helvetica, sans-serif;\"><SPAN STYLE=\"font-size:1.16vh;\">Registrasi</SPAN></SPAN></DIV><DIV STYLE=\"text-align:left;\"><SPAN STYLE=\"letter-spacing:0vh;color:#000000;font-family:Arial, Helvetica, sans-serif;\"><SPAN STYLE=\"font-size:1.16vh;\">Setiap tamu undangan diwajibkan membawa kartu undang dan menunjukkan barcode kepada petugas untuk melakukan registrasi di meja pendaftaran yang telah disediakan sebelum memasuki area acara.</SPAN></SPAN></DIV><DIV STYLE=\"text-align:left;\"><SPAN STYLE=\"letter-spacing:0vh;color:#000000;font-family:Arial, Helvetica, sans-serif;\"><SPAN STYLE=\"font-size:1.16vh;\">Penghormatan</SPAN></SPAN></DIV><DIV STYLE=\"text-align:left;\"><SPAN STYLE=\"letter-spacing:0vh;color:#000000;font-family:Arial, Helvetica, sans-serif;\"><SPAN STYLE=\"font-size:1.16vh;\">Tamu undangan diharapkan memberikan penghormatan kepada prosesi dan pembicara dengan tetap diam dan fokus selama acara berlangsung.</SPAN></SPAN></DIV><DIV STYLE=\"text-align:left;\"><SPAN STYLE=\"letter-spacing:0vh;color:#000000;font-family:Arial, Helvetica, sans-serif;\"><SPAN STYLE=\"font-size:1.16vh;\">Penggunaan ponsel selama acara sebaiknya dibatasi atau dimatikan untuk menghindari gangguan.</SPAN></SPAN></DIV><DIV STYLE=\"text-align:left;\"><SPAN STYLE=\"letter-spacing:0vh;color:#000000;font-family:Arial, Helvetica, sans-serif;\"><SPAN STYLE=\"font-size:1.16vh;\">Tamu undangan dilarang membuat gaduh selama prosesi acara wisuda berlangsung.</SPAN></SPAN></DIV><DIV STYLE=\"text-align:left;\"><SPAN STYLE=\"letter-spacing:0vh;color:#000000;font-family:Arial, Helvetica, sans-serif;\"><SPAN STYLE=\"font-size:1.16vh;\">Fotografi</SPAN></SPAN></DIV><DIV STYLE=\"text-align:left;\"><SPAN STYLE=\"letter-spacing:0vh;color:#000000;font-family:Arial, Helvetica, sans-serif;\"><SPAN STYLE=\"font-size:1.16vh;\">Selama acara berlangsung, tamu undangan diizinkan untuk mengambil foto, namun diharapkan untuk tidak mengganggu prosesi atau menghalangi pandangan orang lain.</SPAN></SPAN></DIV><DIV STYLE=\"text-align:left;\"><SPAN STYLE=\"letter-spacing:0vh;color:#000000;font-family:Arial, Helvetica, sans-serif;\"><SPAN STYLE=\"font-size:1.16vh;\">Tamu dihimbau untuk menghormati kebijakan fotografi yang mungkin ada, seperti tidak menggunakan flash saat pengambilan foto.</SPAN></SPAN></DIV><DIV STYLE=\"text-align:left;\"><SPAN STYLE=\"letter-spacing:0vh;color:#000000;font-family:Arial, Helvetica, sans-serif;\"><SPAN STYLE=\"font-size:1.16vh;\">Interaksi dengan Wisudawan</SPAN></SPAN></DIV><DIV STYLE=\"text-align:left;\"><SPAN STYLE=\"letter-spacing:0vh;color:#000000;font-family:Arial, Helvetica, sans-serif;\"><SPAN STYLE=\"font-size:1.16vh;\">Tamu undangan diperbolehkan untuk memberikan ucapan selamat kepada wisudawan setelah acara selesai atau pada waktu yang telah ditentukan oleh panitia.</SPAN></SPAN></DIV><DIV STYLE=\"text-align:left;\"><SPAN STYLE=\"letter-spacing:0vh;color:#000000;font-family:Arial, Helvetica, sans-serif;\"><SPAN STYLE=\"font-size:1.16vh;\">Untuk menghindari gangguan, interaksi dengan wisudawan sebaiknya dilakukan setelah prosesi acara utama selesai.</SPAN></SPAN></DIV><DIV STYLE=\"text-align:left;\"><SPAN STYLE=\"letter-spacing:0vh;color:#000000;font-family:Arial, Helvetica, sans-serif;\"><SPAN STYLE=\"font-size:1.16vh;\">Penutupan Acara</SPAN></SPAN></DIV><DIV STYLE=\"text-align:left;\"><SPAN STYLE=\"letter-spacing:0vh;color:#000000;font-family:Arial, Helvetica, sans-serif;\"><SPAN STYLE=\"font-size:1.16vh;\">Setelah acara selesai, tamu undangan diharapkan meninggalkan tempat acara dengan tertib dan rapi.</SPAN></SPAN></DIV><DIV STYLE=\"text-align:left;\"><SPAN STYLE=\"letter-spacing:0vh;color:#000000;font-family:Arial, Helvetica, sans-serif;\"><SPAN STYLE=\"font-size:1.16vh;\">Bagi tamu yang ingin berfoto bersama keluarga atau teman, diharapkan untuk melakukannya di area yang telah ditentukan oleh panitia.</SPAN></SPAN></DIV></div>",
  "paddingBottom": 20,
  "scrollBarWidth": 10,
  "data": {
@@ -23690,7 +23688,7 @@
  "mode": "push",
  "class": "Button",
  "fontSize": "3vh",
- "label": "lorem ipsum",
+ "label": "Mohon Dipelajari",
  "paddingLeft": 0,
  "backgroundColor": [
   "#04A3E1"
